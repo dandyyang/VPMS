@@ -212,7 +212,7 @@
             this.IsMdiContainer = true;
             this.Menu = this.mainMenu1;
             this.Name = "MainForm";
-            this.Text = "江門利奧信領科技系統";
+            this.Text = "VPMS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
