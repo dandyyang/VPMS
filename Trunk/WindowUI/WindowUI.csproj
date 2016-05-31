@@ -1,0 +1,940 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7DE2E080-8C5E-46C0-B7BA-45E0B4B552CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowUI</RootNamespace>
+    <AssemblyName>WindowUI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>leo.ico</ApplicationIcon>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>D3145AC114BD641B9B6F17ADF9E36C8EEA5826F9</ManifestCertificateThumbprint>
+    <ManifestKeyFile>WindowUI_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <PublishUrl>C:\Users\simonliang\Desktop\web\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.MSCommLib, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.5.3700.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.Shared\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Interop.MSCommLib, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>skin\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="ModuleAPI, Version=1.1.9.6, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ObjectListView, Version=2.5.0.19404, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ClassLibrary\DllFile\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="UtilityLibrary, Version=1.0.3.0, Culture=neutral, PublicKeyToken=c13d07fefef8d2c7">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ClassLibrary\DllFile\UtilityLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.2.2864.18696, Culture=neutral, PublicKeyToken=d481317c817cec47, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ClassLibrary\DllFile\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassLibrary\Public\CheckDataTypeValue.cs" />
+    <Compile Include="ClassLibrary\Public\ExMethod.cs" />
+    <Compile Include="ClassLibrary\Public\ListViewItemComparer.cs" />
+    <Compile Include="ClassLibrary\Public\plc_ConstValue.cs" />
+    <Compile Include="ClassLibrary\Public\plc_InitControlData.cs" />
+    <Compile Include="ClassLibrary\Public\plc_MainClass.cs" />
+    <Compile Include="ClassLibrary\Public\plc_UserPurview.cs" />
+    <Compile Include="ClassLibrary\Public\ProgressBarControl.cs" />
+    <Compile Include="ClassLibrary\Public\TestClass.cs" />
+    <Compile Include="ExportToExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportToExcel.Designer.cs">
+      <DependentUpon>ExportToExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Management\Common\CardUserSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Common\CardUserSearch.Designer.cs">
+      <DependentUpon>CardUserSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Common\ClassroomSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Common\ClassroomSearch.Designer.cs">
+      <DependentUpon>ClassroomSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Common\DateTimePickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Common\DateTimePickerForm.Designer.cs">
+      <DependentUpon>DateTimePickerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\LocalGeneral\ConstantValue.cs" />
+    <Compile Include="Management\DataRightsManagement\DataRightsRoleSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\DataRightsManagement\DataRightsRoleSetting.designer.cs">
+      <DependentUpon>DataRightsRoleSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\DataRightsManagement\DataRightsRoleSettingSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\DataRightsManagement\DataRightsRoleSettingSearch.Designer.cs">
+      <DependentUpon>DataRightsRoleSettingSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\DataRightsManagement\DataRightsRoleUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\DataRightsManagement\DataRightsRoleUser.Designer.cs">
+      <DependentUpon>DataRightsRoleUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\DataRightsManagement\QueryRightSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\DataRightsManagement\QueryRightSetting.Designer.cs">
+      <DependentUpon>QueryRightSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\DataRightsManagement\QueryRightSettingRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\DataRightsManagement\QueryRightSettingRoles.Designer.cs">
+      <DependentUpon>QueryRightSettingRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\DataRightsManagement\QueryRightSettingUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\DataRightsManagement\QueryRightSettingUsers.Designer.cs">
+      <DependentUpon>QueryRightSettingUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\LocalGeneral\SchoolInternetOfThingsGeneral.cs" />
+    <Compile Include="Management\Master\BuildingMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Master\BuildingMaster.Designer.cs">
+      <DependentUpon>BuildingMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Master\BuildingMasterSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Master\BuildingMasterSearch.Designer.cs">
+      <DependentUpon>BuildingMasterSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Master\CardUserMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Master\CardUserMaster.Designer.cs">
+      <DependentUpon>CardUserMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Master\CardUserMasterInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Master\CardUserMasterInput.Designer.cs">
+      <DependentUpon>CardUserMasterInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Master\CardUserMasterMonitorGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Master\CardUserMasterMonitorGroup.Designer.cs">
+      <DependentUpon>CardUserMasterMonitorGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Master\CardUserMasterSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Master\CardUserMasterSearch.Designer.cs">
+      <DependentUpon>CardUserMasterSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Master\ExportCardUserPhoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Master\ExportCardUserPhoto.Designer.cs">
+      <DependentUpon>ExportCardUserPhoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Master\ExportCumData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Master\ExportCumData.Designer.cs">
+      <DependentUpon>ExportCumData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Master\ImportCardUserPhoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Master\ImportCardUserPhoto.Designer.cs">
+      <DependentUpon>ImportCardUserPhoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Master\SchoolMasterSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Master\SchoolMasterSearch.Designer.cs">
+      <DependentUpon>SchoolMasterSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Master\SelectExpTpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Master\SelectExpTpt.Designer.cs">
+      <DependentUpon>SelectExpTpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Master\SiteMasterSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Master\SiteMasterSearch.Designer.cs">
+      <DependentUpon>SiteMasterSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Master\SpecialtyMasterSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Master\SpecialtyMasterSearch.Designer.cs">
+      <DependentUpon>SpecialtyMasterSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Master\SchoolMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Master\SchoolMaster.Designer.cs">
+      <DependentUpon>SchoolMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Master\SiteMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Master\SiteMaster.Designer.cs">
+      <DependentUpon>SiteMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Master\SpecialtyMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Master\SpecialtyMaster.Designer.cs">
+      <DependentUpon>SpecialtyMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysMaster\ClientMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysMaster\ClientMaster.Designer.cs">
+      <DependentUpon>ClientMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysMaster\ClientMasterFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysMaster\ClientMasterFind.Designer.cs">
+      <DependentUpon>ClientMasterFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysMaster\DepartmentMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysMaster\DepartmentMaster.Designer.cs">
+      <DependentUpon>DepartmentMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuToolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuToolForm.Designer.cs">
+      <DependentUpon>MenuToolForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportToExcel.resx">
+      <DependentUpon>ExportToExcel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Common\CardUserSearch.resx">
+      <DependentUpon>CardUserSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Common\ClassroomSearch.resx">
+      <DependentUpon>ClassroomSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Common\DateTimePickerForm.resx">
+      <DependentUpon>DateTimePickerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\DataRightsManagement\DataRightsRoleSetting.resx">
+      <DependentUpon>DataRightsRoleSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\DataRightsManagement\DataRightsRoleSettingSearch.resx">
+      <DependentUpon>DataRightsRoleSettingSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\DataRightsManagement\DataRightsRoleUser.resx">
+      <DependentUpon>DataRightsRoleUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\DataRightsManagement\QueryRightSetting.resx">
+      <DependentUpon>QueryRightSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\DataRightsManagement\QueryRightSettingRoles.resx">
+      <DependentUpon>QueryRightSettingRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\DataRightsManagement\QueryRightSettingUsers.resx">
+      <DependentUpon>QueryRightSettingUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Master\BuildingMaster.resx">
+      <DependentUpon>BuildingMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Master\BuildingMasterSearch.resx">
+      <DependentUpon>BuildingMasterSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Master\CardUserMaster.resx">
+      <DependentUpon>CardUserMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Master\CardUserMasterInput.resx">
+      <DependentUpon>CardUserMasterInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Master\CardUserMasterMonitorGroup.resx">
+      <DependentUpon>CardUserMasterMonitorGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Master\CardUserMasterSearch.resx">
+      <DependentUpon>CardUserMasterSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Master\ExportCardUserPhoto.resx">
+      <DependentUpon>ExportCardUserPhoto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Master\ExportCumData.resx">
+      <DependentUpon>ExportCumData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Master\ImportCardUserPhoto.resx">
+      <DependentUpon>ImportCardUserPhoto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Master\SchoolMasterSearch.resx">
+      <DependentUpon>SchoolMasterSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Master\SelectExpTpt.resx">
+      <DependentUpon>SelectExpTpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Master\SiteMasterSearch.resx">
+      <DependentUpon>SiteMasterSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Master\SpecialtyMasterSearch.resx">
+      <DependentUpon>SpecialtyMasterSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Master\SchoolMaster.resx">
+      <DependentUpon>SchoolMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Master\SiteMaster.resx">
+      <DependentUpon>SiteMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Master\SpecialtyMaster.resx">
+      <DependentUpon>SpecialtyMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysMaster\ClientMaster.resx">
+      <DependentUpon>ClientMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysMaster\ClientMasterFind.resx">
+      <DependentUpon>ClientMasterFind.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysMaster\DepartmentMaster.resx">
+      <DependentUpon>DepartmentMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuToolForm.resx">
+      <DependentUpon>MenuToolForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysMaster\DepartmentMasterSearch.resx">
+      <DependentUpon>DepartmentMasterSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysMaster\SupplierMaster.resx">
+      <DependentUpon>SupplierMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysMaster\SupplierMasterSearch.resx">
+      <DependentUpon>SupplierMasterSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysMaster\SysFormMaster.resx">
+      <DependentUpon>SysFormMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysMaster\SysFormMasterSearch.resx">
+      <DependentUpon>SysFormMasterSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysMaster\SysFunctionMaster.resx">
+      <DependentUpon>SysFunctionMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysMaster\SysFunctionMasterSearch.resx">
+      <DependentUpon>SysFunctionMasterSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysMaster\SysRoleMaster.resx">
+      <DependentUpon>SysRoleMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysMaster\SysRoleMasterSearch.resx">
+      <DependentUpon>SysRoleMasterSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysMaster\SysUserMaster.resx">
+      <DependentUpon>SysUserMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysMaster\SysPurviewMaster.resx">
+      <DependentUpon>SysPurviewMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysMaster\SysUserMasterSearch.resx">
+      <DependentUpon>SysUserMasterSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysMaster\TypeMaster.resx">
+      <DependentUpon>TypeMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemForm\CodeMaster.resx">
+      <DependentUpon>CodeMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemForm\CodeMasterForm.resx">
+      <DependentUpon>CodeMasterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemForm\CodeMasterFormSearch.resx">
+      <DependentUpon>CodeMasterFormSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemForm\ReportViewForm.resx">
+      <DependentUpon>ReportViewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <Compile Include="SysMaster\DepartmentMasterSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysMaster\DepartmentMasterSearch.Designer.cs">
+      <DependentUpon>DepartmentMasterSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysMaster\SupplierMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysMaster\SupplierMaster.Designer.cs">
+      <DependentUpon>SupplierMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysMaster\SupplierMasterSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysMaster\SupplierMasterSearch.Designer.cs">
+      <DependentUpon>SupplierMasterSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysMaster\SysFormMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysMaster\SysFormMaster.Designer.cs">
+      <DependentUpon>SysFormMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysMaster\SysFormMasterSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysMaster\SysFormMasterSearch.Designer.cs">
+      <DependentUpon>SysFormMasterSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysMaster\SysFunctionMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysMaster\SysFunctionMaster.Designer.cs">
+      <DependentUpon>SysFunctionMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysMaster\SysFunctionMasterSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysMaster\SysFunctionMasterSearch.Designer.cs">
+      <DependentUpon>SysFunctionMasterSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysMaster\SysRoleMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysMaster\SysRoleMaster.Designer.cs">
+      <DependentUpon>SysRoleMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysMaster\SysRoleMasterSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysMaster\SysRoleMasterSearch.Designer.cs">
+      <DependentUpon>SysRoleMasterSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysMaster\SysUserMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysMaster\SysUserMaster.Designer.cs">
+      <DependentUpon>SysUserMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysMaster\SysPurviewMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysMaster\SysPurviewMaster.Designer.cs">
+      <DependentUpon>SysPurviewMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysMaster\SysUserMasterSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysMaster\SysUserMasterSearch.Designer.cs">
+      <DependentUpon>SysUserMasterSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysMaster\TypeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysMaster\TypeMaster.Designer.cs">
+      <DependentUpon>TypeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemForm\CodeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemForm\CodeMaster.Designer.cs">
+      <DependentUpon>CodeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemForm\CodeMasterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemForm\CodeMasterForm.Designer.cs">
+      <DependentUpon>CodeMasterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemForm\CodeMasterFormSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemForm\CodeMasterFormSearch.Designer.cs">
+      <DependentUpon>CodeMasterFormSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemForm\ReportViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemForm\ReportViewForm.Designer.cs">
+      <DependentUpon>ReportViewForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{F0C1BE9F-501E-4F4C-B989-BDACEA0B70E2}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{CBC14F8C-690A-48C4-852D-8266FE39389D}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\General\UKey\UKey.csproj">
+      <Project>{9B89AB55-69DA-4BA0-AD4F-70178FA041B7}</Project>
+      <Name>UKey</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{ECD86F7B-7213-48DC-93AD-1F378AB2E577}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowControls\WindowControls.csproj">
+      <Project>{FC1E3F76-73EA-4CFE-AC8C-3E604EAC6D8D}</Project>
+      <Name>WindowControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClassLibrary\DllFile\AxInterop.WMPLib.dll" />
+    <Content Include="ClassLibrary\DllFile\Interop.WMPLib.dll" />
+    <Content Include="ClassLibrary\DllFile\log4net.dll" />
+    <Content Include="ClassLibrary\DllFile\ModuleAPI.dll" />
+    <Content Include="ClassLibrary\DllFile\NT119.dll" />
+    <Content Include="ClassLibrary\DllFile\ObjectListView.dll" />
+    <Content Include="ClassLibrary\DllFile\SystemLog.dll" />
+    <Content Include="ClassLibrary\DllFile\UtilityLibrary.dll" />
+    <Content Include="ClassLibrary\DllFile\WeifenLuo.WinFormsUI.Docking.dll" />
+    <None Include="ClassLibrary\DllFile\YCCARD.dll" />
+    <Content Include="leo.ico" />
+    <Content Include="Leo_TH_final.ico" />
+    <None Include="ExcelTemplate\CardInfo.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\cardUserMasterTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\ChangeClass.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Exam.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\student.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\student1.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\TableMoneyRecordStudent.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\teacher.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\teacher1.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\Model.SchoolInternetOfThings.Payment.ReportPaymentRecharge_rpr_Info.datasource" />
+    <None Include="Properties\DataSources\WindowUI.SchoolInternetOfThings.report.CardUserMaster_cus_Rpt.datasource" />
+    <None Include="Properties\DataSources\WindowUI.TestingForm.PrintCtrlCard.CtrlCard_ccd_Info.datasource" />
+    <None Include="Resources\PNGbg_YZ.png" />
+    <None Include="Resources\bLogin.png" />
+    <None Include="Resources\bReset.png" />
+    <None Include="Resources\06.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\order_159.png" />
+    <None Include="Resources\order.png" />
+    <Content Include="Resources\PNGbg.png" />
+    <Content Include="Resources\PNGbg_GL.png" />
+    <Content Include="Resources\PNGbg_YTS.png" />
+    <Content Include="skin\IrisSkin2.dll" />
+    <Content Include="skin\skin\Carlmness\calmness.gif" />
+    <Content Include="skin\skin\Carlmness\calmness_color1.gif" />
+    <Content Include="skin\skin\Carlmness\calmness_color2.gif" />
+    <Content Include="skin\skin\Deep\deepcyan.gif" />
+    <Content Include="skin\skin\Deep\deepgreen.gif" />
+    <Content Include="skin\skin\Deep\deeporange.gif" />
+    <Content Include="skin\skin\Diamond\diamondblue.gif" />
+    <Content Include="skin\skin\Diamond\diamondgreen.gif" />
+    <Content Include="skin\skin\Eighteen\eighteen.gif" />
+    <Content Include="skin\skin\Eighteen\eighteen_color1.gif" />
+    <Content Include="skin\skin\Eighteen\eighteen_color2.gif" />
+    <Content Include="skin\skin\Emerald\emerald.gif" />
+    <Content Include="skin\skin\Emerald\emerald_color1.gif" />
+    <Content Include="skin\skin\Emerald\emerald_color2.gif" />
+    <Content Include="skin\skin\Emerald\emerald_color3.gif" />
+    <Content Include="skin\skin\Glass\glassbrown.gif" />
+    <Content Include="skin\skin\Glass\glassgreen.gif" />
+    <Content Include="skin\skin\Glass\glassorange.gif" />
+    <Content Include="skin\skin\Longhorn\longhorn.gif" />
+    <Content Include="skin\skin\MacOS\macos.gif" />
+    <Content Include="skin\skin\Midsummer\midsummer.gif" />
+    <Content Include="skin\skin\Midsummer\midsummer_color1.gif" />
+    <Content Include="skin\skin\Midsummer\midsummer_color2.gif" />
+    <Content Include="skin\skin\Midsummer\midsummer_color3.gif" />
+    <Content Include="skin\skin\MP10\mp10.gif" />
+    <Content Include="skin\skin\MSN\msn.gif" />
+    <Content Include="skin\skin\One\oneblue.gif" />
+    <Content Include="skin\skin\One\onecyan.gif" />
+    <Content Include="skin\skin\One\onegreen.gif" />
+    <Content Include="skin\skin\One\oneorange.gif" />
+    <Content Include="skin\skin\Page\page.gif" />
+    <Content Include="skin\skin\Page\page_color1.gif" />
+    <Content Include="skin\skin\Page\page_color2.gif" />
+    <Content Include="skin\skin\RealOne\realone.gif" />
+    <Content Include="skin\skin\Silver\silver.gif" />
+    <Content Include="skin\skin\Silver\silver_color1.gif" />
+    <Content Include="skin\skin\Silver\silver_color2.gif" />
+    <Content Include="skin\skin\Sports\sportsblack.gif" />
+    <Content Include="skin\skin\Sports\sportsblue.gif" />
+    <Content Include="skin\skin\Sports\sportscyan.gif" />
+    <Content Include="skin\skin\Sports\sportsgreen.gif" />
+    <Content Include="skin\skin\Sports\sportsorange.gif" />
+    <Content Include="skin\skin\Steel\steelblack.gif" />
+    <Content Include="skin\skin\Steel\steelblue.gif" />
+    <Content Include="skin\skin\Vista1\vista1.gif" />
+    <Content Include="skin\skin\Vista1\vista1_green.gif" />
+    <Content Include="skin\skin\Vista2\vista2_color1.gif" />
+    <Content Include="skin\skin\Vista2\vista2_color2.gif" />
+    <Content Include="skin\skin\Vista2\vista2_color3.gif" />
+    <Content Include="skin\skin\Vista2\vista2_color4.gif" />
+    <Content Include="skin\skin\Vista2\vista2_color5.gif" />
+    <Content Include="skin\skin\Vista2\vista2_color6.gif" />
+    <Content Include="skin\skin\Vista2\vista2_color7.gif" />
+    <Content Include="skin\skin\Warm\warm.gif" />
+    <Content Include="skin\skin\Warm\warm_color1.gif" />
+    <Content Include="skin\skin\Warm\warm_color2.gif" />
+    <Content Include="skin\skin\Warm\warm_color3.gif" />
+    <Content Include="skin\skin\Wave\wave.gif" />
+    <Content Include="skin\skin\Wave\wave_color1.gif" />
+    <Content Include="skin\skin\Wave\wave_color2.gif" />
+    <Content Include="skin\skin\WinXP\xpblue.gif" />
+    <Content Include="skin\skin\WinXP\xpgreen.gif" />
+    <Content Include="skin\skin\WinXP\xporange.gif" />
+    <Content Include="skin\skin\WinXP\xpsilver.gif" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\call_up.png" />
+    <None Include="Resources\call_down.png" />
+    <None Include="skin\skin\Carlmness\Calmness.ssk" />
+    <None Include="skin\skin\Carlmness\CalmnessColor1.ssk" />
+    <None Include="skin\skin\Carlmness\CalmnessColor2.ssk" />
+    <None Include="skin\skin\Deep\DeepCyan.ssk" />
+    <None Include="skin\skin\Deep\DeepGreen.ssk" />
+    <None Include="skin\skin\Deep\DeepOrange.ssk" />
+    <None Include="skin\skin\Diamond\DiamondBlue.ssk" />
+    <None Include="skin\skin\Diamond\DiamondGreen.ssk" />
+    <None Include="skin\skin\Eighteen\Eighteen.ssk" />
+    <None Include="skin\skin\Eighteen\EighteenColor1.ssk" />
+    <None Include="skin\skin\Eighteen\EighteenColor2.ssk" />
+    <None Include="skin\skin\Emerald\Emerald.ssk" />
+    <None Include="skin\skin\Emerald\EmeraldColor1.ssk" />
+    <None Include="skin\skin\Emerald\EmeraldColor2.ssk" />
+    <None Include="skin\skin\Emerald\EmeraldColor3.ssk" />
+    <None Include="skin\skin\Glass\GlassBrown.ssk" />
+    <None Include="skin\skin\Glass\GlassGreen.ssk" />
+    <None Include="skin\skin\Glass\GlassOrange.ssk" />
+    <None Include="skin\skin\Longhorn\Longhorn.ssk" />
+    <None Include="skin\skin\MacOS\MacOS.ssk" />
+    <None Include="skin\skin\Midsummer\Midsummer.ssk" />
+    <None Include="skin\skin\Midsummer\MidsummerColor1.ssk" />
+    <None Include="skin\skin\Midsummer\MidsummerColor2.ssk" />
+    <None Include="skin\skin\Midsummer\MidsummerColor3.ssk" />
+    <None Include="skin\skin\MP10\MP10.ssk" />
+    <None Include="skin\skin\MSN\MSN.ssk" />
+    <None Include="skin\skin\One\OneBlue.ssk" />
+    <None Include="skin\skin\One\OneCyan.ssk" />
+    <None Include="skin\skin\One\OneGreen.ssk" />
+    <None Include="skin\skin\One\OneOrange.ssk" />
+    <None Include="skin\skin\Page\Page.ssk" />
+    <None Include="skin\skin\Page\PageColor1.ssk" />
+    <None Include="skin\skin\Page\PageColor2.ssk" />
+    <None Include="skin\skin\RealOne\RealOne.ssk" />
+    <None Include="skin\skin\Silver\Silver.ssk" />
+    <None Include="skin\skin\Silver\SilverColor1.ssk" />
+    <None Include="skin\skin\Silver\SilverColor2.ssk" />
+    <None Include="skin\skin\Sports\SportsBlack.ssk" />
+    <None Include="skin\skin\Sports\SportsBlue.ssk" />
+    <None Include="skin\skin\Sports\SportsCyan.ssk" />
+    <None Include="skin\skin\Sports\SportsGreen.ssk" />
+    <None Include="skin\skin\Sports\SportsOrange.ssk" />
+    <None Include="skin\skin\Steel\SteelBlack.ssk" />
+    <None Include="skin\skin\Steel\SteelBlue.ssk" />
+    <None Include="skin\skin\Vista1\vista1.ssk" />
+    <None Include="skin\skin\Vista1\vista1_green.ssk" />
+    <None Include="skin\skin\Vista2\Vista2_color1.ssk" />
+    <None Include="skin\skin\Vista2\Vista2_color2.ssk" />
+    <None Include="skin\skin\Vista2\Vista2_color3.ssk" />
+    <None Include="skin\skin\Vista2\Vista2_color4.ssk" />
+    <None Include="skin\skin\Vista2\Vista2_color5.ssk" />
+    <None Include="skin\skin\Vista2\Vista2_color6.ssk" />
+    <None Include="skin\skin\Vista2\Vista2_color7.ssk" />
+    <None Include="skin\skin\Warm\Warm.ssk" />
+    <None Include="skin\skin\Warm\WarmColor1.ssk" />
+    <None Include="skin\skin\Warm\WarmColor2.ssk" />
+    <None Include="skin\skin\Warm\WarmColor3.ssk" />
+    <None Include="skin\skin\Wave\Wave.ssk" />
+    <None Include="skin\skin\Wave\WaveColor1.ssk" />
+    <None Include="skin\skin\Wave\WaveColor2.ssk" />
+    <None Include="skin\skin\WinXP\XPBlue.ssk" />
+    <None Include="skin\skin\WinXP\XPGreen.ssk" />
+    <None Include="skin\skin\WinXP\XPOrange.ssk" />
+    <None Include="skin\skin\WinXP\XPSilver.ssk" />
+    <None Include="WindowUI_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

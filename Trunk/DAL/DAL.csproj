@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D01BD63-8F37-41AC-A0D9-CAF7DAB31283}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessDAL\DataAccessLayer.cs" />
+    <Compile Include="AccessDAL\LocalLayer\DataBaseCommand.cs" />
+    <Compile Include="AccessDAL\LocalLayer\LocalDefine.cs" />
+    <Compile Include="AccessDAL\Master\DeptMasterDA.cs" />
+    <Compile Include="AccessDAL\Base\CodeMasterDA.cs" />
+    <Compile Include="AccessDAL\Base\SystemGeneralDA.cs" />
+    <Compile Include="AccessDAL\Base\UserInformationDA.cs" />
+    <Compile Include="Factory\Base\SystemMenuDALFactory.cs" />
+    <Compile Include="Factory\General\GeneralDAFactory.cs" />
+    <Compile Include="Factory\PublisherTool\PublisherToolDAFactory.cs" />
+    <Compile Include="Factory\Management\MasterDAFactory.cs" />
+    <Compile Include="Factory\SysFunction\SysDALFactory.cs" />
+    <Compile Include="Factory\SysMaster\MasterDAFactory.cs" />
+    <Compile Include="General\DynamicSorting.cs" />
+    <Compile Include="IDAL\Management\DataRightsManagement\IDataRightsRoleDA.cs" />
+    <Compile Include="IDAL\Management\DeleteData\IDeleteDataLogicDA.cs" />
+    <Compile Include="IDAL\Management\Master\IBuildingMasterDA.cs" />
+    <Compile Include="IDAL\Management\Master\ICardUserMasterDA.cs" />
+    <Compile Include="IDAL\Management\Master\ICodeMasterDA.cs" />
+    <Compile Include="IDAL\Management\Master\IUserSkinDA.cs" />
+    <Compile Include="IDAL\Management\Service\IGeneralDA.cs" />
+    <Compile Include="IDAL\Management\Master\ISchoolMasterDA.cs" />
+    <Compile Include="IDAL\Management\Master\ISiteMasterDA.cs" />
+    <Compile Include="IDAL\Management\Master\ISpecialtyMasterDA.cs" />
+    <Compile Include="IDAL\SysFunction\ILogDetailDA.cs" />
+    <Compile Include="IDAL\SysMaster\IArticleTypeDefineDA.cs" />
+    <Compile Include="IDAL\SysMaster\IDepartmentMasterDA.cs" />
+    <Compile Include="IDAL\SysMaster\ILoginFormDA.cs" />
+    <Compile Include="IDAL\SysMaster\ISupplierMasterDA.cs" />
+    <Compile Include="IDAL\SysMaster\ISysFormMasterDA.cs" />
+    <Compile Include="IDAL\SysMaster\ISysFunctionMasterDA.cs" />
+    <Compile Include="IDAL\SysMaster\ISysRoleMasterDA.cs" />
+    <Compile Include="IDAL\SysMaster\ISysUserMasterDA.cs" />
+    <Compile Include="IDAL\SysMaster\IUserPurviewDA.cs" />
+    <Compile Include="IDAL\SysMaster\Web_IUserMasterPwdDA.cs" />
+    <Compile Include="LocalDefine\Base\DataDictionary.cs" />
+    <Compile Include="LocalDefine\LocalGeneralMenu.cs" />
+    <Compile Include="SqlDAL\Base\SystemMenuDA.cs" />
+    <Compile Include="SqlDAL\General\GeneralDA.cs" />
+    <Compile Include="SqlDAL\LocalLayer\LocalGeneral.cs" />
+    <Compile Include="SqlDAL\SchoolInternetOfThings\DataRightsManagement\DataRightsRoleDA.cs" />
+    <Compile Include="SqlDAL\SchoolInternetOfThings\DeleteData\DeleteDataLogicDA.cs" />
+    <Compile Include="SqlDAL\SchoolInternetOfThings\Master\BuildingMasterDA.cs" />
+    <Compile Include="SqlDAL\SchoolInternetOfThings\Master\CardUserMasterDA.cs" />
+    <Compile Include="SqlDAL\SchoolInternetOfThings\Master\CodeMasterDA.cs" />
+    <Compile Include="SqlDAL\SchoolInternetOfThings\Master\UserSkinDA.cs" />
+    <Compile Include="SqlDAL\SchoolInternetOfThings\Service\GeneralDA.cs" />
+    <Compile Include="SqlDAL\SchoolInternetOfThings\Master\SchoolMasterDA.cs" />
+    <Compile Include="SqlDAL\SchoolInternetOfThings\Master\SiteMasterDA.cs" />
+    <Compile Include="SqlDAL\SchoolInternetOfThings\Master\SpecialtyMasterDA.cs" />
+    <Compile Include="SqlDAL\SysFunction\LogDetailDA.cs" />
+    <Compile Include="SqlDAL\SysFunction\SysUserMasterDA.cs" />
+    <Compile Include="Factory\DataBaseType.cs" />
+    <Compile Include="Factory\FactoryLayerDefine.cs" />
+    <Compile Include="Factory\Master\MasterDAFactory.cs" />
+    <Compile Include="Factory\Base\CodeMasterDAFactory.cs" />
+    <Compile Include="IDAL\General\IGeneralDA.cs" />
+    <Compile Include="IDAL\IExtraDA.cs" />
+    <Compile Include="IDAL\Master\IClientMasterDA.cs" />
+    <Compile Include="IDAL\Master\IDeptMasterDA.cs" />
+    <Compile Include="IDAL\Base\ICodeMasterDA.cs" />
+    <Compile Include="IDAL\IDataBaseCommandDA.cs" />
+    <Compile Include="IDAL\IMainDA.cs" />
+    <Compile Include="IDAL\Base\ISystemGeneralDA.cs" />
+    <Compile Include="IDAL\Base\ISystemMenuDA.cs" />
+    <Compile Include="IDAL\Base\IUserInformationDA.cs" />
+    <Compile Include="IDAL\SysFunction\ISysUserMasterDA.cs" />
+    <Compile Include="LocalDefine\General.cs" />
+    <Compile Include="LocalDefine\GeneralDefine.cs" />
+    <Compile Include="SqlDAL\DataAccessLayer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlDAL\LocalLayer\DataBaseCommand.cs" />
+    <Compile Include="SqlDAL\LocalLayer\LocalDefine.cs" />
+    <Compile Include="SqlDAL\Master\ClientMasterDA.cs" />
+    <Compile Include="SqlDAL\Master\DeptMasterDA.cs" />
+    <Compile Include="SqlDAL\Base\CodeMasterDA.cs" />
+    <Compile Include="SqlDAL\Base\UserInformationDA.cs" />
+    <Compile Include="SqlDAL\SysMaster\ArticleTypeDefineDA.cs" />
+    <Compile Include="SqlDAL\SysMaster\DepartmentMasterDA.cs" />
+    <Compile Include="SqlDAL\SysMaster\LoginFormDA.cs" />
+    <Compile Include="SqlDAL\SysMaster\SupplierMasterDA.cs" />
+    <Compile Include="SqlDAL\SysMaster\SysFormMasterDA.cs" />
+    <Compile Include="SqlDAL\SysMaster\SysFunctionMasterDA.cs" />
+    <Compile Include="SqlDAL\SysMaster\SysRoleMasterDA.cs" />
+    <Compile Include="SqlDAL\SysMaster\SysUserMasterDA.cs" />
+    <Compile Include="SqlDAL\SysMaster\UserPurviewDA.cs" />
+    <Compile Include="SqlDAL\SysMaster\Web_UserMasterPwdDA.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{CBC14F8C-690A-48C4-852D-8266FE39389D}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LinqToSQLModel\LinqToSQLModel.csproj">
+      <Project>{999AA021-B8B6-4A0E-9277-1D2BB08030C0}</Project>
+      <Name>LinqToSQLModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{ECD86F7B-7213-48DC-93AD-1F378AB2E577}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IDAL\Management\Report\" />
+    <Folder Include="SqlDAL\SchoolInternetOfThings\Report\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

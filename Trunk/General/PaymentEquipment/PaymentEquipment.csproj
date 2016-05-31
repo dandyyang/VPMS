@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{96CFDC4E-CD4A-482D-AFEA-3492E8BC66AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PaymentEquipment</RootNamespace>
+    <AssemblyName>PaymentEquipment</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeviceFactory\PaymentDeviceFactory.cs" />
+    <Compile Include="DeviceFactory\PaymentSubsidizedFactory.cs" />
+    <Compile Include="DeviceFactory\PaymentWriterFactory.cs" />
+    <Compile Include="DeviceImplement\EastRiverWriter.cs" />
+    <Compile Include="DeviceImplement\YuChuanWriterV2.cs" />
+    <Compile Include="DeviceImplement\LeoJocatPayDevice.cs" />
+    <Compile Include="DeviceImplement\LeoJocatSubsidizeDevice.cs" />
+    <Compile Include="DeviceImplement\YuChuanWriter.cs" />
+    <Compile Include="DLL\EastRiverDevice.cs" />
+    <Compile Include="DLL\JocatDevice.cs" />
+    <Compile Include="DeviceImplement\LeoJocatWriter.cs" />
+    <Compile Include="DLL\YuChuanDevice.cs" />
+    <Compile Include="Entity\PaymentInfo.cs" />
+    <Compile Include="Enum\EnumMaster.cs" />
+    <Compile Include="EquipmentGeneral.cs" />
+    <Compile Include="Funtion\DataConvert.cs" />
+    <Compile Include="Funtion\JocatDataConvert.cs" />
+    <Compile Include="Entity\PaymentCard.cs" />
+    <Compile Include="IDevice\AbstractICWriter.cs" />
+    <Compile Include="IDevice\AbstractPayDevice.cs" />
+    <Compile Include="IDevice\AbstractSubsidizeDevice.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\EastRiver.dll" />
+    <Content Include="DLL\ERCommbase.dll" />
+    <Content Include="DLL\JocatDeviceLab.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="DLL\YCCARD.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="DLL\SystemLog.dll" />
+    <Content Include="DLL\YC_M2.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{CBC14F8C-690A-48C4-852D-8266FE39389D}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Model\Model.csproj">
+      <Project>{ECD86F7B-7213-48DC-93AD-1F378AB2E577}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReaderEquipment\ReaderEquipment.csproj">
+      <Project>{6F8BC23D-298D-494D-A99D-8AF410B81678}</Project>
+      <Name>ReaderEquipment</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

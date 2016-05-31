@@ -1,0 +1,1061 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 19.625, 100.625" name="SchoolInternetOfThingsDB">
+  <DataContextMoniker Name="/SchoolInternetOfThingsDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e9fe81b3-bf1b-4478-b76c-b79e3a7b4f80" isExpanded="false" absoluteBounds="0.625, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/DepartmentMaster_dpm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="94359f14-d735-4ddc-8331-bdb1a5e3ce6c" isExpanded="false" absoluteBounds="0.64000000000000012, 0.96, 1.9700000000000002, 0.2493896484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="422b66a6-7355-4df6-b22d-7b91fb0df512" isExpanded="false" absoluteBounds="0.625, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/SchoolMaster_scm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9fba8b49-e528-43a5-8324-dea8f935c8a1" absoluteBounds="0.64, 1.585, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ae1199de-d6a0-4ef0-94ef-51ffddabe77c" isExpanded="false" absoluteBounds="7, 5.125, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/BuildingMaster_bdm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05d3c22c-a8b3-4737-b690-bb142a54cefd" absoluteBounds="7.0150000000000006, 5.585, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1502e2d2-7c4f-4044-a3a0-50fcaabc517c" isExpanded="false" absoluteBounds="7, 3.875, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/SiteMaster_stm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="93831aff-433b-44ab-bac6-d9b791c3aee7" absoluteBounds="7.0150000000000006, 4.335, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="61e68604-a63a-4cca-953d-f2318d95ba1d" isExpanded="false" absoluteBounds="0.625, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/SpecialtyMaster_spm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aaf8679c-8295-4eb2-a8d4-d4b4489ac40a" absoluteBounds="0.64000000000000012, 4.085, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c4d7ffda-e235-4519-a5d7-8a2852e3e723" isExpanded="false" absoluteBounds="3.625, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/SpecialtyMasterCourse_smc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b0d3e064-9b69-42cd-b482-4fa5bb787f84" absoluteBounds="3.64, 4.085, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.625 : 3.85); (2.91666666666667 : 3.85 : JumpStart); (3.08333333333333 : 3.85 : JumpEnd); (3.625 : 3.85)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/SpecialtyMaster_spm/SpecialtyMaster_spm_SpecialtyMasterCourse_smc" />
+      <nodes>
+        <classShapeMoniker Id="61e68604-a63a-4cca-953d-f2318d95ba1d" />
+        <classShapeMoniker Id="c4d7ffda-e235-4519-a5d7-8a2852e3e723" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="eb034296-b3b1-4191-9a9e-4ddfe0a253d0" isExpanded="false" absoluteBounds="3, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CodeMaster_cmt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a9afda1-a2df-4819-b921-819f5735cac2" absoluteBounds="3.015, 0.96, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="df8c1966-3f7d-4ff1-898b-30a6ff4c2ffe" isExpanded="false" absoluteBounds="0.625, 6.125, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/ClassCourseSetting_ccs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="906d69d1-9adb-4a2c-b8a9-fcb147b06ec6" absoluteBounds="0.64000000000000012, 6.585, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2d97a3cb-9ab7-4320-950a-cfe9c850e4f2" isExpanded="false" absoluteBounds="0.625, 5.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/HolidaysSetting_hds" />
+      <nestedChildShapes>
+        <elementListCompartment Id="04f21c2d-4769-4171-9974-3edec42da491" absoluteBounds="0.64000000000000012, 5.96, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4fdf59ac-e0dc-43fd-98a1-fd2dd65560a2" isExpanded="false" absoluteBounds="7, 4.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CourseMaster_cum" />
+      <nestedChildShapes>
+        <elementListCompartment Id="34bfa7a0-fcd7-4f10-b19d-659e1115ae9a" absoluteBounds="7.015, 4.96, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="67382bf5-95d6-405b-8380-6192ef48ec6b" isExpanded="false" absoluteBounds="0.625, 7.375, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/MonitorControllerSetting_mcs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3aa7ff5a-fbe5-46eb-b5b1-16a8a6ce92a8" absoluteBounds="0.64000000000000012, 7.8350000000000009, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3ac8f1d0-b489-4163-8f89-754570ec980b" isExpanded="false" absoluteBounds="0.625, 8.375, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/Reader24GSetting_rgs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="255aca01-dde1-4f0f-9ca2-8a043f6c5c9d" absoluteBounds="0.64000000000000012, 8.835, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9614cdaa-ad5d-4fc4-8b18-878f5ed8e0c8" isExpanded="false" absoluteBounds="0.625, 9.375, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/Reader24GMonitor_rgm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="951603aa-a9bc-4314-a519-735be974cb85" absoluteBounds="0.64, 9.835, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3dd91dea-8c5c-4d80-9ecf-fd8cb99d6d5a" isExpanded="false" absoluteBounds="0.75, 11, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/ClassReviseCourse_crc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b1281e71-ab7d-4a34-8a6b-03cc9e8bbd79" absoluteBounds="0.765, 11.46, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fcf3a6e5-1921-4694-9f07-209c1a52956b" isExpanded="false" absoluteBounds="3.625, 11, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/ClassReviseCoursePeriod_ccp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de6f7eeb-faa7-4549-b3b1-44b1f7333cc0" absoluteBounds="3.6399999999999997, 11.46, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 11.225); (3.625 : 11.225)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/ClassReviseCourse_crc/ClassReviseCourse_crc_ClassReviseCoursePeriod_ccp" />
+      <nodes>
+        <classShapeMoniker Id="3dd91dea-8c5c-4d80-9ecf-fd8cb99d6d5a" />
+        <classShapeMoniker Id="fcf3a6e5-1921-4694-9f07-209c1a52956b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="6dc164c7-fe10-4b10-be00-45a1b4bb50f9" isExpanded="false" absoluteBounds="3.625, 7.375, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/ReaderOfControllerSetting_rcs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74f41a0c-4fe9-4536-88ff-cee559b70bf5" absoluteBounds="3.6399999999999997, 7.8350000000000009, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.625 : 7.6); (3.625 : 7.6)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/MonitorControllerSetting_mcs/MonitorControllerSetting_mcs_ReaderOfControllerSetting_rcs" />
+      <nodes>
+        <classShapeMoniker Id="67382bf5-95d6-405b-8380-6192ef48ec6b" />
+        <classShapeMoniker Id="6dc164c7-fe10-4b10-be00-45a1b4bb50f9" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="261999de-702a-402f-a54e-1e4755bccbe5" isExpanded="false" absoluteBounds="3.125, 1.625, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/Sys_RecordLockRegister_rlr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0509cef3-1f65-49db-86b9-faf2f4ab3a8a" absoluteBounds="3.1400000000000006, 2.085, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="406a1e5b-d29d-44a8-a3fa-102e2d55d4c5" isExpanded="false" absoluteBounds="3.625, 5.625, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/ClassCourseSettingCourse_ccc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="61592fbb-aa4d-4ba8-8e43-5f77913b9b43" absoluteBounds="3.6400000000000006, 6.085, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.625 : 6.35); (4.625 : 6.35); (4.625 : 6.075)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/ClassCourseSetting_ccs/ClassCourseSetting_ccs_ClassCourseSettingCourse_ccc" />
+      <nodes>
+        <classShapeMoniker Id="df8c1966-3f7d-4ff1-898b-30a6ff4c2ffe" />
+        <classShapeMoniker Id="406a1e5b-d29d-44a8-a3fa-102e2d55d4c5" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3b0b294b-d518-44ec-babb-7e0dbe6f4a3f" isExpanded="false" absoluteBounds="3.625, 8.375, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/Antenna24GSetting_ags" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0893456-ff63-4ca3-8b4f-a926e6ab239c" absoluteBounds="3.6399999999999997, 8.835, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.625 : 8.6); (3.625 : 8.6)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/Reader24GSetting_rgs/Reader24GSetting_rgs_Antenna24GSetting_ags" />
+      <nodes>
+        <classShapeMoniker Id="3ac8f1d0-b489-4163-8f89-754570ec980b" />
+        <classShapeMoniker Id="3b0b294b-d518-44ec-babb-7e0dbe6f4a3f" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="9d2cfd82-0fbe-496a-907b-8b1b935b865d" isExpanded="false" absoluteBounds="0.875, 12.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/SchoolCourseRevise_scr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9e569583-4d7e-462d-841c-a6962f428d53" absoluteBounds="0.89000000000000012, 12.96, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7953390c-382e-47bf-a9c3-5581919ce27a" isExpanded="false" absoluteBounds="3.75, 12.625, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/SchoolCourseRevisePeriod_srp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf821751-bb1c-443e-aba9-6c6325d9929a" absoluteBounds="3.765, 13.085, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.875 : 12.7875); (3.75 : 12.7875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/SchoolCourseRevise_scr/SchoolCourseRevise_scr_SchoolCourseRevisePeriod_srp" />
+      <nodes>
+        <classShapeMoniker Id="9d2cfd82-0fbe-496a-907b-8b1b935b865d" />
+        <classShapeMoniker Id="7953390c-382e-47bf-a9c3-5581919ce27a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b3af4b3b-cb5b-49c2-886b-8d0b17bb705a" isExpanded="false" absoluteBounds="3.25, 17.25, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/RFIDCardIssuance_rci" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ef140a09-864b-40f4-a6c4-d808f9e864be" absoluteBounds="3.2650000000000006, 17.71, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dafc5b33-6660-41ac-bfc4-a54e87ccd19d" isExpanded="false" absoluteBounds="3.625, 4.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CourseMasterTeacher_cut" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b3aa5ef5-812c-4c86-9034-365aeb83451b" absoluteBounds="3.6399999999999997, 4.96, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7 : 4.725); (5.625 : 4.725)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/CourseMaster_cum/CourseMaster_cum_CourseMasterTeacher_cut" />
+      <nodes>
+        <classShapeMoniker Id="4fdf59ac-e0dc-43fd-98a1-fd2dd65560a2" />
+        <classShapeMoniker Id="dafc5b33-6660-41ac-bfc4-a54e87ccd19d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f71e142d-ca4b-4447-ba04-422b41d6924f" isExpanded="false" absoluteBounds="0.75, 13.875, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/Sys_UserMaster_usm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c904e3ee-eb51-4078-add5-a14d9016f049" absoluteBounds="0.76500000000000012, 14.335, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a39b3195-b334-44bc-bb51-a49384ebcb9e" isExpanded="false" absoluteBounds="3.625, 14.75, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/Sys_UserPurview_usp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2dcc2e55-4413-4d44-a816-a2224fbaf554" absoluteBounds="3.6399999999999997, 15.21, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b2f43222-cc33-41c3-9f44-5f7278c4ec81" isExpanded="false" absoluteBounds="6.5, 13.875, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/Sys_RoleMaster_rlm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bf6756c8-71ab-471b-8d43-d7addaa0db05" absoluteBounds="6.515, 14.335, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 14.325); (3.625 : 14.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/Sys_UserMaster_usm/Sys_UserMaster_usm_Sys_UserPurview_usp" />
+      <nodes>
+        <classShapeMoniker Id="f71e142d-ca4b-4447-ba04-422b41d6924f" />
+        <classShapeMoniker Id="a39b3195-b334-44bc-bb51-a49384ebcb9e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.5 : 14.325); (5.625 : 14.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/Sys_RoleMaster_rlm/Sys_RoleMaster_rlm_Sys_UserPurview_usp" />
+      <nodes>
+        <classShapeMoniker Id="b2f43222-cc33-41c3-9f44-5f7278c4ec81" />
+        <classShapeMoniker Id="a39b3195-b334-44bc-bb51-a49384ebcb9e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="6f2f33fe-950b-4297-a67a-1026b58a9f93" isExpanded="false" absoluteBounds="9.125, 13.625, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/Sys_FunctionMaster_fum" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a02c0ee3-e3d6-465e-84f6-f4aee4ace010" absoluteBounds="9.14, 14.085, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4c17728f-4774-438e-9dca-bf145d3d1f60" isExpanded="false" absoluteBounds="3.625, 13.875, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/Sys_UserRoles_usr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="71e0df32-1473-42da-8790-b66ed4dbefdd" absoluteBounds="3.6399999999999997, 14.335, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 14.0687475); (3.625 : 14.0687475)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/Sys_UserMaster_usm/Sys_UserMaster_usm_Sys_UserRoles_usr" />
+      <nodes>
+        <classShapeMoniker Id="f71e142d-ca4b-4447-ba04-422b41d6924f" />
+        <classShapeMoniker Id="4c17728f-4774-438e-9dca-bf145d3d1f60" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.5 : 14.0687475); (5.625 : 14.0687475)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/Sys_RoleMaster_rlm/Sys_RoleMaster_rlm_Sys_UserRoles_usr" />
+      <nodes>
+        <classShapeMoniker Id="b2f43222-cc33-41c3-9f44-5f7278c4ec81" />
+        <classShapeMoniker Id="4c17728f-4774-438e-9dca-bf145d3d1f60" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3ba887f5-121d-463f-8e46-6b7dc150f9bd" isExpanded="false" absoluteBounds="6.625, 14.875, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/Sys_FormPurview_frp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3ee76d1d-d2cd-49f3-928f-9e3144802ec2" absoluteBounds="6.64, 15.335, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5fe1c591-f9b6-4ec2-ba00-19389383ef20" isExpanded="false" absoluteBounds="3.75, 9.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/_24GMonitorTeam_gmt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cca2cc17-1291-4871-b5b7-5d8e56d064e5" absoluteBounds="3.7649999999999997, 9.96, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.625 : 9.6625); (3.75 : 9.6625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/Reader24GMonitor_rgm/Reader24GMonitor_rgm__24GMonitorTeam_gmt" />
+      <nodes>
+        <classShapeMoniker Id="9614cdaa-ad5d-4fc4-8b18-878f5ed8e0c8" />
+        <classShapeMoniker Id="5fe1c591-f9b6-4ec2-ba00-19389383ef20" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b77a2578-002a-4cfe-b1eb-074e48239a60" isExpanded="false" absoluteBounds="6.625, 9.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/_24GMonitorTeamDetail_mtd" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6d121195-36f0-4bd4-a3ef-932c31eeeb14" absoluteBounds="6.64, 9.96, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 9.725); (6.625 : 9.725)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/_24GMonitorTeam_gmt/_24GMonitorTeam_gmt__24GMonitorTeamDetail_mtd" />
+      <nodes>
+        <classShapeMoniker Id="5fe1c591-f9b6-4ec2-ba00-19389383ef20" />
+        <classShapeMoniker Id="b77a2578-002a-4cfe-b1eb-074e48239a60" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3026afc0-b75d-4209-aa0c-469215189af8" isExpanded="false" absoluteBounds="3.75, 6.625, 2.5, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/ClassCourseSettingMSOList_cml" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e405da5-b4cf-4f2c-a857-dd0e3aae7a1a" absoluteBounds="3.765, 7.085, 2.4699999999999998, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.625 : 6.2062475); (5.4375 : 6.2062475); (5.4375 : 6.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/ClassCourseSetting_ccs/ClassCourseSetting_ccs_ClassCourseSettingMSOList_cml" />
+      <nodes>
+        <classShapeMoniker Id="df8c1966-3f7d-4ff1-898b-30a6ff4c2ffe" />
+        <classShapeMoniker Id="3026afc0-b75d-4209-aa0c-469215189af8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.125 : 14.075); (8.625 : 14.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/Sys_FunctionMaster_fum/Sys_FunctionMaster_fum_Sys_FormPurview_frp" />
+      <nodes>
+        <classShapeMoniker Id="6f2f33fe-950b-4297-a67a-1026b58a9f93" />
+        <classShapeMoniker Id="3ba887f5-121d-463f-8e46-6b7dc150f9bd" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="6e89cd76-8ff4-4be2-b060-db1c42c7eb45" isExpanded="false" absoluteBounds="0.75, 15.25, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/OverTimeRegister_otr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f016e20-e87d-48b9-aebe-81592c1a6fda" absoluteBounds="0.76499999999999968, 15.71, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.625 : 15.0375); (5.625 : 15.0375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/Sys_FormPurview_frp/Sys_FormPurview_frp_Sys_UserPurview_usp" />
+      <nodes>
+        <classShapeMoniker Id="3ba887f5-121d-463f-8e46-6b7dc150f9bd" />
+        <classShapeMoniker Id="a39b3195-b334-44bc-bb51-a49384ebcb9e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e9bcd38b-dfc5-42ea-88a3-afc8b0f42e6d" isExpanded="false" absoluteBounds="0.875, 16.25, 2.5, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/StudentGoToSchoolMonitor_ssm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9b3c61be-c702-4e9e-82e8-67f5033abff8" absoluteBounds="0.89, 16.71, 2.4699999999999998, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2aa17469-1f21-4c84-85e6-18b8dbda991b" isExpanded="false" absoluteBounds="0.625, 10.25, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/AbsenceTypeSetting_at" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9da49016-ea1b-40cf-a61d-22ac9d04b219" absoluteBounds="0.64000000000000012, 10.71, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b35da32c-72c1-4105-9a77-49a1fe90f967" isExpanded="false" absoluteBounds="6.75, 10.625, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/UserSkin_ur" />
+      <nestedChildShapes>
+        <elementListCompartment Id="23554305-8613-493b-a096-1bc6f2813b55" absoluteBounds="6.7650000000000006, 11.085, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="58288f03-24d9-472f-8e41-5f81b2934cae" isExpanded="false" absoluteBounds="0.75, 18.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CourseCOWATime_cct" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cdaf7cf3-c216-4b26-b83a-52dfd2c8c982" absoluteBounds="0.76500000000000012, 18.96, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="39c86ae2-f61c-496c-9912-1dc3620117b2" isExpanded="false" absoluteBounds="3.375, 18.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CourseCOWATimeUserList_ccl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="14607652-6755-4a9b-83f8-723e7f3e6d33" absoluteBounds="3.3899999999999997, 18.96, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 18.725); (3.375 : 18.725)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/CourseCOWATime_cct/CourseCOWATime_cct_CourseCOWATimeUserList_ccl" />
+      <nodes>
+        <classShapeMoniker Id="58288f03-24d9-472f-8e41-5f81b2934cae" />
+        <classShapeMoniker Id="39c86ae2-f61c-496c-9912-1dc3620117b2" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="bcdb43e2-c61b-4d37-8dd5-adaae06c3824" isExpanded="false" absoluteBounds="4.125, 16.25, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/StaffCOWATime_sct" />
+      <nestedChildShapes>
+        <elementListCompartment Id="174172f2-b05a-47d5-91ee-adf6668dccd2" absoluteBounds="4.14, 16.71, 1.9700000000000002, 8.4613138834635411" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a328526-b5da-476c-bb64-3b7fdd6d1e38" isExpanded="false" absoluteBounds="9.75, 15.125, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/Sys_FormMaster_fom" />
+      <nestedChildShapes>
+        <elementListCompartment Id="47280375-ffc4-4268-9f89-744473239a67" absoluteBounds="9.765, 15.585, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.75 : 15.225); (8.625 : 15.225)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/Sys_FormMaster_fom/Sys_FormMaster_fom_Sys_FormPurview_frp" />
+      <nodes>
+        <classShapeMoniker Id="4a328526-b5da-476c-bb64-3b7fdd6d1e38" />
+        <classShapeMoniker Id="3ba887f5-121d-463f-8e46-6b7dc150f9bd" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1bae88d1-dc93-4155-a485-621f8190c44a" isExpanded="false" absoluteBounds="1, 21.25, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/ClassCourseSettingMSOGroup_ccg" />
+      <nestedChildShapes>
+        <elementListCompartment Id="48961b95-e501-40bb-ac04-90de1f01bef2" absoluteBounds="1.0150000000000001, 21.71, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b4568e30-171f-4a87-ac74-842a23cb6b2b" isExpanded="false" absoluteBounds="4.125, 21.25, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/ClassCourseSettingMSOGroupList_cgl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8d587e8a-1bbb-4968-b677-e59bf8eb3258" absoluteBounds="4.14, 21.71, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3 : 21.475); (4.125 : 21.475)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/ClassCourseSettingMSOGroup_ccg/ClassCourseSettingMSOGroup_ccg_ClassCourseSettingMSOGroupList_cgl" />
+      <nodes>
+        <classShapeMoniker Id="1bae88d1-dc93-4155-a485-621f8190c44a" />
+        <classShapeMoniker Id="b4568e30-171f-4a87-ac74-842a23cb6b2b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="af44d3ab-3855-4c2d-b07c-3297caf53488" absoluteBounds="1, 19.375, 2, 2.3356245930989594">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/OriginalRecordDetail_ord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c6949fbf-6ec4-4628-a7dd-27798e31a213" absoluteBounds="1.0150000000000001, 19.835, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e211483-b676-44cf-b623-afde667cb5d8" isExpanded="false" absoluteBounds="1, 22.125, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/StudentActivityMonitorSourceData_sad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="96377671-2dc8-43cb-a44f-78f89537fbdd" absoluteBounds="1.0150000000000001, 22.585, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="35e64c56-ba09-4f07-895b-075ff18d2fb6" isExpanded="false" absoluteBounds="3.625, 23.875, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/EntranceguardRight_egr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0cf0d793-79c0-4f19-9754-f0800c41d3ca" absoluteBounds="3.6399999999999997, 24.335, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="77f6e48d-558d-4ab9-8464-afd43f200890" isExpanded="false" absoluteBounds="6, 23.875, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/EntranceguardTeams_egt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1f6b4493-42d0-4849-bdaf-0838b00610bd" absoluteBounds="6.015, 24.335, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="33fc432d-bfcf-474e-942e-3e4ed10a15c2" isExpanded="false" absoluteBounds="1, 23.875, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/EntranceguardPeriod_egp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a90cd37-8b8c-4fb6-a292-3ab24a17982c" absoluteBounds="1.0150000000000001, 24.335, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d6d6c73-b746-44fd-b580-3ecbadb2e22e" isExpanded="false" absoluteBounds="6, 24.875, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/EntranceguardTeamsMap_egm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ad218eb5-0931-4686-abdd-391ab33c45e9" absoluteBounds="6.015, 25.335, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7 : 24.325); (7 : 24.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/EntranceguardTeams_egt/EntranceguardTeams_egt_EntranceguardTeamsMap_egm" />
+      <nodes>
+        <classShapeMoniker Id="77f6e48d-558d-4ab9-8464-afd43f200890" />
+        <classShapeMoniker Id="6d6d6c73-b746-44fd-b580-3ecbadb2e22e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f0fad33a-1a36-4df3-a746-77809e5529b1" isExpanded="false" absoluteBounds="1.375, 25.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/EntranceguardTask_egk" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9aec8522-c4ab-4f6b-b5fe-5b705eb895ee" absoluteBounds="1.3900000000000001, 25.96, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3eee3ec0-89fd-49bc-8924-d52cd989d346" isExpanded="false" absoluteBounds="7.375, 7.125, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/SchoolWeekSetting_sws" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8631fd3a-adc3-4ec9-ac03-b1b8b01c911b" absoluteBounds="7.39, 7.585, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="459eae66-458f-41b0-b5a7-3793013c920e" isExpanded="false" absoluteBounds="3.375, 2.625, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/WebUserIdentityBind" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1d1716e1-59ba-4aad-939e-c85d74852a34" absoluteBounds="3.39, 3.085, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fd4675f9-1be8-4540-9605-863b18a58798" isExpanded="false" absoluteBounds="0.5, 30.25, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/TH24G_EICardInfo_eic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="36dd200d-dcff-4f50-bac9-92e18e49afd3" absoluteBounds="0.515, 30.71, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="77848e16-f6de-4f33-abd4-22ba039157d4" isExpanded="false" absoluteBounds="2.75, 30.25, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/TH24G_EIEQDetail_eid" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b674210e-5ff7-4983-9fcb-356553bf6581" absoluteBounds="2.765, 30.71, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c90f7b83-e3e8-4a33-93c5-05edd2ae9dba" isExpanded="false" absoluteBounds="5.125, 31.375, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/TH24G_InteractiveResult_irt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b2f628ea-f564-4251-9796-9f19cd75d3d8" absoluteBounds="5.14, 31.835, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fe115218-8b8b-452d-b82c-e63c63169697" isExpanded="false" absoluteBounds="0.5, 32.375, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/TH24G_InteractiveUISettingInfo_ius" />
+      <nestedChildShapes>
+        <elementListCompartment Id="236d2876-9f37-4c54-97bc-95753f347db3" absoluteBounds="0.51500000000000012, 32.835, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a226ae08-6a74-42f7-87f6-d35c47a44e71" isExpanded="false" absoluteBounds="0.5, 33.625, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/MonitorTimeSetting_mt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fe8c17e5-4a64-487b-8e61-15a15d0fa92b" absoluteBounds="0.51500000000000012, 34.085, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aa4d6586-1f3f-4470-8521-7d3e988ac457" isExpanded="false" absoluteBounds="6.875, 1.375, 2.375, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/UserActivityMonitorItem_uam" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2cb75b44-5d1d-42b5-ac5a-cb53ff618c9b" absoluteBounds="6.89, 1.835, 2.3449999999999998, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e5932bec-9c31-4f5c-b6d8-5a5cd81d32e0" isExpanded="false" absoluteBounds="6.875, 2.25, 2.375, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/UserActivityMonitorItemSite_uas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0fc02f67-1ed2-48f7-be86-ed27c8684439" absoluteBounds="6.89, 2.71, 2.3449999999999998, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.0625 : 1.825); (8.0625 : 2.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/UserActivityMonitorItem_uam/UserActivityMonitorItem_uam_UserActivityMonitorItemSite_uas" />
+      <nodes>
+        <classShapeMoniker Id="aa4d6586-1f3f-4470-8521-7d3e988ac457" />
+        <classShapeMoniker Id="e5932bec-9c31-4f5c-b6d8-5a5cd81d32e0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="775dec68-8def-4047-a7a9-d5f7cafb60da" isExpanded="false" absoluteBounds="0.5, 35.125, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/VisitDetailRegister_vdr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5bf68aa8-991b-4048-97ac-5b3e5d19cfd4" absoluteBounds="0.51500000000000057, 35.585, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1906eb06-6621-46a5-81fe-38000e39be46" isExpanded="false" absoluteBounds="2.625, 35.125, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/VisitSiteDetail_vsd" />
+      <nestedChildShapes>
+        <elementListCompartment Id="76f44852-5d59-48e7-b9fb-ab83e103659d" absoluteBounds="2.6400000000000006, 35.585, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f2f917bc-12d1-4d1d-9010-dac395047296" isExpanded="false" absoluteBounds="0.5, 36, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/VisitorGroupMaster_vgm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f8402f9-f051-4b03-8b2d-198f731cea12" absoluteBounds="0.51500000000000012, 36.46, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cfabaf3b-f492-4bc2-bfa5-770c95f7f3ff" isExpanded="false" absoluteBounds="3, 36, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/VisitUserGroupMap_ugm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fa5a9b29-a5ec-4d5b-a137-ec2141eca62a" absoluteBounds="3.0149999999999997, 36.46, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4446ef6d-9269-482f-9123-ccf36eef1ab0" isExpanded="false" absoluteBounds="4.875, 35.125, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/VistorDetail_vtd" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d3a30b86-0ade-4432-9fa3-4e8088454cf5" absoluteBounds="4.89, 35.585, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 36.225); (3 : 36.225)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/VisitorGroupMaster_vgm/VisitorGroupMaster_vgm_VisitUserGroupMap_ugm" />
+      <nodes>
+        <classShapeMoniker Id="f2f917bc-12d1-4d1d-9010-dac395047296" />
+        <classShapeMoniker Id="cfabaf3b-f492-4bc2-bfa5-770c95f7f3ff" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="fddc1d81-511a-43b2-9a2a-7cdc1abdf693" isExpanded="false" absoluteBounds="0.5, 31.375, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/TH24G_ExaminationQuestionsWarehouse_eqw" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d6d44431-f461-49ea-b49c-52381433e7f9" absoluteBounds="0.515, 31.835, 1.9700000000000002, 3.685821533203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="070eaee5-8075-4ca8-98d9-462bcd8080ce" isExpanded="false" absoluteBounds="6.875, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/UserActivityMonitorItemManageEvent_uae" />
+      <nestedChildShapes>
+        <elementListCompartment Id="69578960-d845-411c-96c0-b4b5c728ff35" absoluteBounds="6.89, 0.96, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.875 : 1.375); (7.875 : 0.95)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/UserActivityMonitorItem_uam/UserActivityMonitorItem_uam_UserActivityMonitorItemManageEvent_uae" />
+      <nodes>
+        <classShapeMoniker Id="aa4d6586-1f3f-4470-8521-7d3e988ac457" />
+        <classShapeMoniker Id="070eaee5-8075-4ca8-98d9-462bcd8080ce" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="48739554-2827-4ff4-8077-d538960ecd3a" isExpanded="false" absoluteBounds="7, 3.25, 2.625, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CheckOnWorkAttendanceSetting_cws" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a2566f5-f5ad-424c-9888-89dd905a40fd" absoluteBounds="7.015, 3.71, 2.5949999999999998, 3.8768412272135415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.25 : 1.825); (9.625 : 2.2); (9.625 : 2.875); (10.0003451538462 : 2.875); (9.625 : 3.25034515384615)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/UserActivityMonitorItem_uam/UserActivityMonitorItem_uam_CheckOnWorkAttendanceSetting_cws" />
+      <nodes>
+        <classShapeMoniker Id="aa4d6586-1f3f-4470-8521-7d3e988ac457" />
+        <classShapeMoniker Id="48739554-2827-4ff4-8077-d538960ecd3a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="16b26ed7-44db-444c-bf01-17c858d5028d" absoluteBounds="10.875, 3.125, 3.5, 2.3356245930989576">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/UserActivityMonitorItemSettingGroupDetail_msd" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3130ba3c-7db5-4e7a-a4c6-32a76122b0ab" absoluteBounds="10.89, 3.585, 3.4699999999999998, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="243e2ce6-417f-48d6-bacd-30e21c656522" isExpanded="false" absoluteBounds="10.875, 1.5, 3.875, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/UserActivityMonitorItemSettingGroup_msg" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f1df455-3fde-4bf0-bcee-ab3621ada421" absoluteBounds="10.89, 1.96, 3.8449999999999998, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(12.625 : 1.95); (12.625 : 3.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/UserActivityMonitorItemSettingGroup_msg/UserActivityMonitorItemSettingGroup_msg_UserActivityMonitorItemSettingGroupDetail_msd" />
+      <nodes>
+        <classShapeMoniker Id="243e2ce6-417f-48d6-bacd-30e21c656522" />
+        <classShapeMoniker Id="16b26ed7-44db-444c-bf01-17c858d5028d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ad60f0fd-f198-4bf5-9b10-95ac4a30a26c" isExpanded="false" absoluteBounds="0.5, 39, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/PaymentInfo_pif" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f9217e0-ab23-4c11-a46a-335633b6cdfd" absoluteBounds="0.51500000000000012, 39.46, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e6d0e472-31c3-438e-a88c-3265d734b0f5" isExpanded="false" absoluteBounds="3.125, 39, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/PaymentDiningAdjust_pda" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e3955825-0db0-4bf6-ad40-8ca2e33ea5f7" absoluteBounds="3.1399999999999997, 39.46, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e3ce97f4-8153-4f30-b39a-5c42c81f98b3" isExpanded="false" absoluteBounds="0.5, 37.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/PaymentSetting_pm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="78dbc71a-7c3e-4ee2-93e3-1621521c9ab9" absoluteBounds="0.51500000000000012, 37.96, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="88d9b7f8-532e-43e8-b63b-6958e2058bd9" isExpanded="false" absoluteBounds="5.875, 36, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/VisitorMaster_vmr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="96091a95-84ba-45e4-8b9f-4625335d4e7f" absoluteBounds="5.89, 36.46, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.875 : 36.225); (5 : 36.225)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/VisitorMaster_vmr/VisitorMaster_vmr_VisitUserGroupMap_ugm" />
+      <nodes>
+        <classShapeMoniker Id="88d9b7f8-532e-43e8-b63b-6958e2058bd9" />
+        <classShapeMoniker Id="cfabaf3b-f492-4bc2-bfa5-770c95f7f3ff" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a2c6bec1-bd63-4b1e-a2ca-71e946ab6da3" isExpanded="false" absoluteBounds="0.875, 17.25, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/RFIDCardManage_rcm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6b123beb-18d1-4ca6-ac43-e60256939dc8" absoluteBounds="0.88999999999999968, 17.71, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6eecfee8-d632-440c-9d99-469dedce3bef" isExpanded="false" absoluteBounds="5.625, 39.125, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/PaymentDailyAdjustMark_pdm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8de1548a-a9e7-419c-b689-7243510f9eb0" absoluteBounds="5.64, 39.585, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9d468193-635e-4394-9021-0b592cd0121a" isExpanded="false" absoluteBounds="6.625, 5.75, 2.625, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/MessageContentMaster_mcm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a659da4-eacc-4a50-874e-7e402c56535e" absoluteBounds="6.64, 6.21, 2.5949999999999998, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c2bd24c8-6275-453d-8202-af9772a484f6" isExpanded="false" absoluteBounds="17.375, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/AMSUnitMaster_aum" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0fdf3bec-e91e-4d69-ba14-2259d1898392" absoluteBounds="17.39, 5.335, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b67d1f97-92d6-40c5-b206-475e58e35067" isExpanded="false" absoluteBounds="17.375, 5.375, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/AMSTypeMaster_atm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c9d32ef1-1fed-46f8-947b-0e857a516b01" absoluteBounds="17.39, 5.835, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="62dfe065-f741-4946-89db-a8b6989117ea" isExpanded="false" absoluteBounds="17.375, 3.875, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/AMSInStockTrx_ais" />
+      <nestedChildShapes>
+        <elementListCompartment Id="62674072-09bd-4470-87b7-994f9be19cc0" absoluteBounds="17.39, 4.335, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="52768b42-fcd7-4ca3-a0d6-4bd6011fc8a0" isExpanded="false" absoluteBounds="17.375, 3.375, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/AMSItemMaster_aim" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bc80b877-1f76-480c-b9a1-b9bfdfd364a8" absoluteBounds="17.39, 3.835, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a6ccd6a5-e1ff-44be-ae4c-329f11f69610" isExpanded="false" absoluteBounds="17.375, 4.375, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/AMSOutStockTrx_aos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="82bf2d3c-de8f-4deb-976f-5f76e1213cc1" absoluteBounds="17.39, 4.835, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b6ba7fd3-57a8-431c-9e94-cdd6e6efd39c" isExpanded="false" absoluteBounds="3.125, 37.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/PaymentCardInfo_pci" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eb235361-b48f-4e57-82e8-01c21495ba76" absoluteBounds="3.14, 37.96, 1.9700000000000002, 4.067860921223958" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="25cd131b-049b-40c2-aba6-d6445efdc868" isExpanded="false" absoluteBounds="0.5, 38.125, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/PaymentDormitoryWater_pdw" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ff08913b-44f9-4773-a184-945da2a98674" absoluteBounds="0.51499999999999968, 38.585, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3f02ccab-68cf-45a1-8dc8-1188860a4f95" isExpanded="false" absoluteBounds="0.5, 40, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/LogDetail_lgd" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d3bf99d-1d54-4c4d-928e-7b7b7383f7c3" absoluteBounds="0.51499999999999968, 40.46, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="64cd73c8-808b-4937-b9dc-d16fa0dc6a3d" isExpanded="false" absoluteBounds="5.625, 37.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/PaymentMachineInfo_pmi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="30bd6a2c-61bd-4d84-af8d-4201cc9e12b7" absoluteBounds="5.64, 37.96, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ae4647c7-bbca-48aa-ad17-198d201fdc07" absoluteBounds="1.25, 41, 2, 2.335624593098963">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CardUserPhoneNumMaster_cup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a26d759a-4463-4f01-b56c-d8bd33ea662f" absoluteBounds="1.2650000000000001, 41.46, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7945a678-843e-4813-8946-7d43c086691c" isExpanded="false" absoluteBounds="7.125, 26.125, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/SchoolIDCardModelMaster_idm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d332c20-a1a1-480d-ba53-e35a86941ff8" absoluteBounds="7.14, 26.585, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="43eff850-9447-45da-a412-b22bf2781647" absoluteBounds="0.875, 47.5, 2, 2.908683675130213">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/PaymentUDGeneralSetting_pus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a02619df-7343-4725-9e4e-3a7eba295d16" absoluteBounds="0.89, 47.96, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="418231ef-dd8f-4b13-b3cf-4d173dcdd207" absoluteBounds="3.625, 47.5, 2, 2.908683675130213">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/PaymentUDMealState_pms" />
+      <nestedChildShapes>
+        <elementListCompartment Id="660fc69a-8634-46c1-8ce2-5ba7f14af286" absoluteBounds="3.64, 47.96, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bbec23a2-ff44-4f62-9ef3-4392a6417523" absoluteBounds="10.125, 6.125, 2, 2.5266442871093755">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/SuspendClassSetting_scm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6324b430-6250-4930-aef8-62a085d94235" absoluteBounds="10.14, 6.585, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68bad943-affc-4315-95b7-b5fae4fd4da1" absoluteBounds="13.25, 6.25, 2, 1.9535852050781255">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/SuspendClassSetting_scs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a219e72-747b-45ca-b004-ef89ab59157d" absoluteBounds="13.265, 6.71, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(12.125 : 7.14279296875); (13.25 : 7.14279296875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/SuspendClassSetting_scm/SuspendClassSetting_scm_SuspendClassSetting_scs" />
+      <nodes>
+        <classShapeMoniker Id="bbec23a2-ff44-4f62-9ef3-4392a6417523" />
+        <classShapeMoniker Id="68bad943-affc-4315-95b7-b5fae4fd4da1" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e78044fa-af76-4c7e-8cac-061bfad57e5f" absoluteBounds="0.5, 53.25, 2, 2.335624593098963">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/DataRightsRole_ClassList_dtc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10f6dfd4-556e-454a-a9d5-3a0166c2a7e8" absoluteBounds="0.515, 53.71, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="34a7c3e8-381d-43f8-ac7c-baa46f80572f" absoluteBounds="3.125, 53.125, 2, 2.335624593098963">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/DataRightsRole_drr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="caa33c2b-fe78-4697-b35e-037b83e0d2e0" absoluteBounds="3.14, 53.585, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a164ba9b-d104-4097-886a-a18ce91ad752" absoluteBounds="5.75, 53.125, 2.375, 1.762565511067713">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/DataRightsRole_TeacherList_dtl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="edc99f75-16d7-4791-8b1b-c59a394fe6ed" absoluteBounds="5.765, 53.585, 2.3449999999999998, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="813702cf-89e8-49f1-9235-1b0c07244bec" absoluteBounds="3.125, 55.625, 2, 1.3805261230468773">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/DataRightsRoleUser_dru" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c7fbee89-595f-46ed-886a-c8aafb73c320" absoluteBounds="3.1400000000000006, 56.085, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4af9cba9-8885-4a69-8496-777fbe3892e8" isExpanded="false" absoluteBounds="6.375, 8.125, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/Demo24GInOutMessage_dio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="98d66623-9a28-4df3-b01d-d5cd53c85eda" absoluteBounds="6.39, 8.585, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="38c3db84-274d-40dc-ba6d-81d43354929f" isExpanded="false" absoluteBounds="1.25, 27, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/PaymentPassword_ppd" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c71a8ba6-5dd3-48fd-94d0-08007ec3e838" absoluteBounds="1.2650000000000001, 27.46, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="287775e9-6167-4831-80cc-2d8d32a61c45" absoluteBounds="0.625, 56.5, 2, 1.5715458170572916">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/PaymentChangeCardRecord_pcr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21388c87-e7a7-41a7-84f5-5d0e7135c27e" absoluteBounds="0.64, 56.96, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="99b7a830-8a2f-4911-98d1-96233c77d100" isExpanded="false" absoluteBounds="0.625, 58.875, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CheckOnWorkAttendanceSite_cas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8403ebe3-9933-48f8-8d67-608c13f6e92b" absoluteBounds="0.64, 59.335, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b519be52-653b-4338-8a69-45ebdbb02e21" isExpanded="false" absoluteBounds="3.375, 58.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CheckOnWorkAttendanceSiteList_csl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2546ce46-9d9a-4cd1-9b57-3117c4f0a220" absoluteBounds="3.39, 58.96, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3eaec7f2-f67c-426c-a753-8fa1336debe0" isExpanded="false" absoluteBounds="5.875, 38.375, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/PaymentDetailInfo_pdi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9feef50c-7bf7-432c-89d1-769177ce85bb" absoluteBounds="5.89, 38.835, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="efa5fba9-f33f-4574-9562-8e05e5dd8223" isExpanded="false" absoluteBounds="5.125, 27.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/BaseReaderDatas_brd" />
+      <nestedChildShapes>
+        <elementListCompartment Id="424f07c5-ac4b-4d67-8f2c-1dd4076c6245" absoluteBounds="5.14, 27.96, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="39b0dcc8-92d5-4e0e-b533-c108ac2b828c" absoluteBounds="2.75, 31.375, 2, 3.481742757161463">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/TH24G_ExamineInformation_eif" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9b0a9fdc-058f-4003-aa7e-e9fa81ab2fdd" absoluteBounds="2.765, 31.835, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8d214161-556f-4d70-945b-6d1a0f776ceb" isExpanded="false" absoluteBounds="3.75, 62, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CheckOnAttendanceUnusualRecordCause_cuc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a04d43d1-e58f-485b-83bb-a04555f5bc4f" absoluteBounds="3.765, 62.46, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f1ff4ab5-4e74-4068-ba1a-bc7ae8b92668" isExpanded="false" absoluteBounds="0.75, 62.375, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CheckOnAttendanceUnusualRecord_cur" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a13218d6-a0cd-48e5-9be3-0de00b496f23" absoluteBounds="0.765, 62.835, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f4d5d335-eca8-4346-8e72-7276134a5f3d" absoluteBounds="7.75, 31.875, 2, 1.9535852050781273">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/TH24G_EQWarehouseOption_eqo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="286188ab-4536-469e-aab8-79753337905e" absoluteBounds="7.765, 32.335, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b8a0ab86-a0bf-4da3-930b-43d0d2a933d2" isExpanded="false" absoluteBounds="3.875, 64.875, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CheckOnAttendanceUnusualRecordDetail_cud" />
+      <nestedChildShapes>
+        <elementListCompartment Id="31baa853-2ebf-4443-a7a6-1de443926473" absoluteBounds="3.89, 65.335, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1565dac4-79b2-41f1-942b-e52820047216" isExpanded="false" absoluteBounds="5.125, 67.875, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CheckOnWorkAttendanceGroupList_cgl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e276ec9a-0a26-4d4b-95c5-b72b3e976e2f" absoluteBounds="5.14, 68.335, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="949d4c44-410c-44dc-92c8-8532ba2ae7d9" isExpanded="false" absoluteBounds="1.75, 67.75, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CheckOnWorkAttendanceGroupSetting_cgs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4338d21e-78a9-4947-819e-1898975c5deb" absoluteBounds="1.7650000000000001, 68.21, 1.9700000000000002, 1.7756245930989585" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d084ed3e-b402-44f2-8ae2-3419ebffbc0e" isExpanded="false" absoluteBounds="0.875, 43.75, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/AutoMessageMaster_amm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2d9861dd-4944-4cba-987a-a35d97dd7846" absoluteBounds="0.89000000000000012, 44.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="13ec6512-dc0b-47ef-a105-999d9833fbae" isExpanded="false" absoluteBounds="1.875, 68.875, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/MeetingInformation_min" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a41afc50-c0d8-4456-a91c-671f88c1de74" absoluteBounds="1.8900000000000001, 69.335, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e1b0bd42-31b8-47b9-8cfa-5f88bbce07d2" isExpanded="false" absoluteBounds="5, 68.75, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/MeetingParticipant_mpp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b5987e91-4027-4f49-b47c-1e3cb67ada76" absoluteBounds="5.015, 69.21, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="07a40b5e-b84b-49a8-85d2-3fc4b81a219f" isExpanded="false" absoluteBounds="0.875, 45, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/AutoMessageOtherRec_amo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f821dac5-fadb-4047-baf4-fc14bd4481aa" absoluteBounds="0.89, 45.46, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b69b25cc-5ef2-4718-9794-335f764c697e" isExpanded="false" absoluteBounds="0.875, 44.375, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/AutoMessageRecipient_amr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9ca4e77a-052b-4e4e-9d52-615a716376b0" absoluteBounds="0.89000000000000012, 44.835, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a2d008e-8e72-4ca2-bec7-7099abdb576e" absoluteBounds="10.125, 9.5, 2, 3.8637821451822916">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/AbsenceRegister_arg" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a4dbc3ea-a868-47f3-b7ae-df2c7b401469" absoluteBounds="10.14, 9.96, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46f85236-9e68-46fa-a7b6-2390057c6e71" absoluteBounds="2.875, 70.125, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/StaffBasicWages_sbw" />
+      <nestedChildShapes>
+        <elementListCompartment Id="345b8b83-25be-463c-bd34-2cd2bf325148" absoluteBounds="2.89, 70.585, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="264ef875-32f3-49fc-8d21-3b7900bbe797" absoluteBounds="0.5, 73, 2, 3.0997033691406251">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/StaffWeekWorkHourWages_sww" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4987ab00-ea63-49d1-b7f5-3cdba358d6ad" absoluteBounds="0.515, 73.46, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="75262177-d297-4f61-bfb8-2360e614a360" absoluteBounds="5.125, 70.125, 2, 3.4817427571614581">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/StaffDutyWorkHourWages_sdw" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22e85734-52d0-4ad5-859b-620be7d74b69" absoluteBounds="5.14, 70.585, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="580cfe21-5daa-43fe-91de-5991473404c8" absoluteBounds="0.5, 70.125, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/StaffOrganizationsWorkHourWages_sow" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3edcf4af-62fd-48de-920d-d09bb36270ce" absoluteBounds="0.51499999999999968, 70.585, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8ad15d92-a723-41b7-9f85-066270cc0af0" absoluteBounds="7.375, 70.125, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/StaffAllowanceWages_saw" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7b554478-9948-463e-958d-4f6f7f951793" absoluteBounds="7.3900000000000006, 70.585, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="83aa41b8-2e69-484a-90df-bbe5c9056481" absoluteBounds="3, 73.625, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/StaffOverTimeWages_sot" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b322991c-5b71-411c-b712-9231ff4b3493" absoluteBounds="3.015, 74.085, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="300a9fc2-e5b4-4818-b6da-385237c18df6" absoluteBounds="5.625, 74, 2, 2.3356245930989585">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CheckOnTeacherCourseAttendance_cot" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4724495c-aa2a-499e-a120-b8cabe146498" absoluteBounds="5.64, 74.46, 1.9700000000000002, 1.7756245930989585" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="01681dc5-ca2a-4479-a3e0-797c3636a7ef" absoluteBounds="0.5, 76.75, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/PaymentReChargeRecord_prc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f882bb99-09ec-4ca6-8935-05f9f5730f14" absoluteBounds="0.51500000000000012, 77.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fa32801c-bc56-41de-80e0-058a26301df5" isExpanded="false" absoluteBounds="0.625, 2.25, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CardUserMaster_cus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9c591e34-f353-4c08-bfdf-543842a6f4ab" absoluteBounds="0.64, 2.71, 1.9700000000000002, 6.551116943359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.625 : 2.7); (3 : 3.075); (3 : 4.725); (3.625 : 4.725)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/CardUserMaster_cus/CardUserMaster_cus_CourseMasterTeacher_cut" />
+      <nodes>
+        <classShapeMoniker Id="fa32801c-bc56-41de-80e0-058a26301df5" />
+        <classShapeMoniker Id="dafc5b33-6660-41ac-bfc4-a54e87ccd19d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.593748 : 2.7); (1.593748 : 3.375); (0.25 : 3.375); (0.25 : 42.1678122965495); (1.25 : 42.1678122965495)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SchoolInternetOfThingsDBDataContext/CardUserMaster_cus/CardUserMaster_cus_CardUserPhoneNumMaster_cup" />
+      <nodes>
+        <classShapeMoniker Id="fa32801c-bc56-41de-80e0-058a26301df5" />
+        <classShapeMoniker Id="ae4647c7-bbca-48aa-ad17-198d201fdc07" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="fbea4ba3-b846-44f1-848d-fe8f266bf9b1" absoluteBounds="3.75, 78.125, 2.5, 3.0997033691406251">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/PaymentCardLoseRegister_clr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="195b80b6-4eb8-40de-a808-fddf5e1590bf" absoluteBounds="3.765, 78.585, 2.4699999999999998, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a5d3463f-abcc-49b4-9c9e-40aa61305199" absoluteBounds="7, 76.875, 2, 2.1446048990885416">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/ClassSettingSwitch_css" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8520ded0-80c8-4b21-bf82-6b02cf5ce6ac" absoluteBounds="7.015, 77.335, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2a83e0e-8c8e-432e-a6fb-eb583bdf16fe" absoluteBounds="0.625, 81.875, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/FinancePaymentItem_fpi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3405d7a7-d8f7-4296-8a73-4780ad1434f8" absoluteBounds="0.64, 82.335, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b0f9498b-5727-463e-b23b-587f355fe04f" absoluteBounds="0.625, 85.5, 2, 1.5715458170572916">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/FinancePaymentRecordInportFile_fpf" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ef5ac540-c7b1-440e-97e9-0dd7c644005a" absoluteBounds="0.64000000000000012, 85.96, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e3cf2aa0-2b65-48b3-ae7d-3c324b5586a3" absoluteBounds="3.125, 85.375, 2, 3.6727624511718746">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/SupplierMaster_slm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="46333f30-b8a9-4e7e-8551-b3945f5ac146" absoluteBounds="3.14, 85.835, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e9b62b86-ba6d-49a1-b5b3-103aae18fd1f" isExpanded="false" absoluteBounds="8.125, 20.5, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/CardUserActivityMonitorSourceData_cad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a07ff41-a783-410e-85a6-49a61d17ac52" absoluteBounds="8.14, 20.96, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3ed8a1ac-5b0e-49f8-8dde-46715c655555" isExpanded="false" absoluteBounds="3.25, 38.25, 2, 0.45">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/PaymentRechargeInfo_rei" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a52e4ade-c265-4df6-a9c0-d4d4cb171413" absoluteBounds="3.265, 38.71, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46fbb5df-6a0f-4ac7-814c-aa811f21929a" absoluteBounds="0.625, 87.5, 2, 3.6727624511718746">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/FinancialAffairsPayDetail_fpd" />
+      <nestedChildShapes>
+        <elementListCompartment Id="09b00820-f7f0-4f3d-b7f0-02b2f890e502" absoluteBounds="0.64, 87.96, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8ee03330-1955-4807-b2ce-282a14ff6720" absoluteBounds="5.625, 85.5, 2, 1.9535852050781251">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/ArticleTypeDefine_atd" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2a6b9dde-a2c1-4d1d-bebd-05e66f944c22" absoluteBounds="5.64, 85.96, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3f5243ca-61a9-4457-8385-270daa926274" absoluteBounds="5.625, 87.875, 2, 3.0997033691406251">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/FinancialAffairsIncomeDetail_fid" />
+      <nestedChildShapes>
+        <elementListCompartment Id="112f7cd8-65d5-4584-86f3-86a52473468e" absoluteBounds="5.64, 88.335, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d55412ec-2c94-4e43-b8bb-67c3201d9dbe" absoluteBounds="0.5, 92.25, 2, 2.1446048990885416">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/FinancialAffairsIncomeMonthlyBalance_fim" />
+      <nestedChildShapes>
+        <elementListCompartment Id="91c4ed8c-e30a-472f-b05c-dca84d658bb3" absoluteBounds="0.51500000000000012, 92.71, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3987381e-2aaf-4ccf-adab-63df647437e1" absoluteBounds="2.75, 92.25, 2, 2.1446048990885416">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/FinancialAffairsIncomePayMonthlyBalance_fmb" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6aefc85e-c890-44af-8769-584f0ebf3095" absoluteBounds="2.765, 92.71, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2fcefbb7-496e-4d86-b6f0-867ed95fef0e" absoluteBounds="7, 92.25, 2, 2.9086836751302081">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/FinancialAffairsIncomePayMonthlyBalanceRP_fmp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="146a4978-dcdf-452a-8539-d59ef227a46a" absoluteBounds="7.015, 92.71, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a9855310-9d58-40e7-afad-44ae32537995" absoluteBounds="4.875, 92.25, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/FinancialAffairsPayMonthlyBalance_fpm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="baff6aba-9a49-4e68-b40f-6a0a49d009b4" absoluteBounds="4.8900000000000006, 92.71, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="423f35c6-21e8-445b-8468-455d693b787f" absoluteBounds="0.5, 95.375, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/AssetsAndLiabilitiesClosingAmount_aca" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a1483b3-ef7e-48b7-ae0b-0abbf53b7358" absoluteBounds="0.51500000000000012, 95.835, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a8c7cf77-08e4-4ea6-8e3c-f4ae678fcdb2" absoluteBounds="2.75, 95.375, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/AssetsAndLiabilitiesOpeningAmountOfTheYear_aoa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9167c1cc-d849-44f2-a9ee-d8b58ed7719a" absoluteBounds="2.7649999999999997, 95.835, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1c44602f-538b-4149-b507-76b9c5e34f1a" absoluteBounds="3, 81.5, 2, 3.6727624511718746">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/FinancePaymentRecord_fpr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05d084ae-f24c-428f-bdd0-c39708af2e7a" absoluteBounds="3.015, 81.96, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fbf92355-7ab4-4419-a604-d52391607299" absoluteBounds="0.5, 98.375, 2, 1.9535852050781251">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/IdentityRecognition_irn" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6fe8f2ee-c947-4534-a021-096ed3777a04" absoluteBounds="0.51500000000000012, 98.835, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="72d74ad6-4ad6-45fd-afdd-79c35075039a" absoluteBounds="4.375, 19.25, 2, 2.1446048990885416">
+      <DataClassMoniker Name="/SchoolInternetOfThingsDBDataContext/OriginalRecordDetailBackup_orb" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e2b27796-8403-4fb7-b948-87ea087445eb" absoluteBounds="4.39, 19.71, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

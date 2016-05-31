@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F8BC23D-298D-494D-A99D-8AF410B81678}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReaderEquipment</RootNamespace>
+    <AssemblyName>ReaderEquipment</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.MSCommLib, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.MSCommLib, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Leo.PLDMS.Client.ProcessTagService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\work\UHF读写器\深圳信领\M5EDemo\M5EDemo\GateDoorDemo\GateDoorDemo\bin\Debug\Leo.PLDMS.Client.ProcessTagService.dll</HintPath>
+    </Reference>
+    <Reference Include="ModuleAPI, Version=1.10.11.11, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\work\UHF读写器\深圳信领\M5EDemo\M5EDemo\GateDoorDemo\API2\ModuleAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="WComm_UDP, Version=1.0.3303.22355, Culture=neutral, PublicKeyToken=df1778fc654a5dea">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLFile\WComm_UDP.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractReaderBackground.cs" />
+    <Compile Include="Entity\EnumEquipmentStatus.cs" />
+    <Compile Include="Entity\EnumRecDataMode.cs" />
+    <Compile Include="Entity\ControllerExceptionEventArgs.cs" />
+    <Compile Include="Entity\ControllerInformationInfo.cs" />
+    <Compile Include="Entity\EquipmentStatusEventArgs.cs" />
+    <Compile Include="Entity\MachineIDChangedEventArgs.cs" />
+    <Compile Include="Entity\TH24G\ReaderExDetailInfo.cs" />
+    <Compile Include="Entity\TH24G\C24GEntity.cs" />
+    <Compile Include="AbstractReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entity\ReaderExceptionEventArgs.cs" />
+    <Compile Include="Entity\ReturnValueInfo.cs" />
+    <Compile Include="Entity\TagInfoResultEventArgs.cs" />
+    <Compile Include="Entity\TagInformationInfo.cs" />
+    <Compile Include="Entity\ULineHF\ULineClock.cs" />
+    <Compile Include="Entity\ULineHF\ULineEquipmentNum.cs" />
+    <Compile Include="Entity\ULineHF\ULineEquipmentType.cs" />
+    <Compile Include="Entity\ULineHF\ULineEquipmentVersion.cs" />
+    <Compile Include="Entity\ULineHF\ULineHFReaderEntity.cs" />
+    <Compile Include="Entity\ULineHF\ULineRecordsAmount.cs" />
+    <Compile Include="Entity\ULineHF\ULineSetCommandCardReading.cs" />
+    <Compile Include="Entity\ULineHF\ULineUID.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoAllEquipmentNum.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoClock.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoDesignatedPiece.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoEquipmentNum.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoEquipmentType.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoEquipmentVersion.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoGetLable.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoRandomNum.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoReaderEntity.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoReaderLable.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoRecordInformation.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoRecordsAmount.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoRecordsInformation.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoTagPUF.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoTagsInternal.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoTakeAuthenticationReadPiece.cs" />
+    <Compile Include="Entity\VerayoHF\VerayoUID.cs" />
+    <Compile Include="Function\Functions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReaderGeneral.cs" />
+    <Compile Include="ReaderImplement\TH24GTypeAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReaderImplement\TH24GTypeAR.Designer.cs">
+      <DependentUpon>TH24GTypeAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReaderImplement\TH24GR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReaderImplement\TH24GR.Designer.cs">
+      <DependentUpon>TH24GR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReaderImplement\ReaderFactory.cs" />
+    <Compile Include="ReaderImplement\TH24GTypeAR_Socket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReaderImplement\TH24GTypeAR_Socket_BG.cs" />
+    <Compile Include="ReaderImplement\THBlueToothReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReaderImplement\THBlueToothReader.Designer.cs">
+      <DependentUpon>THBlueToothReader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReaderImplement\THUHFTypeM5EMF4EReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReaderImplement\ULineHFReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReaderImplement\ULineHFReader.Designer.cs">
+      <DependentUpon>ULineHFReader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReaderImplement\VerayoHFReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReaderImplement\VerayoHFReader.Designer.cs">
+      <DependentUpon>VerayoHFReader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReaderImplement\WeigengICCardController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ReaderImplement\TH24GTypeAR.resx">
+      <DependentUpon>TH24GTypeAR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReaderImplement\TH24GR.resx">
+      <DependentUpon>TH24GR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReaderImplement\THBlueToothReader.resx">
+      <DependentUpon>THBlueToothReader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReaderImplement\ULineHFReader.resx">
+      <DependentUpon>ULineHFReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReaderImplement\VerayoHFReader.resx">
+      <DependentUpon>VerayoHFReader.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLLFile\AxInterop.MSCommLib.dll" />
+    <Content Include="DLLFile\Interop.MSCommLib.dll" />
+    <Content Include="DLLFile\Leo.PLDMS.Client.ProcessTagService.dll" />
+    <Content Include="DLLFile\ModuleAPI.dll" />
+    <Content Include="DLLFile\ModuleConf.dll" />
+    <Content Include="DLLFile\SystemLog.dll" />
+    <Content Include="DLLFile\WComm_UDP.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Documents\MSCOMM.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{CBC14F8C-690A-48C4-852D-8266FE39389D}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

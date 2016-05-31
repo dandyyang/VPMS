@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F0C1BE9F-501E-4F4C-B989-BDACEA0B70E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\General\GeneralBL.cs" />
+    <Compile Include="DAL\Management\DataRightsManagement\DataRightsRoleBL.cs" />
+    <Compile Include="DAL\Management\DeleteData\DeleteDataLogicBL.cs" />
+    <Compile Include="DAL\Management\Master\CodeMasterBL.cs" />
+    <Compile Include="DAL\Management\Master\UserSkinBL.cs" />
+    <Compile Include="DAL\Management\Master\BuildingMasterBL.cs" />
+    <Compile Include="DAL\Management\Master\CardUserMasterBL.cs" />
+    <Compile Include="DAL\Management\SysFunction\LogDetailBL.cs" />
+    <Compile Include="DAL\Management\Master\SchoolMasterBL.cs" />
+    <Compile Include="DAL\Management\Master\SiteMasterBL.cs" />
+    <Compile Include="DAL\Management\Master\SpecialtyMasterBL.cs" />
+    <Compile Include="DAL\SysFunction\LogDetailBL.cs" />
+    <Compile Include="DAL\SysFunction\SysUserMasterBL.cs" />
+    <Compile Include="DAL\SysMaster\ArticleTypeDefineBL.cs" />
+    <Compile Include="DAL\SysMaster\DepartmentMasterBL.cs" />
+    <Compile Include="DAL\SysMaster\LoginFormBL.cs" />
+    <Compile Include="DAL\SysMaster\SupplierMasterBL.cs" />
+    <Compile Include="DAL\SysMaster\SysFormMasterBL.cs" />
+    <Compile Include="DAL\SysMaster\SysFunctionMasterBL.cs" />
+    <Compile Include="DAL\SysMaster\SysRoleMasterBL.cs" />
+    <Compile Include="DAL\SysMaster\SysUserMasterBL.cs" />
+    <Compile Include="DAL\SysMaster\UserPurviewBL.cs" />
+    <Compile Include="Factory\General\GeneralBLLFactory.cs" />
+    <Compile Include="Factory\SchoolInternetOfThings\MasterBLLFactory.cs" />
+    <Compile Include="Factory\SysFunction\SysBLLFactory.cs" />
+    <Compile Include="Factory\DataSourceType.cs" />
+    <Compile Include="Factory\FactoryLayerDefine.cs" />
+    <Compile Include="Factory\Base\SystemMenuBLLFactory.cs" />
+    <Compile Include="Factory\SysMaster\MasterBLLFactory.cs" />
+    <Compile Include="General\General.cs" />
+    <Compile Include="IBLL\General\IGeneralBL.cs" />
+    <Compile Include="IBLL\IDataBaseCommandBL.cs" />
+    <Compile Include="IBLL\IMainBL.cs" />
+    <Compile Include="IBLL\IExtraBL.cs" />
+    <Compile Include="IBLL\Base\ISystemMenu.cs" />
+    <Compile Include="IBLL\SchoolInternetOfThings\DataRightsManagement\IDataRightsRoleBL.cs" />
+    <Compile Include="IBLL\SchoolInternetOfThings\DeleteData\IDeleteDataLogicBL.cs" />
+    <Compile Include="IBLL\SchoolInternetOfThings\Master\IBuildingMasterBL.cs" />
+    <Compile Include="IBLL\SchoolInternetOfThings\Master\ICardUserMasterBL.cs" />
+    <Compile Include="IBLL\SchoolInternetOfThings\Master\ICodeMasterBL.cs" />
+    <Compile Include="IBLL\SchoolInternetOfThings\Master\IUserSkinBL.cs" />
+    <Compile Include="IBLL\SchoolInternetOfThings\Master\ISchoolMasterBL.cs" />
+    <Compile Include="IBLL\SchoolInternetOfThings\Master\ISiteMasterBL.cs" />
+    <Compile Include="IBLL\SchoolInternetOfThings\Master\ISpecialtyMasterBL.cs" />
+    <Compile Include="IBLL\SysFunction\ILogDetailBL.cs" />
+    <Compile Include="IBLL\SysFunction\ISysUserMasterBL.cs" />
+    <Compile Include="IBLL\SysMaster\IArticleTypeDefineBL.cs" />
+    <Compile Include="IBLL\SysMaster\IDepartmentMasterBL.cs" />
+    <Compile Include="IBLL\SysMaster\ILoginFormBL.cs" />
+    <Compile Include="IBLL\SysMaster\ISupplierMasterBL.cs" />
+    <Compile Include="IBLL\SysMaster\ISysFormMasterBL.cs" />
+    <Compile Include="IBLL\SysMaster\ISysFunctionMasterBL.cs" />
+    <Compile Include="IBLL\SysMaster\ISysRoleMasterBL.cs" />
+    <Compile Include="IBLL\SysMaster\ISysUserMasterBL.cs" />
+    <Compile Include="IBLL\SysMaster\IUserPurviewBL.cs" />
+    <Compile Include="IBLL\SysMaster\Web_IUserMasterPwdBL.cs" />
+    <Compile Include="LocalLayer\LocalGeneral.cs" />
+    <Compile Include="Master\ClientMaster.cs" />
+    <Compile Include="Master\DeptMaster.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Base\CodeMaster.cs" />
+    <Compile Include="DAL\Base\SystemMenu.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{CBC14F8C-690A-48C4-852D-8266FE39389D}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{8D01BD63-8F37-41AC-A0D9-CAF7DAB31283}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\General\ServiceManage\ServiceManage.csproj">
+      <Project>{18909E94-EACE-4E8D-A8CA-90044DF033DC}</Project>
+      <Name>ServiceManage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{ECD86F7B-7213-48DC-93AD-1F378AB2E577}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DAL\Management\Report\" />
+    <Folder Include="IBLL\SchoolInternetOfThings\Report\" />
+    <Folder Include="WebService\General\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ECD86F7B-7213-48DC-93AD-1F378AB2E577}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="General\CommInfo.cs" />
+    <Compile Include="General\LinqPager.cs" />
+    <Compile Include="General\SendMessageInfo.cs" />
+    <Compile Include="General\SerializedDictionary.cs" />
+    <Compile Include="IModel\IRecordEditStatusInfo.cs" />
+    <Compile Include="IModel\IModelObject.cs" />
+    <Compile Include="Management\DataRightsManagement\DataRightsRoleUser_dru_Info.cs" />
+    <Compile Include="Management\DataRightsManagement\DataRightsRole_ClassList_dtc_Info.cs" />
+    <Compile Include="Management\DataRightsManagement\DataRightsRole_drr_Info.cs" />
+    <Compile Include="Management\DataRightsManagement\DataRightsRole_TeacherList_dtl_Info.cs" />
+    <Compile Include="Management\DeleteData\DeleteDataLogic_ddl_Info.cs" />
+    <Compile Include="Management\Master\BuildingMaster_bdm_Info.cs" />
+    <Compile Include="Management\Master\CardUserMaster_cus_Info.cs" />
+    <Compile Include="Management\Master\CardUserPhoneNumMaster_cup_Info.cs" />
+    <Compile Include="Management\Master\CodeMaster_cmt_Info.cs" />
+    <Compile Include="Management\Master\UserSkin_urs_Info.cs" />
+    <Compile Include="Management\Report\CheckOnAttendanceURreport_Info.cs" />
+    <Compile Include="Management\Report\Reader24GMonitorData_Info.cs" />
+    <Compile Include="Management\Report\RptStudentClassAttend_Info.cs" />
+    <Compile Include="Management\Report\SiteMonitoringReport_Info.cs" />
+    <Compile Include="Management\Report\StaffAttendReport_CardUser_Info.cs" />
+    <Compile Include="Management\Report\StaffAttendReport_ClassAttend_Info.cs" />
+    <Compile Include="Management\Report\StaffAttendReport_Info.cs" />
+    <Compile Include="Management\Report\StaffAttendReport_WorkAttend_Info.cs" />
+    <Compile Include="Management\Report\StudentAttendReport_Info.cs" />
+    <Compile Include="Management\Report\StudentClassAttendDetailReport_Info.cs" />
+    <Compile Include="Management\Report\StudentClassAttendReport_Info.cs" />
+    <Compile Include="Management\Master\SiteMaster_stm_Info.cs" />
+    <Compile Include="Management\Master\SpecialtyMasterCourse_smc_Info.cs" />
+    <Compile Include="Management\Master\SpecialtyMaster_spm_Info.cs" />
+    <Compile Include="SysFunction\LogDetail_lgd_Info.cs" />
+    <Compile Include="SysMaster\ArticleTypeDefine_atd_Info.cs" />
+    <Compile Include="SysMaster\Sys_SupplierMaster_slm_Info.cs" />
+    <Compile Include="SysMaster\Web_Sys_UserMaster_usm_PWD.cs" />
+    <Compile Include="SysMaster\DepartmentMaster_dpm_Info.cs" />
+    <Compile Include="Management\Master\SchoolMaster_scm_Info.cs" />
+    <Compile Include="SysFunction\Sys_UserMaster_usm.cs" />
+    <Compile Include="General\ComboboxDataInfo.cs" />
+    <Compile Include="General\MenuNodeInfo1.cs" />
+    <Compile Include="General\ReturnValueInfo.cs" />
+    <Compile Include="General\TreeNodeInfo.cs" />
+    <Compile Include="Master\ClientMasterInfo.cs" />
+    <Compile Include="Master\DeptMasterInfo.cs" />
+    <Compile Include="Base\CodeMasterFindInfo.cs" />
+    <Compile Include="Base\CodeMasterInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Base\DataBaseCommandInfo.cs" />
+    <Compile Include="Base\SystemMenuInfo.cs" />
+    <Compile Include="Base\UserInformationFindInfo.cs" />
+    <Compile Include="Base\UserInformationInfo.cs" />
+    <Compile Include="SysMaster\Sys_FormMaster_fom_Info.cs" />
+    <Compile Include="SysMaster\Sys_FormPurview_frp_Info.cs" />
+    <Compile Include="SysMaster\Sys_FunctionMaster_fum_Info.cs" />
+    <Compile Include="SysMaster\Sys_RoleMaster_rlm_Info.cs" />
+    <Compile Include="SysMaster\Sys_UserMaster_usm_Info.cs" />
+    <Compile Include="SysMaster\Sys_UserPurview_usp_Info.cs" />
+    <Compile Include="SysMaster\Sys_UserRoles_usr_Info.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{CBC14F8C-690A-48C4-852D-8266FE39389D}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
