@@ -12,7 +12,8 @@
     <AssemblyName>WindowUI</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ApplicationIcon>leo.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
     <SccProjectName>
     </SccProjectName>
     <SccLocalPath>
@@ -707,8 +708,6 @@
     <Content Include="ClassLibrary\DllFile\UtilityLibrary.dll" />
     <Content Include="ClassLibrary\DllFile\WeifenLuo.WinFormsUI.Docking.dll" />
     <None Include="ClassLibrary\DllFile\YCCARD.dll" />
-    <Content Include="leo.ico" />
-    <Content Include="Leo_TH_final.ico" />
     <None Include="ExcelTemplate\CardInfo.xls">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -740,7 +739,6 @@
     <None Include="Properties\DataSources\Model.SchoolInternetOfThings.Payment.ReportPaymentRecharge_rpr_Info.datasource" />
     <None Include="Properties\DataSources\WindowUI.SchoolInternetOfThings.report.CardUserMaster_cus_Rpt.datasource" />
     <None Include="Properties\DataSources\WindowUI.TestingForm.PrintCtrlCard.CtrlCard_ccd_Info.datasource" />
-    <None Include="Resources\PNGbg_YZ.png" />
     <None Include="Resources\bLogin.png" />
     <None Include="Resources\bReset.png" />
     <None Include="Resources\06.png" />
@@ -748,8 +746,6 @@
     <None Include="Resources\order_159.png" />
     <None Include="Resources\order.png" />
     <Content Include="Resources\PNGbg.png" />
-    <Content Include="Resources\PNGbg_GL.png" />
-    <Content Include="Resources\PNGbg_YTS.png" />
     <Content Include="skin\IrisSkin2.dll" />
     <Content Include="skin\skin\Carlmness\calmness.gif" />
     <Content Include="skin\skin\Carlmness\calmness_color1.gif" />
@@ -882,7 +878,6 @@
     <None Include="skin\skin\WinXP\XPGreen.ssk" />
     <None Include="skin\skin\WinXP\XPOrange.ssk" />
     <None Include="skin\skin\WinXP\XPSilver.ssk" />
-    <None Include="WindowUI_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="WMPLib">
