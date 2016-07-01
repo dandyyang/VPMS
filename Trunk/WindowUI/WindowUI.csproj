@@ -707,34 +707,6 @@
     <Content Include="ClassLibrary\DllFile\SystemLog.dll" />
     <Content Include="ClassLibrary\DllFile\UtilityLibrary.dll" />
     <Content Include="ClassLibrary\DllFile\WeifenLuo.WinFormsUI.Docking.dll" />
-    <None Include="ClassLibrary\DllFile\YCCARD.dll" />
-    <None Include="ExcelTemplate\CardInfo.xls">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="ExcelTemplate\cardUserMasterTemplate.xls">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="ExcelTemplate\ChangeClass.xls">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="ExcelTemplate\Exam.xls">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="ExcelTemplate\student.xls">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="ExcelTemplate\student1.xls">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="ExcelTemplate\TableMoneyRecordStudent.xls">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="ExcelTemplate\teacher.xls">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="ExcelTemplate\teacher1.xls">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="Properties\app.manifest" />
     <None Include="Properties\DataSources\Model.SchoolInternetOfThings.Payment.ReportPaymentRecharge_rpr_Info.datasource" />
     <None Include="Properties\DataSources\WindowUI.SchoolInternetOfThings.report.CardUserMaster_cus_Rpt.datasource" />
@@ -923,6 +895,9 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExcelTemplate\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
