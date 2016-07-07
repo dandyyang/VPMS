@@ -56,16 +56,42 @@
             this.ToolBar.AutoSetStatus = true;
             this.ToolBar.BtnCancelEnabled = false;
             this.ToolBar.BtnCancelVisible = true;
+            this.ToolBar.BtnCardIssuanceEnabled = true;
+            this.ToolBar.BtnCardIssuanceVisible = false;
             this.ToolBar.BtnCardMissingEnabled = true;
             this.ToolBar.BtnCardMissingVisible = false;
+            this.ToolBar.BtnCardRecoveryEnabled = true;
+            this.ToolBar.BtnCardRecoveryVisible = false;
             this.ToolBar.BtnCardReturnEnabled = true;
             this.ToolBar.BtnCardReturnVisible = false;
             this.ToolBar.BtnCardScrapEnabled = true;
             this.ToolBar.BtnCardScrapVisible = false;
+            this.ToolBar.BtnDataExportEnabled = true;
+            this.ToolBar.BtnDataExportVisible = false;
+            this.ToolBar.BtnDataInputEnabled = true;
+            this.ToolBar.BtnDataInputVisible = false;
             this.ToolBar.BtnDeleteEnabled = true;
             this.ToolBar.BtnDeleteVisible = true;
+            this.ToolBar.BtnExpCusDataEnabled = true;
+            this.ToolBar.BtnExpCusDataVisible = false;
+            this.ToolBar.BtnExportCardUserPhotoEnabled = true;
+            this.ToolBar.BtnExportCardUserPhotoVisible = false;
+            this.ToolBar.btnExportDataEnabled = true;
+            this.ToolBar.btnExportDataVisible = false;
+            this.ToolBar.btnExportTempEnabled = true;
+            this.ToolBar.BtnExportTemplateEnabled = true;
+            this.ToolBar.BtnExportTemplateVisible = false;
+            this.ToolBar.btnExportTempVisible = false;
             this.ToolBar.BtnFirstEnabled = true;
             this.ToolBar.BtnFirstVisible = true;
+            this.ToolBar.BtnGroupPersonEnabled = true;
+            this.ToolBar.BtnGroupPersonVisible = false;
+            this.ToolBar.BtnImportCardUserDataEnabled = true;
+            this.ToolBar.BtnImportCardUserDataVisible = false;
+            this.ToolBar.btnImportDataEnabled = true;
+            this.ToolBar.btnImportDataVisible = false;
+            this.ToolBar.BtnImportPhotoEnabled = true;
+            this.ToolBar.BtnImportPhotoVisible = false;
             this.ToolBar.BtnLastEnabled = true;
             this.ToolBar.BtnLastVisible = true;
             this.ToolBar.BtnModifyEnabled = true;
@@ -84,22 +110,22 @@
             this.ToolBar.Location = new System.Drawing.Point(0, 0);
             this.ToolBar.Name = "ToolBar";
             this.ToolBar.RecordExistPosition = WindowControls.UserToolBar.RecordIndexType.None;
-            this.ToolBar.Size = new System.Drawing.Size(757, 26);
+            this.ToolBar.Size = new System.Drawing.Size(833, 26);
             this.ToolBar.TabIndex = 5;
             this.ToolBar.toolStripSeparator11Visible = true;
             this.ToolBar.toolStripSeparator12Visible = true;
             this.ToolBar.toolStripSeparator21Visible = true;
             this.ToolBar.toolStripSeparator22Visible = true;
-            this.ToolBar.BtnPreviousClick += new System.EventHandler(this.ToolBar_BtnPreviousClick);
-            this.ToolBar.BtnDeleteClick += new System.EventHandler(this.ToolBar_BtnDeleteClick);
-            this.ToolBar.BtnSaveClick += new System.EventHandler(this.ToolBar_BtnSaveClick);
-            this.ToolBar.BtnFirstClick += new System.EventHandler(this.ToolBar_BtnFirstClick);
-            this.ToolBar.BtnNextClick += new System.EventHandler(this.ToolBar_BtnNextClick);
-            this.ToolBar.BtnNewClick += new System.EventHandler(this.ToolBar_BtnNewClick);
-            this.ToolBar.BtnCancelClick += new System.EventHandler(this.ToolBar_BtnCancelClick);
             this.ToolBar.BtnLastClick += new System.EventHandler(this.ToolBar_BtnLastClick);
-            this.ToolBar.BtnSearchClick += new System.EventHandler(this.ToolBar_BtnSearchClick);
+            this.ToolBar.BtnNextClick += new System.EventHandler(this.ToolBar_BtnNextClick);
+            this.ToolBar.BtnPreviousClick += new System.EventHandler(this.ToolBar_BtnPreviousClick);
+            this.ToolBar.BtnNewClick += new System.EventHandler(this.ToolBar_BtnNewClick);
             this.ToolBar.BtnModifyClick += new System.EventHandler(this.ToolBar_BtnModifyClick);
+            this.ToolBar.BtnFirstClick += new System.EventHandler(this.ToolBar_BtnFirstClick);
+            this.ToolBar.BtnSaveClick += new System.EventHandler(this.ToolBar_BtnSaveClick);
+            this.ToolBar.BtnCancelClick += new System.EventHandler(this.ToolBar_BtnCancelClick);
+            this.ToolBar.BtnSearchClick += new System.EventHandler(this.ToolBar_BtnSearchClick);
+            this.ToolBar.BtnDeleteClick += new System.EventHandler(this.ToolBar_BtnDeleteClick);
             // 
             // groupBox1
             // 
@@ -110,7 +136,7 @@
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Location = new System.Drawing.Point(0, 24);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(757, 329);
+            this.groupBox1.Size = new System.Drawing.Size(833, 393);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
@@ -126,9 +152,9 @@
             this.groupBox4.Controls.Add(this.label13);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox4.Location = new System.Drawing.Point(3, 242);
+            this.groupBox4.Location = new System.Drawing.Point(3, 306);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(751, 84);
+            this.groupBox4.Size = new System.Drawing.Size(827, 84);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             // 
@@ -138,7 +164,7 @@
             this.txtdAddDate.Enabled = false;
             this.txtdAddDate.Location = new System.Drawing.Point(72, 49);
             this.txtdAddDate.Name = "txtdAddDate";
-            this.txtdAddDate.Size = new System.Drawing.Size(125, 22);
+            this.txtdAddDate.Size = new System.Drawing.Size(125, 21);
             this.txtdAddDate.TabIndex = 7;
             // 
             // txtcAdd
@@ -147,7 +173,7 @@
             this.txtcAdd.Enabled = false;
             this.txtcAdd.Location = new System.Drawing.Point(72, 24);
             this.txtcAdd.Name = "txtcAdd";
-            this.txtcAdd.Size = new System.Drawing.Size(125, 22);
+            this.txtcAdd.Size = new System.Drawing.Size(125, 21);
             this.txtcAdd.TabIndex = 6;
             // 
             // txtdLastDate
@@ -155,9 +181,9 @@
             this.txtdLastDate.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtdLastDate.BackColor = System.Drawing.SystemColors.Info;
             this.txtdLastDate.Enabled = false;
-            this.txtdLastDate.Location = new System.Drawing.Point(619, 51);
+            this.txtdLastDate.Location = new System.Drawing.Point(695, 51);
             this.txtdLastDate.Name = "txtdLastDate";
-            this.txtdLastDate.Size = new System.Drawing.Size(125, 22);
+            this.txtdLastDate.Size = new System.Drawing.Size(125, 21);
             this.txtdLastDate.TabIndex = 5;
             // 
             // txtcLast
@@ -165,9 +191,9 @@
             this.txtcLast.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtcLast.BackColor = System.Drawing.SystemColors.Info;
             this.txtcLast.Enabled = false;
-            this.txtcLast.Location = new System.Drawing.Point(619, 26);
+            this.txtcLast.Location = new System.Drawing.Point(695, 26);
             this.txtcLast.Name = "txtcLast";
-            this.txtcLast.Size = new System.Drawing.Size(125, 22);
+            this.txtcLast.Size = new System.Drawing.Size(125, 21);
             this.txtcLast.TabIndex = 4;
             // 
             // label4
@@ -175,9 +201,9 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.AutoSize = true;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label4.Location = new System.Drawing.Point(559, 59);
+            this.label4.Location = new System.Drawing.Point(635, 59);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 12);
+            this.label4.Size = new System.Drawing.Size(59, 12);
             this.label4.TabIndex = 3;
             this.label4.Text = "修改时间:";
             // 
@@ -186,9 +212,9 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label11.AutoSize = true;
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label11.Location = new System.Drawing.Point(559, 29);
+            this.label11.Location = new System.Drawing.Point(635, 29);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(44, 12);
+            this.label11.Size = new System.Drawing.Size(47, 12);
             this.label11.TabIndex = 2;
             this.label11.Text = "修改者:";
             // 
@@ -198,7 +224,7 @@
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label12.Location = new System.Drawing.Point(13, 56);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(56, 12);
+            this.label12.Size = new System.Drawing.Size(59, 12);
             this.label12.TabIndex = 1;
             this.label12.Text = "新增时间:";
             // 
@@ -208,7 +234,7 @@
             this.label13.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label13.Location = new System.Drawing.Point(13, 26);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(44, 12);
+            this.label13.Size = new System.Drawing.Size(47, 12);
             this.label13.TabIndex = 0;
             this.label13.Text = "新增者:";
             // 
@@ -248,14 +274,14 @@
             // 
             this.txtcName.Location = new System.Drawing.Point(85, 39);
             this.txtcName.Name = "txtcName";
-            this.txtcName.Size = new System.Drawing.Size(286, 22);
+            this.txtcName.Size = new System.Drawing.Size(286, 21);
             this.txtcName.TabIndex = 12;
             // 
             // txtcNumber
             // 
             this.txtcNumber.Location = new System.Drawing.Point(85, 13);
             this.txtcNumber.Name = "txtcNumber";
-            this.txtcNumber.Size = new System.Drawing.Size(286, 22);
+            this.txtcNumber.Size = new System.Drawing.Size(286, 21);
             this.txtcNumber.TabIndex = 10;
             // 
             // label2
@@ -282,7 +308,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(757, 357);
+            this.ClientSize = new System.Drawing.Size(833, 421);
             this.Controls.Add(this.ToolBar);
             this.Controls.Add(this.groupBox1);
             this.Name = "SchoolMaster";

@@ -180,7 +180,7 @@ namespace Common
 
             public SystemMessage(string str)
             {
-                this.strSystemText = "江门利奥信领科技有限公司";
+                this.strSystemText = "有限公司";
                 this.strSystemMessage = "系统提示";
                 this.strSystemError = "错误: ";
                 this.strQuestion = "询问: ";

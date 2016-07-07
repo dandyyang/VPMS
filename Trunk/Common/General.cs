@@ -27,8 +27,6 @@ namespace Common
     {
         public delegate void SetProBar1ValCallback(int val);
 
-        public static event SetProBar1ValCallback SetProBarValEventHandler;
-
         /// <summary>
         /// 日志内容记录容器
         /// </summary>
@@ -710,56 +708,6 @@ namespace Common
         }
 
         /// <summary>
-        /// RFID标签ID格式化
-        /// </summary>
-        /// <param name="TagID">RFID标签ID</param>
-        /// <returns></returns>
-        public static string RFIDTagIDFormat(string sourceTagID)
-        {
-            if (sourceTagID.Trim() == string.Empty)
-            {
-                return string.Empty;
-            }
-
-            char[] tagIDs = sourceTagID.Trim().ToCharArray();
-
-            string formatString = string.Empty;
-
-            int zeroIndex = 0;
-            for (int i = 0; i < tagIDs.Length; i++)
-            {
-                if (tagIDs[i] != '0')
-                {
-                    zeroIndex = i;
-                    break;
-                }
-            }
-
-            string formatTagID = sourceTagID.Trim().Substring(zeroIndex);
-            //if (formatTagID.Length<9)
-            //{
-            //    formatTagID = "0" + formatTagID;
-            //}
-
-            return formatTagID;
-        }
-
-        public static string RFIDTagIDFormatAddZero(string sourceTagID)
-        {
-
-
-            if (sourceTagID.Length < 9)
-            {
-                for (int i = 0; i <= (9 - sourceTagID.Length); i++)
-                {
-                    sourceTagID = "0" + sourceTagID;
-                }
-            }
-
-            return sourceTagID;
-        }
-
-        /// <summary>
         /// 转换10位十进制或者8位十六进制的标签ID成七位十进制
         /// </summary>
         /// <param name="tagIDHex"></param>
@@ -1355,133 +1303,6 @@ namespace Common
         }
 
         #endregion
-
-        #region 消费密码
-
-        /// <summary>
-        /// 消费密码类型
-        /// </summary>
-        public enum PaymentPasswordType
-        {
-            /// <summary>
-            /// 默认密码
-            /// </summary>
-            Defaul,
-
-            /// <summary>
-            /// 消费密码
-            /// </summary>
-            Consumption,
-
-            /// <summary>
-            /// 电话密码
-            /// </summary>
-            Phone,
-
-            /// <summary>
-            /// 水表管理卡密码
-            /// </summary>
-            Subsidize
-        }
-
-        /// <summary>
-        /// 获取消费卡密码
-        /// </summary>
-        /// <param name="passwordType">消费密码类型</param>
-        /// <returns>获取密码成功时boolValue为True, 密码内容在messageText中。</returns>
-        public static ReturnValueInfo GetPaymentPassword(PaymentPasswordType passwordType)
-        {
-            ReturnValueInfo passwordInfo = new ReturnValueInfo();
-
-            //消费卡的默认密码
-            if (passwordType == PaymentPasswordType.Defaul)
-            {
-                try
-                {
-                    passwordInfo.messageText = ConfigurationSettings.AppSettings["OriginalPassword"];
-                    passwordInfo.boolValue = true;
-                }
-                catch (Exception Ex)
-                {
-                    passwordInfo.boolValue = false;
-                    passwordInfo.messageText = Ex.Message;
-                }
-            }
-            //消费卡的消费密码
-            else if (passwordType == PaymentPasswordType.Consumption)
-            {
-                UKey.AbstractUKey uKey = UKey.UKeyFactory.GetUKey();
-
-                UKey.Entity.ReturnValueInfo returnInfo = null;
-
-                returnInfo = uKey.ReadPassword();
-
-                if (returnInfo != null)
-                {
-                    passwordInfo.boolValue = returnInfo.IsSuccess;
-                    passwordInfo.messageText = returnInfo.MessageText;
-                }
-
-            }
-            //消费卡的电话密码
-            else if (passwordType == PaymentPasswordType.Phone)
-            {
-                try
-                {
-                    passwordInfo.messageText = ConfigurationSettings.AppSettings["PhonePassword"];
-                    passwordInfo.boolValue = true;
-                }
-                catch (Exception Ex)
-                {
-                    passwordInfo.boolValue = false;
-                    passwordInfo.messageText = Ex.Message;
-                }
-            }
-            //水表管理卡的水表密码
-            else if (passwordType == PaymentPasswordType.Subsidize)
-            {
-                try
-                {
-                    passwordInfo.messageText = ConfigurationSettings.AppSettings["SubsidizePassword"];
-                    passwordInfo.boolValue = true;
-                }
-                catch (Exception Ex)
-                {
-                    passwordInfo.boolValue = false;
-                    passwordInfo.messageText = Ex.Message;
-                }
-            }
-
-
-            return passwordInfo;
-        }
-
-        #endregion
-
-        /// <summary>
-        /// 获得卡的默认有效期
-        /// </summary>
-        /// <returns></returns>
-        public static DateTime? GetPaymentCardDefaultExpiryDate()
-        {
-            DateTime? expiryDate = null;
-
-            try
-            {
-                string dateString = ConfigurationSettings.AppSettings["PaymentCardDefaultExpiryDate"];
-                List<string> dateList = dateString.Split('-').ToList();
-                int expiryYears = DateTime.Now.Year + Convert.ToInt32(dateList[0]);
-                string expiryDateString = expiryYears.ToString().Trim() + "-" + dateList[1] + "-" + dateList[2];
-
-                expiryDate = Convert.ToDateTime(expiryDateString);
-            }
-            catch (Exception Ex)
-            {
-                throw Ex;
-            }
-
-            return expiryDate;
-        }
 
         /// <summary>
         /// 写本地日志

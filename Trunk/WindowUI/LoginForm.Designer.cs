@@ -158,6 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::WindowUI.Properties.Resources.PNGbg;
             this.ClientSize = new System.Drawing.Size(545, 252);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.txtPwd);
