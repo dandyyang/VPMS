@@ -43,15 +43,29 @@
             this.tabSpeciesItem = new System.Windows.Forms.TabControl();
             this.tpgTransaction = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnTADelete = new System.Windows.Forms.Button();
+            this.btnTAModify = new System.Windows.Forms.Button();
+            this.btnTAAdd = new System.Windows.Forms.Button();
+            this.lvwCTPlantingAfter = new System.Windows.Forms.ListView();
+            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader9 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader11 = new System.Windows.Forms.ColumnHeader();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnTBDelete = new System.Windows.Forms.Button();
+            this.btnTBModify = new System.Windows.Forms.Button();
+            this.btnTBAdd = new System.Windows.Forms.Button();
             this.lvwCTPlantingBefore = new System.Windows.Forms.ListView();
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader10 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader17 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader10 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
             this.tpgCost = new System.Windows.Forms.TabPage();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.tpgPerdictYield = new System.Windows.Forms.TabPage();
             this.tpgSuitPlantTime = new System.Windows.Forms.TabPage();
             this.txtiPlastochron = new System.Windows.Forms.TextBox();
@@ -74,20 +88,6 @@
             this.txtcNumber = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnTBAdd = new System.Windows.Forms.Button();
-            this.btnTBModify = new System.Windows.Forms.Button();
-            this.btnTBDelete = new System.Windows.Forms.Button();
-            this.lvwCTPlantingAfter = new System.Windows.Forms.ListView();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader9 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader11 = new System.Windows.Forms.ColumnHeader();
-            this.btnTADelete = new System.Windows.Forms.Button();
-            this.btnTAModify = new System.Windows.Forms.Button();
-            this.btnTAAdd = new System.Windows.Forms.Button();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -365,6 +365,94 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "定植后";
             // 
+            // btnTADelete
+            // 
+            this.btnTADelete.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnTADelete.Location = new System.Drawing.Point(889, 94);
+            this.btnTADelete.Name = "btnTADelete";
+            this.btnTADelete.Size = new System.Drawing.Size(47, 31);
+            this.btnTADelete.TabIndex = 23;
+            this.btnTADelete.Text = "删除";
+            this.btnTADelete.UseVisualStyleBackColor = true;
+            // 
+            // btnTAModify
+            // 
+            this.btnTAModify.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnTAModify.Location = new System.Drawing.Point(889, 58);
+            this.btnTAModify.Name = "btnTAModify";
+            this.btnTAModify.Size = new System.Drawing.Size(47, 31);
+            this.btnTAModify.TabIndex = 22;
+            this.btnTAModify.Text = "修改";
+            this.btnTAModify.UseVisualStyleBackColor = true;
+            // 
+            // btnTAAdd
+            // 
+            this.btnTAAdd.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnTAAdd.Location = new System.Drawing.Point(888, 22);
+            this.btnTAAdd.Name = "btnTAAdd";
+            this.btnTAAdd.Size = new System.Drawing.Size(47, 31);
+            this.btnTAAdd.TabIndex = 21;
+            this.btnTAAdd.Text = "新增";
+            this.btnTAAdd.UseVisualStyleBackColor = true;
+            // 
+            // lvwCTPlantingAfter
+            // 
+            this.lvwCTPlantingAfter.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader4,
+            this.columnHeader7,
+            this.columnHeader5,
+            this.columnHeader8,
+            this.columnHeader9,
+            this.columnHeader11});
+            this.lvwCTPlantingAfter.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lvwCTPlantingAfter.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lvwCTPlantingAfter.FullRowSelect = true;
+            this.lvwCTPlantingAfter.GridLines = true;
+            this.lvwCTPlantingAfter.HideSelection = false;
+            this.lvwCTPlantingAfter.Location = new System.Drawing.Point(3, 19);
+            this.lvwCTPlantingAfter.MultiSelect = false;
+            this.lvwCTPlantingAfter.Name = "lvwCTPlantingAfter";
+            this.lvwCTPlantingAfter.Size = new System.Drawing.Size(884, 264);
+            this.lvwCTPlantingAfter.TabIndex = 18;
+            this.lvwCTPlantingAfter.UseCompatibleStateImageBehavior = false;
+            this.lvwCTPlantingAfter.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Tag = "vsct_RecordID";
+            this.columnHeader4.Text = "";
+            this.columnHeader4.Width = 0;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Tag = "vsct_iCycleDatetime";
+            this.columnHeader7.Text = "周期天数";
+            this.columnHeader7.Width = 71;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Tag = "TransactionName";
+            this.columnHeader5.Text = "事务名称";
+            this.columnHeader5.Width = 116;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Tag = "vsct_iAheadOfTimeRemind";
+            this.columnHeader8.Text = "提前提醒天数";
+            this.columnHeader8.Width = 92;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Tag = "Material";
+            this.columnHeader9.Text = "所用物料";
+            this.columnHeader9.Width = 528;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Tag = "vsct_cRemark";
+            this.columnHeader11.Text = "备注";
+            this.columnHeader11.Width = 59;
+            // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.Control;
@@ -378,6 +466,36 @@
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "定植前";
+            // 
+            // btnTBDelete
+            // 
+            this.btnTBDelete.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnTBDelete.Location = new System.Drawing.Point(888, 91);
+            this.btnTBDelete.Name = "btnTBDelete";
+            this.btnTBDelete.Size = new System.Drawing.Size(47, 31);
+            this.btnTBDelete.TabIndex = 20;
+            this.btnTBDelete.Text = "删除";
+            this.btnTBDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnTBModify
+            // 
+            this.btnTBModify.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnTBModify.Location = new System.Drawing.Point(888, 55);
+            this.btnTBModify.Name = "btnTBModify";
+            this.btnTBModify.Size = new System.Drawing.Size(47, 31);
+            this.btnTBModify.TabIndex = 19;
+            this.btnTBModify.Text = "修改";
+            this.btnTBModify.UseVisualStyleBackColor = true;
+            // 
+            // btnTBAdd
+            // 
+            this.btnTBAdd.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnTBAdd.Location = new System.Drawing.Point(887, 19);
+            this.btnTBAdd.Name = "btnTBAdd";
+            this.btnTBAdd.Size = new System.Drawing.Size(47, 31);
+            this.btnTBAdd.TabIndex = 18;
+            this.btnTBAdd.Text = "新增";
+            this.btnTBAdd.UseVisualStyleBackColor = true;
             // 
             // lvwCTPlantingBefore
             // 
@@ -407,17 +525,17 @@
             this.columnHeader2.Text = "";
             this.columnHeader2.Width = 0;
             // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Tag = "TransactionName";
-            this.columnHeader10.Text = "事务名称";
-            this.columnHeader10.Width = 70;
-            // 
             // columnHeader17
             // 
             this.columnHeader17.Tag = "vsct_iCycleDatetime";
             this.columnHeader17.Text = "周期天数";
             this.columnHeader17.Width = 71;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Tag = "TransactionName";
+            this.columnHeader10.Text = "事务名称";
+            this.columnHeader10.Width = 113;
             // 
             // columnHeader6
             // 
@@ -435,7 +553,6 @@
             // 
             this.columnHeader3.Tag = "vsct_cRemark";
             this.columnHeader3.Text = "备注";
-            this.columnHeader3.Width = 102;
             // 
             // tpgCost
             // 
@@ -448,6 +565,15 @@
             this.tpgCost.Size = new System.Drawing.Size(944, 434);
             this.tpgCost.TabIndex = 1;
             this.tpgCost.Text = "生产成本";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox6.Location = new System.Drawing.Point(4, 3);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(936, 428);
+            this.groupBox6.TabIndex = 0;
+            this.groupBox6.TabStop = false;
             // 
             // tpgPerdictYield
             // 
@@ -612,7 +738,7 @@
             this.txtcRemark.Location = new System.Drawing.Point(94, 100);
             this.txtcRemark.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtcRemark.Name = "txtcRemark";
-            this.txtcRemark.Size = new System.Drawing.Size(929, 23);
+            this.txtcRemark.Size = new System.Drawing.Size(842, 23);
             this.txtcRemark.TabIndex = 25;
             // 
             // label14
@@ -662,133 +788,6 @@
             this.label1.Size = new System.Drawing.Size(77, 14);
             this.label1.TabIndex = 0;
             this.label1.Text = "品种编号：";
-            // 
-            // btnTBAdd
-            // 
-            this.btnTBAdd.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnTBAdd.Location = new System.Drawing.Point(887, 19);
-            this.btnTBAdd.Name = "btnTBAdd";
-            this.btnTBAdd.Size = new System.Drawing.Size(47, 31);
-            this.btnTBAdd.TabIndex = 18;
-            this.btnTBAdd.Text = "新增";
-            this.btnTBAdd.UseVisualStyleBackColor = true;
-            // 
-            // btnTBModify
-            // 
-            this.btnTBModify.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnTBModify.Location = new System.Drawing.Point(888, 55);
-            this.btnTBModify.Name = "btnTBModify";
-            this.btnTBModify.Size = new System.Drawing.Size(47, 31);
-            this.btnTBModify.TabIndex = 19;
-            this.btnTBModify.Text = "修改";
-            this.btnTBModify.UseVisualStyleBackColor = true;
-            // 
-            // btnTBDelete
-            // 
-            this.btnTBDelete.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnTBDelete.Location = new System.Drawing.Point(888, 91);
-            this.btnTBDelete.Name = "btnTBDelete";
-            this.btnTBDelete.Size = new System.Drawing.Size(47, 31);
-            this.btnTBDelete.TabIndex = 20;
-            this.btnTBDelete.Text = "删除";
-            this.btnTBDelete.UseVisualStyleBackColor = true;
-            // 
-            // lvwCTPlantingAfter
-            // 
-            this.lvwCTPlantingAfter.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader4,
-            this.columnHeader7,
-            this.columnHeader5,
-            this.columnHeader8,
-            this.columnHeader9,
-            this.columnHeader11});
-            this.lvwCTPlantingAfter.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lvwCTPlantingAfter.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lvwCTPlantingAfter.FullRowSelect = true;
-            this.lvwCTPlantingAfter.GridLines = true;
-            this.lvwCTPlantingAfter.HideSelection = false;
-            this.lvwCTPlantingAfter.Location = new System.Drawing.Point(3, 19);
-            this.lvwCTPlantingAfter.MultiSelect = false;
-            this.lvwCTPlantingAfter.Name = "lvwCTPlantingAfter";
-            this.lvwCTPlantingAfter.Size = new System.Drawing.Size(884, 264);
-            this.lvwCTPlantingAfter.TabIndex = 18;
-            this.lvwCTPlantingAfter.UseCompatibleStateImageBehavior = false;
-            this.lvwCTPlantingAfter.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Tag = "vsct_RecordID";
-            this.columnHeader4.Text = "";
-            this.columnHeader4.Width = 0;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Tag = "TransactionName";
-            this.columnHeader5.Text = "事务名称";
-            this.columnHeader5.Width = 70;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Tag = "vsct_iCycleDatetime";
-            this.columnHeader7.Text = "周期天数";
-            this.columnHeader7.Width = 71;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Tag = "vsct_iAheadOfTimeRemind";
-            this.columnHeader8.Text = "提前提醒天数";
-            this.columnHeader8.Width = 92;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Tag = "Material";
-            this.columnHeader9.Text = "所用物料";
-            this.columnHeader9.Width = 528;
-            // 
-            // columnHeader11
-            // 
-            this.columnHeader11.Tag = "vsct_cRemark";
-            this.columnHeader11.Text = "备注";
-            this.columnHeader11.Width = 102;
-            // 
-            // btnTADelete
-            // 
-            this.btnTADelete.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnTADelete.Location = new System.Drawing.Point(889, 94);
-            this.btnTADelete.Name = "btnTADelete";
-            this.btnTADelete.Size = new System.Drawing.Size(47, 31);
-            this.btnTADelete.TabIndex = 23;
-            this.btnTADelete.Text = "删除";
-            this.btnTADelete.UseVisualStyleBackColor = true;
-            // 
-            // btnTAModify
-            // 
-            this.btnTAModify.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnTAModify.Location = new System.Drawing.Point(889, 58);
-            this.btnTAModify.Name = "btnTAModify";
-            this.btnTAModify.Size = new System.Drawing.Size(47, 31);
-            this.btnTAModify.TabIndex = 22;
-            this.btnTAModify.Text = "修改";
-            this.btnTAModify.UseVisualStyleBackColor = true;
-            // 
-            // btnTAAdd
-            // 
-            this.btnTAAdd.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnTAAdd.Location = new System.Drawing.Point(888, 22);
-            this.btnTAAdd.Name = "btnTAAdd";
-            this.btnTAAdd.Size = new System.Drawing.Size(47, 31);
-            this.btnTAAdd.TabIndex = 21;
-            this.btnTAAdd.Text = "新增";
-            this.btnTAAdd.UseVisualStyleBackColor = true;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox6.Location = new System.Drawing.Point(4, 3);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(936, 428);
-            this.groupBox6.TabIndex = 0;
-            this.groupBox6.TabStop = false;
             // 
             // VegetableSpeciesMaster
             // 
