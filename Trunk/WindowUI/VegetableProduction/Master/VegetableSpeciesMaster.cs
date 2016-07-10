@@ -15,5 +15,17 @@ namespace WindowUI.VegetableProduction.Master
         {
             InitializeComponent();
         }
+
+        private void btnTBAdd_Click(object sender, EventArgs e)
+        {
+            VegetableSpeciesTransaction frm = new VegetableSpeciesTransaction();
+            frm.ShowDialog();
+        }
+
+        private void btnTAAdd_Click(object sender, EventArgs e)
+        {
+            VegetableSpeciesTransaction frm = new VegetableSpeciesTransaction();
+            frm.ShowDialog();
+        }
     }
 }

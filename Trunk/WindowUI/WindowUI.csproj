@@ -185,6 +185,18 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Management\Common\MaterialSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Common\MaterialSearch.Designer.cs">
+      <DependentUpon>MaterialSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Common\MaterialUseQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Common\MaterialUseQuantity.Designer.cs">
+      <DependentUpon>MaterialUseQuantity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Management\Common\CardUserSearch.cs">
       <SubType>Form</SubType>
@@ -391,6 +403,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Management\Common\DateTimePickerForm.resx">
       <DependentUpon>DateTimePickerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Common\MaterialUseQuantity.resx">
+      <DependentUpon>MaterialUseQuantity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Management\DataRightsManagement\DataRightsRoleSetting.resx">
       <DependentUpon>DataRightsRoleSetting.cs</DependentUpon>
