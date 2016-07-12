@@ -1,6 +1,6 @@
-﻿namespace WindowUI.Management.Common
+﻿namespace WindowUI.VegetableProduction.Master
 {
-    partial class MaterialSearch
+    partial class VegetableSpeciesPerdictYield
     {
         /// <summary>
         /// Required designer variable.
@@ -30,16 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // MaterialSearch
+            // VegetableSpeciesPerdictYield
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 290);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "MaterialSearch";
-            this.Text = "物料搜索";
+            this.ClientSize = new System.Drawing.Size(463, 262);
+            this.Name = "VegetableSpeciesPerdictYield";
+            this.Text = "VegetableSpeciesPerdictYield";
             this.ResumeLayout(false);
 
         }

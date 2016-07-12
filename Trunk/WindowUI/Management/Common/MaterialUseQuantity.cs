@@ -15,5 +15,11 @@ namespace WindowUI.Management.Common
         {
             InitializeComponent();
         }
+
+        private void btnMaterialSearch_Click(object sender, EventArgs e)
+        {
+            MaterialSearch frm = new MaterialSearch();
+            frm.ShowDialog();
+        }
     }
 }

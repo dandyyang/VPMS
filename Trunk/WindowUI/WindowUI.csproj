@@ -404,6 +404,9 @@
     <EmbeddedResource Include="Management\Common\DateTimePickerForm.resx">
       <DependentUpon>DateTimePickerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Management\Common\MaterialSearch.resx">
+      <DependentUpon>MaterialSearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Management\Common\MaterialUseQuantity.resx">
       <DependentUpon>MaterialUseQuantity.cs</DependentUpon>
     </EmbeddedResource>
@@ -581,6 +584,9 @@
     <EmbeddedResource Include="VegetableProduction\Master\VegetableSpeciesMaster.resx">
       <DependentUpon>VegetableSpeciesMaster.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VegetableProduction\Master\VegetableSpeciesPerdictYield.resx">
+      <DependentUpon>VegetableSpeciesPerdictYield.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VegetableProduction\Master\VegetableSpeciesTransaction.resx">
       <DependentUpon>VegetableSpeciesTransaction.cs</DependentUpon>
     </EmbeddedResource>
@@ -697,6 +703,12 @@
     </Compile>
     <Compile Include="VegetableProduction\Master\VegetableSpeciesMaster.Designer.cs">
       <DependentUpon>VegetableSpeciesMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VegetableProduction\Master\VegetableSpeciesPerdictYield.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VegetableProduction\Master\VegetableSpeciesPerdictYield.Designer.cs">
+      <DependentUpon>VegetableSpeciesPerdictYield.cs</DependentUpon>
     </Compile>
     <Compile Include="VegetableProduction\Master\VegetableSpeciesTransaction.cs">
       <SubType>Form</SubType>
