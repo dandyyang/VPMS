@@ -27,7 +27,10 @@ namespace Model.VegetableProduction.Master
             this.vsm_cRemark = string.Empty;
             this.vsm_cAdd = string.Empty;
             this.vsm_cLast = string.Empty;
-
+            this.VegetableSpeciesTransactionTimes = null;
+            this.VegetableSpeciesMasterCosts = null;
+            this.VegetableSpeciesPerdictYields = null;
+            this.VegetableSpeciesSuitPlantTimes = null;
         }
 
         /// <summary>
@@ -94,8 +97,22 @@ namespace Model.VegetableProduction.Master
         /// 修改时间
         /// </summary>
         public DateTime? vsm_dLastDate { set; get; }
-
-
+        /// <summary>
+        /// 种植事务时间列表
+        /// </summary>
+        public List<VegetableSpeciesTransactionTime_vstt> VegetableSpeciesTransactionTimes { set; get; }
+        /// <summary>
+        /// 蔬菜品种种植成本列表
+        /// </summary>
+        public List<VegetableSpeciesMasterCost_vsmc> VegetableSpeciesMasterCosts { set; get; }
+        /// <summary>
+        /// 蔬菜品种预计产量列表
+        /// </summary>
+        public List<VegetableSpeciesPerdictYield_vspy> VegetableSpeciesPerdictYields { set; get; }
+        /// <summary>
+        /// 适种月份列表
+        /// </summary>
+        public List<VegetableSpeciesSuitPlantTime_vspt> VegetableSpeciesSuitPlantTimes { set; get; }
 
         #region IModelObject 成员
 

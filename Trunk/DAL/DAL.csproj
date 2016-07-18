@@ -106,7 +106,6 @@
     <Compile Include="IDAL\Management\Master\ICardUserMasterDA.cs" />
     <Compile Include="IDAL\Management\Master\ICodeMasterDA.cs" />
     <Compile Include="IDAL\Management\Master\IUserSkinDA.cs" />
-    <Compile Include="IDAL\Management\Service\IGeneralDA.cs" />
     <Compile Include="IDAL\Management\Master\ISchoolMasterDA.cs" />
     <Compile Include="IDAL\Management\Master\ISiteMasterDA.cs" />
     <Compile Include="IDAL\Management\Master\ISpecialtyMasterDA.cs" />
@@ -121,6 +120,7 @@
     <Compile Include="IDAL\SysMaster\ISysUserMasterDA.cs" />
     <Compile Include="IDAL\SysMaster\IUserPurviewDA.cs" />
     <Compile Include="IDAL\SysMaster\Web_IUserMasterPwdDA.cs" />
+    <Compile Include="IDAL\VegetableProduction\Master\IVegetableSpeciesMasterDA.cs" />
     <Compile Include="LocalDefine\Base\DataDictionary.cs" />
     <Compile Include="LocalDefine\LocalGeneralMenu.cs" />
     <Compile Include="SqlDAL\Base\SystemMenuDA.cs" />
@@ -129,10 +129,8 @@
     <Compile Include="SqlDAL\SchoolInternetOfThings\DataRightsManagement\DataRightsRoleDA.cs" />
     <Compile Include="SqlDAL\SchoolInternetOfThings\DeleteData\DeleteDataLogicDA.cs" />
     <Compile Include="SqlDAL\SchoolInternetOfThings\Master\BuildingMasterDA.cs" />
-    <Compile Include="SqlDAL\SchoolInternetOfThings\Master\CardUserMasterDA.cs" />
     <Compile Include="SqlDAL\SchoolInternetOfThings\Master\CodeMasterDA.cs" />
     <Compile Include="SqlDAL\SchoolInternetOfThings\Master\UserSkinDA.cs" />
-    <Compile Include="SqlDAL\SchoolInternetOfThings\Service\GeneralDA.cs" />
     <Compile Include="SqlDAL\SchoolInternetOfThings\Master\SchoolMasterDA.cs" />
     <Compile Include="SqlDAL\SchoolInternetOfThings\Master\SiteMasterDA.cs" />
     <Compile Include="SqlDAL\SchoolInternetOfThings\Master\SpecialtyMasterDA.cs" />
@@ -173,6 +171,7 @@
     <Compile Include="SqlDAL\SysMaster\SysUserMasterDA.cs" />
     <Compile Include="SqlDAL\SysMaster\UserPurviewDA.cs" />
     <Compile Include="SqlDAL\SysMaster\Web_UserMasterPwdDA.cs" />
+    <Compile Include="SqlDAL\VegetableProduction\Master\VegetableSpeciesMasterDA.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
@@ -190,7 +189,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="IDAL\Management\Report\" />
+    <Folder Include="IDAL\Management\Service\" />
     <Folder Include="SqlDAL\SchoolInternetOfThings\Report\" />
+    <Folder Include="SqlDAL\SchoolInternetOfThings\Service\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

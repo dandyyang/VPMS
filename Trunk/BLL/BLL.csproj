@@ -97,7 +97,6 @@
     <Compile Include="DAL\Management\Master\SiteMasterBL.cs" />
     <Compile Include="DAL\Management\Master\SpecialtyMasterBL.cs" />
     <Compile Include="DAL\SysFunction\LogDetailBL.cs" />
-    <Compile Include="DAL\SysFunction\SysUserMasterBL.cs" />
     <Compile Include="DAL\SysMaster\ArticleTypeDefineBL.cs" />
     <Compile Include="DAL\SysMaster\DepartmentMasterBL.cs" />
     <Compile Include="DAL\SysMaster\LoginFormBL.cs" />
@@ -107,6 +106,7 @@
     <Compile Include="DAL\SysMaster\SysRoleMasterBL.cs" />
     <Compile Include="DAL\SysMaster\SysUserMasterBL.cs" />
     <Compile Include="DAL\SysMaster\UserPurviewBL.cs" />
+    <Compile Include="DAL\VegetableProduction\Master\VegetableSpeciesMasterBL.cs" />
     <Compile Include="Factory\General\GeneralBLLFactory.cs" />
     <Compile Include="Factory\SchoolInternetOfThings\MasterBLLFactory.cs" />
     <Compile Include="Factory\SysFunction\SysBLLFactory.cs" />
@@ -130,7 +130,6 @@
     <Compile Include="IBLL\SchoolInternetOfThings\Master\ISiteMasterBL.cs" />
     <Compile Include="IBLL\SchoolInternetOfThings\Master\ISpecialtyMasterBL.cs" />
     <Compile Include="IBLL\SysFunction\ILogDetailBL.cs" />
-    <Compile Include="IBLL\SysFunction\ISysUserMasterBL.cs" />
     <Compile Include="IBLL\SysMaster\IArticleTypeDefineBL.cs" />
     <Compile Include="IBLL\SysMaster\IDepartmentMasterBL.cs" />
     <Compile Include="IBLL\SysMaster\ILoginFormBL.cs" />

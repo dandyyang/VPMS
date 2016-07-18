@@ -24,7 +24,7 @@ namespace DAL.SqlDAL.Management.Master
                 using (VPMSDBDataContext db = new VPMSDBDataContext())
                 {
                     taQuery =
-                        (from ta in db.SchoolMaster_scms
+                        (from ta in db.SchoolMaster_scm
                          orderby ta.scm_iRecordID ascending
                          select ta).Take(1);
 
@@ -51,7 +51,7 @@ namespace DAL.SqlDAL.Management.Master
                 using (VPMSDBDataContext db = new VPMSDBDataContext())
                 {
                     taQuery =
-                     (from ta in db.SchoolMaster_scms
+                     (from ta in db.SchoolMaster_scm
                       orderby ta.scm_iRecordID descending
                       select ta).Take(1);
 
@@ -91,7 +91,7 @@ namespace DAL.SqlDAL.Management.Master
                         //}
                         RecordID = commandInfo.KeyInfoList[0].KeyValue.ToString();
                         taQuery =
-                           (from ta in db.SchoolMaster_scms
+                           (from ta in db.SchoolMaster_scm
                             where ta.scm_iRecordID < Convert.ToInt32(RecordID)
                             orderby ta.scm_iRecordID descending
                             select ta).Take(1);
@@ -135,7 +135,7 @@ namespace DAL.SqlDAL.Management.Master
                         //}
                         RecordID = commandInfo.KeyInfoList[0].KeyValue.ToString();
                         taQuery =
-                           (from ta in db.SchoolMaster_scms
+                           (from ta in db.SchoolMaster_scm
                             where ta.scm_iRecordID > Convert.ToInt32(RecordID)
                             orderby ta.scm_iRecordID ascending
                             select ta).Take(1);
@@ -171,7 +171,7 @@ namespace DAL.SqlDAL.Management.Master
             {
                 using (VPMSDBDataContext db = new VPMSDBDataContext()) 
                 {
-                        db.SchoolMaster_scms.InsertOnSubmit(tab);
+                        db.SchoolMaster_scm.InsertOnSubmit(tab);
                         db.SubmitChanges();
                         isSuccess = true;
                 }
@@ -191,7 +191,7 @@ namespace DAL.SqlDAL.Management.Master
             {
                 using (VPMSDBDataContext db = new VPMSDBDataContext()) 
                 {
-                  tab= db.SchoolMaster_scms.SingleOrDefault(t => t.scm_cNumber == infoObject.scm_cNumber);
+                  tab= db.SchoolMaster_scm.SingleOrDefault(t => t.scm_cNumber == infoObject.scm_cNumber);
                   if (tab != null) 
                   {
                       tab.scm_cName = infoObject.scm_cName;
@@ -218,10 +218,10 @@ namespace DAL.SqlDAL.Management.Master
             try {
                 using (VPMSDBDataContext db = new VPMSDBDataContext())
                 {
-                    tab = db.SchoolMaster_scms.SingleOrDefault(t => t.scm_iRecordID == KeyObject.RecordID);
+                    tab = db.SchoolMaster_scm.SingleOrDefault(t => t.scm_iRecordID == KeyObject.RecordID);
                     if (tab != null)
                     {
-                        db.SchoolMaster_scms.DeleteOnSubmit(tab);
+                        db.SchoolMaster_scm.DeleteOnSubmit(tab);
                         db.SubmitChanges();
                         isSuccess = true;
                     }
@@ -244,7 +244,7 @@ namespace DAL.SqlDAL.Management.Master
                 using (VPMSDBDataContext db = new VPMSDBDataContext())
                 {
                     info = new model.SchoolMaster_scm_Info();
-                    tab = db.SchoolMaster_scms.SingleOrDefault(t => t.scm_iRecordID == (KeyObject as SchoolMaster_scm_Info).RecordID);
+                    tab = db.SchoolMaster_scm.SingleOrDefault(t => t.scm_iRecordID == (KeyObject as SchoolMaster_scm_Info).RecordID);
                 }
             }
             catch (Exception Ex)
@@ -269,7 +269,7 @@ namespace DAL.SqlDAL.Management.Master
             {
                 using (VPMSDBDataContext db = new VPMSDBDataContext())
                 {
-                    taQuery = db.SchoolMaster_scms.Take(Common.DefineConstantValue.ListRecordMaxCount);
+                    taQuery = db.SchoolMaster_scm.Take(Common.DefineConstantValue.ListRecordMaxCount);
                     if (info.scm_cName.ToString()!="")
                     {
                         if (info.scm_cName.ToString().IndexOf("*") != -1 || info.scm_cName.ToString().IndexOf("?") != -1)
@@ -322,7 +322,7 @@ namespace DAL.SqlDAL.Management.Master
             SchoolMaster_scm info = null;
             using (VPMSDBDataContext db = new VPMSDBDataContext())
             {
-                info = db.SchoolMaster_scms.SingleOrDefault(t => t.scm_cNumber == KeyObject.ToString().Trim());
+                info = db.SchoolMaster_scm.SingleOrDefault(t => t.scm_cNumber == KeyObject.ToString().Trim());
                 if (info != null) 
                 {
                     return true;

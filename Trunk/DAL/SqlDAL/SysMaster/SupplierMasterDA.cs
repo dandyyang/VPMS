@@ -25,7 +25,7 @@ namespace DAL.SqlDAL.SysMaster
                 using (VPMSDBDataContext db = new VPMSDBDataContext())
                 {
 
-                    IEnumerable<SupplierMaster_slm> query = db.SupplierMaster_slms.OrderBy(t => t.slm_iRecordID);
+                    IEnumerable<SupplierMaster_slm> query = db.SupplierMaster_slm.OrderBy(t => t.slm_iRecordID);
 
                     if (query != null && query.Count() > 0)
                     {
@@ -55,7 +55,7 @@ namespace DAL.SqlDAL.SysMaster
             {
                 using (VPMSDBDataContext db = new VPMSDBDataContext())
                 {
-                    IEnumerable<SupplierMaster_slm> query = db.SupplierMaster_slms.OrderByDescending(t => t.slm_iRecordID);
+                    IEnumerable<SupplierMaster_slm> query = db.SupplierMaster_slm.OrderByDescending(t => t.slm_iRecordID);
 
                     if (query != null && query.Count() > 0)
                     {
@@ -87,7 +87,7 @@ namespace DAL.SqlDAL.SysMaster
                 {
                     using (VPMSDBDataContext db = new VPMSDBDataContext())
                     {
-                        SupplierMaster_slm supplierMaster = (from t in db.SupplierMaster_slms
+                        SupplierMaster_slm supplierMaster = (from t in db.SupplierMaster_slm
                                                              where t.slm_iRecordID < Convert.ToInt32(commandInfo.KeyInfoList[0].KeyValue)
                                                              orderby t.slm_iRecordID descending
                                                              select t).FirstOrDefault();
@@ -119,7 +119,7 @@ namespace DAL.SqlDAL.SysMaster
                 {
                     using (VPMSDBDataContext db = new VPMSDBDataContext())
                     {
-                        SupplierMaster_slm supplierMaster = (from t in db.SupplierMaster_slms
+                        SupplierMaster_slm supplierMaster = (from t in db.SupplierMaster_slm
                                                              where t.slm_iRecordID > Convert.ToInt32(commandInfo.KeyInfoList[0].KeyValue)
                                                              orderby t.slm_iRecordID ascending
                                                              select t).FirstOrDefault();
@@ -155,7 +155,7 @@ namespace DAL.SqlDAL.SysMaster
             {
                 using (VPMSDBDataContext db = new VPMSDBDataContext())
                 {
-                    SupplierMaster_slm supplierMaster = db.SupplierMaster_slms.FirstOrDefault(t => t.slm_cClientNum == supplierMasterInfo.slm_cClientNum);
+                    SupplierMaster_slm supplierMaster = db.SupplierMaster_slm.FirstOrDefault(t => t.slm_cClientNum == supplierMasterInfo.slm_cClientNum);
 
                     if (supplierMaster != null)
                     {
@@ -234,7 +234,7 @@ namespace DAL.SqlDAL.SysMaster
                     {
                         SupplierMaster_slm supplierMaster = Common.General.CopyObjectValue<Sys_SupplierMaster_slm_Info, SupplierMaster_slm>(infoObject);
 
-                        db.SupplierMaster_slms.InsertOnSubmit(supplierMaster);
+                        db.SupplierMaster_slm.InsertOnSubmit(supplierMaster);
 
                         db.SubmitChanges();
 
@@ -261,7 +261,7 @@ namespace DAL.SqlDAL.SysMaster
                 {
                     using (VPMSDBDataContext db = new VPMSDBDataContext())
                     {
-                        SupplierMaster_slm supplierMaster = db.SupplierMaster_slms.FirstOrDefault(t => t.slm_iRecordID == infoObject.slm_iRecordID);
+                        SupplierMaster_slm supplierMaster = db.SupplierMaster_slm.FirstOrDefault(t => t.slm_iRecordID == infoObject.slm_iRecordID);
 
                         if (supplierMaster != null)
                         {
@@ -313,11 +313,11 @@ namespace DAL.SqlDAL.SysMaster
                 {
                     using (VPMSDBDataContext db = new VPMSDBDataContext())
                     {
-                        SupplierMaster_slm supplierMaster = db.SupplierMaster_slms.FirstOrDefault(t => t.slm_iRecordID == (KeyObject as Sys_SupplierMaster_slm_Info).slm_iRecordID);
+                        SupplierMaster_slm supplierMaster = db.SupplierMaster_slm.FirstOrDefault(t => t.slm_iRecordID == (KeyObject as Sys_SupplierMaster_slm_Info).slm_iRecordID);
 
                         if (supplierMaster != null)
                         {
-                            db.SupplierMaster_slms.DeleteOnSubmit(supplierMaster);
+                            db.SupplierMaster_slm.DeleteOnSubmit(supplierMaster);
 
                             db.SubmitChanges();
 
@@ -348,7 +348,7 @@ namespace DAL.SqlDAL.SysMaster
                 {
                     using (VPMSDBDataContext db = new VPMSDBDataContext())
                     {
-                        SupplierMaster_slm supplierMaster = db.SupplierMaster_slms.FirstOrDefault(t => t.slm_iRecordID == queryInfo.slm_iRecordID);
+                        SupplierMaster_slm supplierMaster = db.SupplierMaster_slm.FirstOrDefault(t => t.slm_iRecordID == queryInfo.slm_iRecordID);
 
                         if (supplierMaster != null)
                         {

@@ -579,34 +579,34 @@ namespace DAL.SqlDAL.SysMaster
 
         #endregion
 
-        public Model.Management.Master.CardUserMaster_cus_Info GetCardInfo(string p_strWebUser)
-        {
-            using (VPMSDBDataContext db = new VPMSDBDataContext())
-            {
-                var l_objItem = (from userInfo in db.Sys_UserMaster_usms
-                                 join cardInfo in db.WebUserIdentityBind
-                                 on userInfo.usm_cUserLoginID equals cardInfo.wui_WebUser
-                                 join cardUserInfo in db.CardUserMaster_cus
-                                 on cardInfo.wui_CardUserNum equals cardUserInfo.cus_cNumber
-                                 where userInfo.usm_cUserLoginID == p_strWebUser
-                                 select cardUserInfo).FirstOrDefault();
+        //public Model.Management.Master.CardUserMaster_cus_Info GetCardInfo(string p_strWebUser)
+        //{
+        //    using (VPMSDBDataContext db = new VPMSDBDataContext())
+        //    {
+        //        var l_objItem = (from userInfo in db.Sys_UserMaster_usms
+        //                         join cardInfo in db.WebUserIdentityBind
+        //                         on userInfo.usm_cUserLoginID equals cardInfo.wui_WebUser
+        //                         join cardUserInfo in db.CardUserMaster_cus
+        //                         on cardInfo.wui_CardUserNum equals cardUserInfo.cus_cNumber
+        //                         where userInfo.usm_cUserLoginID == p_strWebUser
+        //                         select cardUserInfo).FirstOrDefault();
 
-                return Common.General.CopyObjectValue<CardUserMaster_cus, Model.Management.Master.CardUserMaster_cus_Info>(l_objItem);
-            }
-        }
+        //        return Common.General.CopyObjectValue<CardUserMaster_cus, Model.Management.Master.CardUserMaster_cus_Info>(l_objItem);
+        //    }
+        //}
 
-        public Model.Management.Master.CardUserMaster_cus_Info GetUserInfo(string p_strWebUser)
-        {
-            using (VPMSDBDataContext db = new VPMSDBDataContext())
-            {
-                var l_objItem = (from cus in db.CardUserMaster_cus
-                                 join web in db.WebUserIdentityBind
-                                 on cus.cus_cNumber equals web.wui_CardUserNum
-                                 where web.wui_WebUser == p_strWebUser
-                                 select cus).FirstOrDefault();
+        //public Model.Management.Master.CardUserMaster_cus_Info GetUserInfo(string p_strWebUser)
+        //{
+        //    using (VPMSDBDataContext db = new VPMSDBDataContext())
+        //    {
+        //        var l_objItem = (from cus in db.CardUserMaster_cus
+        //                         join web in db.WebUserIdentityBind
+        //                         on cus.cus_cNumber equals web.wui_CardUserNum
+        //                         where web.wui_WebUser == p_strWebUser
+        //                         select cus).FirstOrDefault();
 
-                return Common.General.CopyObjectValue<CardUserMaster_cus, Model.Management.Master.CardUserMaster_cus_Info>(l_objItem);
-            }
-        }
+        //        return Common.General.CopyObjectValue<CardUserMaster_cus, Model.Management.Master.CardUserMaster_cus_Info>(l_objItem);
+        //    }
+        //}
     }
 }

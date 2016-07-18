@@ -52,11 +52,6 @@ namespace WindowUI.SysMaster
             ToolBar.BtnNextEnabled = false;
             ToolBar.BtnLastEnabled = false;
             Handel(Common.DefineConstantValue.GetReocrdEnum.GR_Last);
-
-            #region 2011-9-7
-            //label10.Visible = false;
-            //txtChaName.Visible = false;
-            #endregion
         }
 
         //設置按鈕狀態

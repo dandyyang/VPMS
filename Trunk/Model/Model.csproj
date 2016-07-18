@@ -139,8 +139,13 @@
     <Compile Include="SysMaster\Sys_UserMaster_usm_Info.cs" />
     <Compile Include="SysMaster\Sys_UserPurview_usp_Info.cs" />
     <Compile Include="SysMaster\Sys_UserRoles_usr_Info.cs" />
+    <Compile Include="VegetableProduction\Master\VegetableSpeciesCycleTransaction_vsct.cs" />
+    <Compile Include="VegetableProduction\Master\VegetableSpeciesMasterCost_vsmc.cs" />
     <Compile Include="VegetableProduction\Master\VegetableSpeciesMaster_vsm.cs" />
+    <Compile Include="VegetableProduction\Master\VegetableSpeciesPerdictYield_vspy.cs" />
+    <Compile Include="VegetableProduction\Master\VegetableSpeciesSuitPlantTime_vspt.cs" />
     <Compile Include="VegetableProduction\Master\VegetableSpeciesTransactionTime_vstt.cs" />
+    <Compile Include="VegetableProduction\Master\VSCTransactionMaterial_vctm.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">

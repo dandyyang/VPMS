@@ -18,6 +18,7 @@ namespace Model.VegetableProduction.Master
             this.vstt_cPlantingStatusNum = string.Empty;
             this.vstt_iCycleDatetime = 0;
             this.vstt_cRemark = string.Empty;
+            this.VegetableSpeciesCycleTransactions = null;
         }
 
         /// <summary>
@@ -42,6 +43,10 @@ namespace Model.VegetableProduction.Master
         /// 备注
         /// </summary>
         public string vstt_cRemark { set; get; }
+        /// <summary>
+        /// 种植周期事务列表
+        /// </summary>
+        public List<VegetableSpeciesCycleTransaction_vsct> VegetableSpeciesCycleTransactions { set; get; }
 
 
         #region IModelObject 成员
