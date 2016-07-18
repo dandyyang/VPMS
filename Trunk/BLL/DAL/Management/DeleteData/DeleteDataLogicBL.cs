@@ -44,52 +44,15 @@ namespace BLL.DAL.Management.DeleteData
                     break;
                 case Common.DefineConstantValue.MasterType.DepartmentMaster:
                     break;
-                case Common.DefineConstantValue.MasterType.CardUserSex:
-                    break;
-                case Common.DefineConstantValue.MasterType.CardUserIdentity:
-                    break;
-                case Common.DefineConstantValue.MasterType.CardUserClass:
-                    break;
                 case Common.DefineConstantValue.MasterType.SiteMaster:
                     break;
                 case Common.DefineConstantValue.MasterType.CourseMaster:
-                    break;
-                case Common.DefineConstantValue.MasterType.TeacherInfo:
-                    break;
-                case Common.DefineConstantValue.MasterType.ControllerReaderUserType:
-                    break;
-                case Common.DefineConstantValue.MasterType.AbsenceType:
-                    break;
-                case Common.DefineConstantValue.MasterType.WeeklySetting:
-                    break;
-                case Common.DefineConstantValue.MasterType.PassType:
                     break;
                 case Common.DefineConstantValue.MasterType.WinFormSkin:
                     break;
                 case Common.DefineConstantValue.MasterType.CodeMaster_Key1:
                     break;
                 case Common.DefineConstantValue.MasterType.CodeMaster_Key2:
-                    break;
-                case Common.DefineConstantValue.MasterType.CourseSetting:
-                    break;
-                case Common.DefineConstantValue.MasterType.CardUser:
-                    returnValue = _deleteDataLogicDA.CheckCardUser(info);
-                    //FileMgtSoapClient soapClient = WebSrvFactory.GetFileMgt();
-                    if (info.ddl_Key1 != string.Empty)
-                    {
-                        try
-                        {
-                            _fileManage.DeletePro_File(new Guid(info.ddl_Key1));
-                        }
-                        catch (Exception Ex)
-                        {
-
-                            throw Ex;
-                        }
-                    }
-                    break;
-                case Common.DefineConstantValue.MasterType.RFIDcard:
-                    returnValue = _deleteDataLogicDA.CheckUserCard(info);
                     break;
                 default:
                     break;

@@ -141,6 +141,7 @@
     <Compile Include="IBLL\SysMaster\ISysUserMasterBL.cs" />
     <Compile Include="IBLL\SysMaster\IUserPurviewBL.cs" />
     <Compile Include="IBLL\SysMaster\Web_IUserMasterPwdBL.cs" />
+    <Compile Include="IBLL\VegetableProduction\Master\IVegetableSpeciesMasterBL.cs" />
     <Compile Include="LocalLayer\LocalGeneral.cs" />
     <Compile Include="Master\ClientMaster.cs" />
     <Compile Include="Master\DeptMaster.cs" />

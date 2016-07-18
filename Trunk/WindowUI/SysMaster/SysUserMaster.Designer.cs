@@ -36,12 +36,6 @@
             this.lvwRole = new System.Windows.Forms.ListView();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnUserSearch = new System.Windows.Forms.Button();
-            this.cbisTrue = new System.Windows.Forms.CheckBox();
-            this.txtCardNum = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtdAddDate = new System.Windows.Forms.TextBox();
             this.txtcAdd = new System.Windows.Forms.TextBox();
@@ -70,11 +64,17 @@
             this.txtUserID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtCardNum = new System.Windows.Forms.TextBox();
+            this.cbisTrue = new System.Windows.Forms.CheckBox();
+            this.btnUserSearch = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // ToolBar
@@ -102,20 +102,22 @@
             this.ToolBar.BtnExpCusDataVisible = false;
             this.ToolBar.BtnExportCardUserPhotoEnabled = true;
             this.ToolBar.BtnExportCardUserPhotoVisible = false;
-            this.ToolBar.BtnExportTemplateEnabled = true;
-            this.ToolBar.BtnExportTemplateVisible = false;
             this.ToolBar.btnExportDataEnabled = true;
             this.ToolBar.btnExportDataVisible = false;
+            this.ToolBar.btnExportTempEnabled = true;
+            this.ToolBar.BtnExportTemplateEnabled = true;
+            this.ToolBar.BtnExportTemplateVisible = false;
+            this.ToolBar.btnExportTempVisible = false;
             this.ToolBar.BtnFirstEnabled = true;
             this.ToolBar.BtnFirstVisible = true;
             this.ToolBar.BtnGroupPersonEnabled = true;
             this.ToolBar.BtnGroupPersonVisible = false;
             this.ToolBar.BtnImportCardUserDataEnabled = true;
             this.ToolBar.BtnImportCardUserDataVisible = false;
-            this.ToolBar.BtnImportPhotoEnabled = true;
-            this.ToolBar.BtnImportPhotoVisible = false;
             this.ToolBar.btnImportDataEnabled = true;
             this.ToolBar.btnImportDataVisible = false;
+            this.ToolBar.BtnImportPhotoEnabled = true;
+            this.ToolBar.BtnImportPhotoVisible = false;
             this.ToolBar.BtnLastEnabled = true;
             this.ToolBar.BtnLastVisible = true;
             this.ToolBar.BtnModifyEnabled = true;
@@ -222,64 +224,6 @@
             // 
             this.columnHeader4.Text = "角色描述";
             this.columnHeader4.Width = 120;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.btnUserSearch);
-            this.groupBox3.Controls.Add(this.cbisTrue);
-            this.groupBox3.Controls.Add(this.txtCardNum);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Location = new System.Drawing.Point(537, 14);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(223, 96);
-            this.groupBox3.TabIndex = 7;
-            this.groupBox3.TabStop = false;
-            // 
-            // btnUserSearch
-            // 
-            this.btnUserSearch.Location = new System.Drawing.Point(186, 37);
-            this.btnUserSearch.Name = "btnUserSearch";
-            this.btnUserSearch.Size = new System.Drawing.Size(31, 23);
-            this.btnUserSearch.TabIndex = 5;
-            this.btnUserSearch.Text = "...";
-            this.btnUserSearch.UseVisualStyleBackColor = true;
-            this.btnUserSearch.Click += new System.EventHandler(this.btnUserSearch_Click);
-            // 
-            // cbisTrue
-            // 
-            this.cbisTrue.AutoSize = true;
-            this.cbisTrue.Location = new System.Drawing.Point(78, 73);
-            this.cbisTrue.Name = "cbisTrue";
-            this.cbisTrue.Size = new System.Drawing.Size(15, 14);
-            this.cbisTrue.TabIndex = 4;
-            this.cbisTrue.UseVisualStyleBackColor = true;
-            this.cbisTrue.CheckedChanged += new System.EventHandler(this.cbisTrue_CheckedChanged);
-            // 
-            // txtCardNum
-            // 
-            this.txtCardNum.Location = new System.Drawing.Point(8, 39);
-            this.txtCardNum.Name = "txtCardNum";
-            this.txtCardNum.Size = new System.Drawing.Size(172, 21);
-            this.txtCardNum.TabIndex = 3;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 73);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(65, 12);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "是否有效：";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 18);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 12);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "用户编号：";
             // 
             // groupBox4
             // 
@@ -560,6 +504,64 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "用户登录ID：";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 18);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 12);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "用户编号：";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 73);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(65, 12);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "是否有效：";
+            // 
+            // txtCardNum
+            // 
+            this.txtCardNum.Location = new System.Drawing.Point(8, 39);
+            this.txtCardNum.Name = "txtCardNum";
+            this.txtCardNum.Size = new System.Drawing.Size(172, 21);
+            this.txtCardNum.TabIndex = 3;
+            // 
+            // cbisTrue
+            // 
+            this.cbisTrue.AutoSize = true;
+            this.cbisTrue.Location = new System.Drawing.Point(78, 73);
+            this.cbisTrue.Name = "cbisTrue";
+            this.cbisTrue.Size = new System.Drawing.Size(15, 14);
+            this.cbisTrue.TabIndex = 4;
+            this.cbisTrue.UseVisualStyleBackColor = true;
+            this.cbisTrue.CheckedChanged += new System.EventHandler(this.cbisTrue_CheckedChanged);
+            // 
+            // btnUserSearch
+            // 
+            this.btnUserSearch.Location = new System.Drawing.Point(186, 37);
+            this.btnUserSearch.Name = "btnUserSearch";
+            this.btnUserSearch.Size = new System.Drawing.Size(31, 23);
+            this.btnUserSearch.TabIndex = 5;
+            this.btnUserSearch.Text = "...";
+            this.btnUserSearch.UseVisualStyleBackColor = true;
+            this.btnUserSearch.Click += new System.EventHandler(this.btnUserSearch_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnUserSearch);
+            this.groupBox3.Controls.Add(this.cbisTrue);
+            this.groupBox3.Controls.Add(this.txtCardNum);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Location = new System.Drawing.Point(537, 14);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(223, 96);
+            this.groupBox3.TabIndex = 7;
+            this.groupBox3.TabStop = false;
+            // 
             // SysUserMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -573,12 +575,12 @@
             this.Load += new System.EventHandler(this.SysUserMaster_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -615,18 +617,18 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Button btnPurviewSetting;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.CheckBox cbisTrue;
-        private System.Windows.Forms.TextBox txtCardNum;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnUserSearch;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button btnAddDataRole;
         private System.Windows.Forms.ListView lvwRole;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Button btnDelDataRole;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnUserSearch;
+        private System.Windows.Forms.CheckBox cbisTrue;
+        private System.Windows.Forms.TextBox txtCardNum;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
 
     }
 }

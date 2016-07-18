@@ -74,13 +74,12 @@ namespace WindowUI.Management.Master
             try
             {
                 SetControlLength();
-                BindCombox(DefineConstantValue.MasterType.CardUserSex);
-                BindCombox(DefineConstantValue.MasterType.CardUserIdentity);
+                
                 BindCombox(DefineConstantValue.MasterType.SchoolMaster);
                 BindCombox(DefineConstantValue.MasterType.SpecialtyMaster);
-                BindCombox(DefineConstantValue.MasterType.CardUserClass);
+                
                 BindCombox(DefineConstantValue.MasterType.DepartmentMaster);
-                BindCombox(DefineConstantValue.MasterType.GoToSchoolType);
+                
                 cus_iRecordID = "0";
                 info = _cardUserMasterBL.GetRecord_Last();
                 showData(info);
@@ -110,34 +109,22 @@ namespace WindowUI.Management.Master
             }
             switch (mType)
             {
-                case DefineConstantValue.MasterType.CardUserSex:
-                    cbcSexNum.SetDataSource(result);
-                    cbcSexNum.Text = "";
-                    break;
+                
                 case DefineConstantValue.MasterType.SchoolMaster:
                     cbcSchool.SetDataSource(result);
                     break;
-                case DefineConstantValue.MasterType.CardUserIdentity:
-                    cbcIdentityNum.SetDataSource(result);
-                    cbcIdentityNum.Text = "";
-                    break;
+                
                 case DefineConstantValue.MasterType.SpecialtyMaster:
                     cbcSpecialty.SetDataSource(result);
                     cbcSpecialty.Text = "";
                     break;
-                case DefineConstantValue.MasterType.CardUserClass:
-                    cbcClass.SetDataSource(result);
-                    cbcClass.Text = "";
-                    break;
+                
                 case DefineConstantValue.MasterType.DepartmentMaster:
                     cbcDepartment.SetDataSource(result);
                     cbcDepartment.Text = "";
                     break;
 
-                case DefineConstantValue.MasterType.GoToSchoolType:
-                    cbcGotoSchoolType.SetDataSource(result);
-                    //cbcGotoSchoolType.Text = "";
-                    break;
+                
                 default:
                     break;
             }
@@ -859,16 +846,16 @@ namespace WindowUI.Management.Master
                     //UserImage = @"d:\我的文档\图片收藏\china.jpg";
                     if (UserImage != "" && UserImage != "openFileDialog1")
                     {
-                        if (DefineConstantValue.CardUserPicture_MaxSize >= fileSize)
-                        {
-                            FileStream fs = File.OpenRead(UserImage);
-                            Byte[] l_b = new byte[fs.Length];
-                            fs.Read(l_b, 0, (int)(fs.Length - 1));
-                            info.byte_cus_imgPhoto = l_b;
+                        //if (DefineConstantValue.CardUserPicture_MaxSize >= fileSize)
+                        //{
+                        //    FileStream fs = File.OpenRead(UserImage);
+                        //    Byte[] l_b = new byte[fs.Length];
+                        //    fs.Read(l_b, 0, (int)(fs.Length - 1));
+                        //    info.byte_cus_imgPhoto = l_b;
 
 
-                            info.PhotoPath = UserImage;
-                        }
+                        //    info.PhotoPath = UserImage;
+                        //}
                     }
 
                     try
@@ -1054,37 +1041,37 @@ namespace WindowUI.Management.Master
 
         private void ToolBar_BtnSearchClick(object sender, EventArgs e)
         {
-            CardUserMasterSearch win = new CardUserMasterSearch();
-            CardUserMaster_cus_Info tempInfo = new CardUserMaster_cus_Info();
-            win.ShowForm(tempInfo);
+            //CardUserMasterSearch win = new CardUserMasterSearch();
+            //CardUserMaster_cus_Info tempInfo = new CardUserMaster_cus_Info();
+            //win.ShowForm(tempInfo);
 
-            if (win.DialogResult == DialogResult.OK)
-            {
-                cus_iRecordID = win.displayRecordID;
-                CardUserMaster_cus_Info info = new CardUserMaster_cus_Info();
-                try
-                {
+            //if (win.DialogResult == DialogResult.OK)
+            //{
+            //    cus_iRecordID = win.displayRecordID;
+            //    CardUserMaster_cus_Info info = new CardUserMaster_cus_Info();
+            //    try
+            //    {
 
-                    info.cus_iRecordID = Convert.ToInt32(cus_iRecordID);
-                    Model.IModel.IModelObject result = _cardUserMasterBL.DisplayRecord(info);
-                    info = result as CardUserMaster_cus_Info;
-                    this.EditState = DefineConstantValue.EditStateEnum.OE_ReaOnly;
-                    SetControlStatus(this.EditState);
+            //        info.cus_iRecordID = Convert.ToInt32(cus_iRecordID);
+            //        Model.IModel.IModelObject result = _cardUserMasterBL.DisplayRecord(info);
+            //        info = result as CardUserMaster_cus_Info;
+            //        this.EditState = DefineConstantValue.EditStateEnum.OE_ReaOnly;
+            //        SetControlStatus(this.EditState);
 
-                    showData(info);
-                    setToolBarViewStatc(DefineConstantValue.GetReocrdEnum.GR_Middle);
+            //        showData(info);
+            //        setToolBarViewStatc(DefineConstantValue.GetReocrdEnum.GR_Middle);
 
-                }
-                catch (Exception Ex)
-                {
-                    ShowErrorMessage(Ex);
-                }
+            //    }
+            //    catch (Exception Ex)
+            //    {
+            //        ShowErrorMessage(Ex);
+            //    }
 
 
 
-            }
-            win.Dispose();
-            win = null;
+            //}
+            //win.Dispose();
+            //win = null;
         }
 
         private void chkSet_CheckedChanged(object sender, EventArgs e)
@@ -1127,27 +1114,27 @@ namespace WindowUI.Management.Master
             string fileType = tempStr.Substring(tempStr.LastIndexOf(".") + 1, 3).ToLower();
 
 
-            //判斷上傳文件類型是否允許
-            if (DefineConstantValue.CardUserPicture_FileType.IndexOf(fileType) >= 0)
-            {
-                FileStream fs = File.OpenRead(openFileDialog1.FileName);
-                Byte[] l_b = new byte[fs.Length];
-                fileSize = l_b.Length / 1024;
-                //判斷上傳文件大小是否在允許以內
+            ////判斷上傳文件類型是否允許
+            //if (DefineConstantValue.CardUserPicture_FileType.IndexOf(fileType) >= 0)
+            //{
+            //    FileStream fs = File.OpenRead(openFileDialog1.FileName);
+            //    Byte[] l_b = new byte[fs.Length];
+            //    fileSize = l_b.Length / 1024;
+            //    //判斷上傳文件大小是否在允許以內
 
-                if (DefineConstantValue.CardUserPicture_MaxSize >= fileSize)
-                {
-                    pictureBoxOwerpic.ImageLocation = openFileDialog1.FileName;
-                }
-                else
-                {
-                    ShowInformationMessage("圖片大小超過限制--" + DefineConstantValue.CardUserPicture_MaxSize.ToString() + "KB !");
-                }
-            }
-            else
-            {
-                ShowInformationMessage("請選擇圖片文件!");
-            }
+            //    if (DefineConstantValue.CardUserPicture_MaxSize >= fileSize)
+            //    {
+            //        pictureBoxOwerpic.ImageLocation = openFileDialog1.FileName;
+            //    }
+            //    else
+            //    {
+            //        ShowInformationMessage("圖片大小超過限制--" + DefineConstantValue.CardUserPicture_MaxSize.ToString() + "KB !");
+            //    }
+            //}
+            //else
+            //{
+            //    ShowInformationMessage("請選擇圖片文件!");
+            //}
         }
 
         private void cbcIdentityNum_SelectedValueChanged(object sender, EventArgs e)
@@ -1218,25 +1205,25 @@ namespace WindowUI.Management.Master
         private void ToolBar_BtnExportTemplateClick(object sender, EventArgs e)
         {
 
-            BaseForm frm = new SelectExpTpt();
+            //BaseForm frm = new SelectExpTpt();
 
-            DialogResult result = frm.ShowDialog();
-            if (result == DialogResult.OK)
-            {
+            //DialogResult result = frm.ShowDialog();
+            //if (result == DialogResult.OK)
+            //{
 
-            }
+            //}
         }
 
         private void ToolBar_BtnExpCusDataClick(object sender, EventArgs e)
         {
 
-            BaseForm frm = new ExportCumData();
+            //BaseForm frm = new ExportCumData();
 
-            DialogResult result = frm.ShowDialog();
-            if (result == DialogResult.OK)
-            {
+            //DialogResult result = frm.ShowDialog();
+            //if (result == DialogResult.OK)
+            //{
 
-            }
+            //}
         }
 
         private void ToolBar_BtnImportCardUserDataClick(object sender, EventArgs e)
@@ -1259,9 +1246,9 @@ namespace WindowUI.Management.Master
                     string fileType = importDialog.FileName.Substring(importDialog.FileName.LastIndexOf(".") + 1, 3).ToLower();
                     if (fileType == "xls" || fileType == "xlsx")
                     {
-                        BaseForm frmCardUserInput = new CardUserMasterInput(importDialog.FileName);
-                        frmCardUserInput.UserInformation = this.UserInformation;
-                        frmCardUserInput.Show();
+                        //BaseForm frmCardUserInput = new CardUserMasterInput(importDialog.FileName);
+                        //frmCardUserInput.UserInformation = this.UserInformation;
+                        //frmCardUserInput.Show();
                     }
                     else
                     {
@@ -1282,24 +1269,24 @@ namespace WindowUI.Management.Master
 
         private void ToolBar_BtnImportCardUserPhotoClick(object sender, EventArgs e)
         {
-            BaseForm frm = new ImportCardUserPhoto();
+            //BaseForm frm = new ImportCardUserPhoto();
 
-            DialogResult result = frm.ShowDialog();
-            if (result == DialogResult.OK)
-            {
+            //DialogResult result = frm.ShowDialog();
+            //if (result == DialogResult.OK)
+            //{
 
-            }
+            //}
         }
 
         private void ToolBar_btnExportCardUserPhotoClick(object sender, EventArgs e)
         {
-            BaseForm frm = new ExportCardUserPhoto();
+            //BaseForm frm = new ExportCardUserPhoto();
 
-            DialogResult result = frm.ShowDialog();
-            if (result == DialogResult.OK)
-            {
+            //DialogResult result = frm.ShowDialog();
+            //if (result == DialogResult.OK)
+            //{
 
-            }
+            //}
         }
 
         private void btnSelectSite_Click(object sender, EventArgs e)
@@ -1326,8 +1313,8 @@ namespace WindowUI.Management.Master
 
         private void ToolBar_BtnGroupPersonClick(object sender, EventArgs e)
         {
-            CardUserMasterMonitorGroup groupFrm = new CardUserMasterMonitorGroup();
-            groupFrm.ShowDialog();
+            //CardUserMasterMonitorGroup groupFrm = new CardUserMasterMonitorGroup();
+            //groupFrm.ShowDialog();
         }
 
         private void txtcSMSReceivePhone1_Leave(object sender, EventArgs e)

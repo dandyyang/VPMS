@@ -111,6 +111,7 @@
     <Compile Include="Management\Master\SiteMaster_stm_Info.cs" />
     <Compile Include="Management\Master\SpecialtyMasterCourse_smc_Info.cs" />
     <Compile Include="Management\Master\SpecialtyMaster_spm_Info.cs" />
+    <Compile Include="ModelBase.cs" />
     <Compile Include="SysFunction\LogDetail_lgd_Info.cs" />
     <Compile Include="SysMaster\ArticleTypeDefine_atd_Info.cs" />
     <Compile Include="SysMaster\Sys_SupplierMaster_slm_Info.cs" />
@@ -138,6 +139,8 @@
     <Compile Include="SysMaster\Sys_UserMaster_usm_Info.cs" />
     <Compile Include="SysMaster\Sys_UserPurview_usp_Info.cs" />
     <Compile Include="SysMaster\Sys_UserRoles_usr_Info.cs" />
+    <Compile Include="VegetableProduction\Master\VegetableSpeciesMaster_vsm.cs" />
+    <Compile Include="VegetableProduction\Master\VegetableSpeciesTransactionTime_vstt.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">

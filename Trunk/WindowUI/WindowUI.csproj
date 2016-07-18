@@ -272,53 +272,11 @@
     <Compile Include="Management\Master\CardUserMaster.Designer.cs">
       <DependentUpon>CardUserMaster.cs</DependentUpon>
     </Compile>
-    <Compile Include="Management\Master\CardUserMasterInput.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Management\Master\CardUserMasterInput.Designer.cs">
-      <DependentUpon>CardUserMasterInput.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Management\Master\CardUserMasterMonitorGroup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Management\Master\CardUserMasterMonitorGroup.Designer.cs">
-      <DependentUpon>CardUserMasterMonitorGroup.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Management\Master\CardUserMasterSearch.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Management\Master\CardUserMasterSearch.Designer.cs">
-      <DependentUpon>CardUserMasterSearch.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Management\Master\ExportCardUserPhoto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Management\Master\ExportCardUserPhoto.Designer.cs">
-      <DependentUpon>ExportCardUserPhoto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Management\Master\ExportCumData.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Management\Master\ExportCumData.Designer.cs">
-      <DependentUpon>ExportCumData.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Management\Master\ImportCardUserPhoto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Management\Master\ImportCardUserPhoto.Designer.cs">
-      <DependentUpon>ImportCardUserPhoto.cs</DependentUpon>
-    </Compile>
     <Compile Include="Management\Master\SchoolMasterSearch.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Management\Master\SchoolMasterSearch.Designer.cs">
       <DependentUpon>SchoolMasterSearch.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Management\Master\SelectExpTpt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Management\Master\SelectExpTpt.Designer.cs">
-      <DependentUpon>SelectExpTpt.cs</DependentUpon>
     </Compile>
     <Compile Include="Management\Master\SiteMasterSearch.cs">
       <SubType>Form</SubType>
@@ -440,35 +398,8 @@
       <DependentUpon>CardUserMaster.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Management\Master\CardUserMasterInput.resx">
-      <DependentUpon>CardUserMasterInput.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Management\Master\CardUserMasterMonitorGroup.resx">
-      <DependentUpon>CardUserMasterMonitorGroup.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Management\Master\CardUserMasterSearch.resx">
-      <DependentUpon>CardUserMasterSearch.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Management\Master\ExportCardUserPhoto.resx">
-      <DependentUpon>ExportCardUserPhoto.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Management\Master\ExportCumData.resx">
-      <DependentUpon>ExportCumData.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Management\Master\ImportCardUserPhoto.resx">
-      <DependentUpon>ImportCardUserPhoto.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Management\Master\SchoolMasterSearch.resx">
       <DependentUpon>SchoolMasterSearch.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Management\Master\SelectExpTpt.resx">
-      <DependentUpon>SelectExpTpt.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Management\Master\SiteMasterSearch.resx">

@@ -80,36 +80,36 @@ namespace WindowUI.Management.DataRightsManagement
 
         void SetDataToLvw(string _type)
         {
-            try
-            {
-                CardUserMasterSearch teacherSearch = new CardUserMasterSearch();
-                teacherSearch.SelectTeacher();
-                if (teacherSearch.DialogResult == DialogResult.OK)
-                {
-                    List<CardUserMaster_cus_Info> List = teacherSearch._listinfo;
-                    foreach (CardUserMaster_cus_Info cus in List)
-                    {
-                        ListViewItem list = new ListViewItem();
-                        list.Text = cus.cus_cNumber.ToString();
-                        if (!IsExistsItem(list.Text, _type))
-                        {
-                            ListViewItem it = new ListViewItem(cus.cus_cNumber.ToString());
-                            it.SubItems.Add(cus.cus_cIdentityNum.ToString());
-                            it.SubItems.Add(cus.cus_cChaName.ToString());
-                            if (_type == _payment)
-                                lvwPay.Items.Add(it);
-                            if (_type == _attendance)
-                                lvwAtt.Items.Add(it);
-                        }
-                    }
-                }
-                teacherSearch.Dispose();
-                teacherSearch = null;
-            }
-            catch (Exception Ex)
-            {
-                ShowErrorMessage(Ex);
-            }
+            //try
+            //{
+            //    CardUserMasterSearch teacherSearch = new CardUserMasterSearch();
+            //    teacherSearch.SelectTeacher();
+            //    if (teacherSearch.DialogResult == DialogResult.OK)
+            //    {
+            //        List<CardUserMaster_cus_Info> List = teacherSearch._listinfo;
+            //        foreach (CardUserMaster_cus_Info cus in List)
+            //        {
+            //            ListViewItem list = new ListViewItem();
+            //            list.Text = cus.cus_cNumber.ToString();
+            //            if (!IsExistsItem(list.Text, _type))
+            //            {
+            //                ListViewItem it = new ListViewItem(cus.cus_cNumber.ToString());
+            //                it.SubItems.Add(cus.cus_cIdentityNum.ToString());
+            //                it.SubItems.Add(cus.cus_cChaName.ToString());
+            //                if (_type == _payment)
+            //                    lvwPay.Items.Add(it);
+            //                if (_type == _attendance)
+            //                    lvwAtt.Items.Add(it);
+            //            }
+            //        }
+            //    }
+            //    teacherSearch.Dispose();
+            //    teacherSearch = null;
+            //}
+            //catch (Exception Ex)
+            //{
+            //    ShowErrorMessage(Ex);
+            //}
         }
 
         private void btnAddPay_Click(object sender, EventArgs e)
@@ -166,8 +166,8 @@ namespace WindowUI.Management.DataRightsManagement
             {
                 var schoolMaster = _generalBL.GetMasterDataInformations(DefineConstantValue.MasterType.SchoolMaster);
                 var specialtyMaster = _generalBL.GetMasterDataInformations(DefineConstantValue.MasterType.SpecialtyMaster);
-                var graduationPeriod = _generalBL.GetMasterDataInformations(DefineConstantValue.MasterType.GraduationPeriod);
-                var cardUserClass = _generalBL.GetMasterDataInformations(DefineConstantValue.MasterType.CardUserClass);
+                //var graduationPeriod = _generalBL.GetMasterDataInformations(DefineConstantValue.MasterType.GraduationPeriod);
+                //var cardUserClass = _generalBL.GetMasterDataInformations(DefineConstantValue.MasterType.CardUserClass);
                 //院校部
 
                 foreach (ComboboxDataInfo school in schoolMaster)
@@ -182,19 +182,19 @@ namespace WindowUI.Management.DataRightsManagement
                         s_node.Tag = specialty;
                         node.Nodes.Add(s_node);
                         //届别                     
-                        foreach (ComboboxDataInfo gp in graduationPeriod)
-                        {
-                            TreeNode c_node = new TreeNode(gp.DisplayMember);
-                            c_node.Tag = gp;
-                            s_node.Nodes.Add(c_node);
-                            //班级
-                            foreach (ComboboxDataInfo cla in cardUserClass)
-                            {
-                                TreeNode e_node = new TreeNode(cla.DisplayMember);
-                                e_node.Tag = cla;
-                                c_node.Nodes.Add(e_node);
-                            }
-                        }
+                        //foreach (ComboboxDataInfo gp in graduationPeriod)
+                        //{
+                        //    TreeNode c_node = new TreeNode(gp.DisplayMember);
+                        //    c_node.Tag = gp;
+                        //    s_node.Nodes.Add(c_node);
+                        //    //班级
+                        //    foreach (ComboboxDataInfo cla in cardUserClass)
+                        //    {
+                        //        TreeNode e_node = new TreeNode(cla.DisplayMember);
+                        //        e_node.Tag = cla;
+                        //        c_node.Nodes.Add(e_node);
+                        //    }
+                        //}
                     }
                 }
 
@@ -210,19 +210,19 @@ namespace WindowUI.Management.DataRightsManagement
                         s_node.Tag = specialty;
                         node.Nodes.Add(s_node);
                         //届别                     
-                        foreach (ComboboxDataInfo gp in graduationPeriod)
-                        {
-                            TreeNode c_node = new TreeNode(gp.DisplayMember);
-                            c_node.Tag = gp;
-                            s_node.Nodes.Add(c_node);
-                            //班级
-                            foreach (ComboboxDataInfo cla in cardUserClass)
-                            {
-                                TreeNode e_node = new TreeNode(cla.DisplayMember);
-                                e_node.Tag = cla;
-                                c_node.Nodes.Add(e_node);
-                            }
-                        }
+                        //foreach (ComboboxDataInfo gp in graduationPeriod)
+                        //{
+                        //    TreeNode c_node = new TreeNode(gp.DisplayMember);
+                        //    c_node.Tag = gp;
+                        //    s_node.Nodes.Add(c_node);
+                        //    //班级
+                        //    foreach (ComboboxDataInfo cla in cardUserClass)
+                        //    {
+                        //        TreeNode e_node = new TreeNode(cla.DisplayMember);
+                        //        e_node.Tag = cla;
+                        //        c_node.Nodes.Add(e_node);
+                        //    }
+                        //}
                     }
                 }
             }

@@ -39,6 +39,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MaterialSearch";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "物料搜索";
             this.ResumeLayout(false);
 

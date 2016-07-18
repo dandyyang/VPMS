@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtcRemark = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtfTotalPrice = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtfUnitPrice = new System.Windows.Forms.TextBox();
@@ -42,8 +44,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.txtcRemark = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +67,25 @@
             this.groupBox2.Size = new System.Drawing.Size(316, 191);
             this.groupBox2.TabIndex = 44;
             this.groupBox2.TabStop = false;
+            // 
+            // txtcRemark
+            // 
+            this.txtcRemark.BackColor = System.Drawing.SystemColors.Window;
+            this.txtcRemark.Location = new System.Drawing.Point(77, 158);
+            this.txtcRemark.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtcRemark.Name = "txtcRemark";
+            this.txtcRemark.Size = new System.Drawing.Size(189, 21);
+            this.txtcRemark.TabIndex = 54;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 161);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 12);
+            this.label6.TabIndex = 53;
+            this.label6.Text = "备注：";
             // 
             // txtfTotalPrice
             // 
@@ -197,25 +216,6 @@
             this.btnSave.Text = "保存";
             this.btnSave.UseVisualStyleBackColor = true;
             // 
-            // txtcRemark
-            // 
-            this.txtcRemark.BackColor = System.Drawing.SystemColors.Window;
-            this.txtcRemark.Location = new System.Drawing.Point(77, 158);
-            this.txtcRemark.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtcRemark.Name = "txtcRemark";
-            this.txtcRemark.Size = new System.Drawing.Size(189, 21);
-            this.txtcRemark.TabIndex = 54;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 161);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 12);
-            this.label6.TabIndex = 53;
-            this.label6.Text = "备注：";
-            // 
             // MaterialUseQuantity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -228,6 +228,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MaterialUseQuantity";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "物料用量";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

@@ -127,11 +127,11 @@ namespace WindowUI.SysMaster
                     groupBox5.Enabled = false;
 
 
-                    txtCardNum.Enabled = false;
-                    txtCardNum.TextBoxSetStatus(true);
-                    cbisTrue.Enabled = false;
+                    //txtCardNum.Enabled = false;
+                    //txtCardNum.TextBoxSetStatus(true);
+                    //cbisTrue.Enabled = false;
 
-                    btnUserSearch.Enabled = false;
+                    //btnUserSearch.Enabled = false;
 
                     break;
                 case DefineConstantValue.EditStateEnum.OE_Insert:
@@ -153,16 +153,16 @@ namespace WindowUI.SysMaster
                     btnPurviewSetting.Enabled = true;
                     lvwMaster.Enabled = true;
 
-                    txtCardNum.Enabled = true;
-                    txtCardNum.TextBoxSetStatus(false);
-                    cbisTrue.Enabled = true;
+                    //txtCardNum.Enabled = true;
+                    //txtCardNum.TextBoxSetStatus(false);
+                    //cbisTrue.Enabled = true;
 
-                    btnUserSearch.Enabled = true;
+                    //btnUserSearch.Enabled = true;
 
-                    if (cbisTrue.Checked)
-                    {
-                        groupBox5.Enabled = true;
-                    }
+                    //if (cbisTrue.Checked)
+                    //{
+                    //    groupBox5.Enabled = true;
+                    //}
                     break;
                 case DefineConstantValue.EditStateEnum.OE_Update:
                     txtUserID.Enabled = false;
@@ -184,15 +184,15 @@ namespace WindowUI.SysMaster
                     lvwMaster.Enabled = true;
 
 
-                    txtCardNum.Enabled = true;
-                    txtCardNum.TextBoxSetStatus(false);
-                    cbisTrue.Enabled = true;
+                    //txtCardNum.Enabled = true;
+                    //txtCardNum.TextBoxSetStatus(false);
+                    //cbisTrue.Enabled = true;
 
-                    btnUserSearch.Enabled = true;
-                    if (cbisTrue.Checked)
-                    {
-                        groupBox5.Enabled = true;
-                    }
+                    //btnUserSearch.Enabled = true;
+                    //if (cbisTrue.Checked)
+                    //{
+                    //    groupBox5.Enabled = true;
+                    //}
                     break;
             }
         }
@@ -509,9 +509,9 @@ namespace WindowUI.SysMaster
             //txtdAddDate.Text = DateTime.Now.ToString(DefineConstantValue.gc_DateFormat);
             //txtdLastDate.Text = DateTime.Now.ToString(DefineConstantValue.gc_DateFormat);
 
-            txtCardNum.Text = "";
-            //txtChaName.Text = "";
-            cbisTrue.Checked = false;
+            //txtCardNum.Text = "";
+            ////txtChaName.Text = "";
+            //cbisTrue.Checked = false;
         }
 
         private void ToolBar_BtnNextClick(object sender, EventArgs e)
@@ -532,10 +532,6 @@ namespace WindowUI.SysMaster
         {
             if (txtCardNum.Text != "")
             {
-                //RFIDCardManage_rcm_Info rcm = new RFIDCardManage_rcm_Info();
-                //rcm.rcm_cCardNum = txtCardNum.Text;
-
-                //rcm = _sysUserMasterBL.CheckRCM(txtCardNum.Text);
 
                 if (true)
                 {
@@ -836,31 +832,7 @@ namespace WindowUI.SysMaster
 
         private void btnUserSearch_Click(object sender, EventArgs e)
         {
-            CardUserMasterSearch win = new CardUserMasterSearch();
-            CardUserMaster_cus_Info info = new CardUserMaster_cus_Info();
-
-            win.ShowForm(info);
-
-            if (info.cus_cNumber != null && info.cus_cNumber != "")
-            {
-                txtCardNum.Text = info.cus_cNumber;
-            }
-
-            //win._check = true;
-            //win.ShowDialog();
-
-            //if (win._listinfo != null && win._listinfo.Count > 0)
-            //{
-            //    try
-            //    {
-            //        txtCardNum.Text = win._listinfo[0].cus_cNumber;
-            //        //txtChaName.Text = win._listinfo[0].cus_cChaName;
-            //    }
-            //    catch (Exception Ex)
-            //    { ShowErrorMessage(Ex); }
-            //}
-            win.Dispose();
-            win = null;
+            
         }
 
         private void btnAddDataRole_Click(object sender, EventArgs e)

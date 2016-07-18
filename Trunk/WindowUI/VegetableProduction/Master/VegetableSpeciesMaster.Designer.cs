@@ -30,15 +30,6 @@
         {
             this.ToolBar = new WindowControls.UserToolBar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.txtdAddDate = new System.Windows.Forms.TextBox();
-            this.txtcAdd = new System.Windows.Forms.TextBox();
-            this.txtdLastDate = new System.Windows.Forms.TextBox();
-            this.txtcLast = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tabSpeciesItem = new System.Windows.Forms.TabControl();
             this.tpgTransaction = new System.Windows.Forms.TabPage();
@@ -95,7 +86,30 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.tpgPerdictYield = new System.Windows.Forms.TabPage();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.btnPYDelete = new System.Windows.Forms.Button();
+            this.btnPYModify = new System.Windows.Forms.Button();
+            this.btnPYAdd = new System.Windows.Forms.Button();
+            this.lvwCost = new System.Windows.Forms.ListView();
+            this.columnHeader20 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader21 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader22 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader23 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader24 = new System.Windows.Forms.ColumnHeader();
             this.tpgSuitPlantTime = new System.Windows.Forms.TabPage();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.chk12 = new System.Windows.Forms.CheckBox();
+            this.chk11 = new System.Windows.Forms.CheckBox();
+            this.chk10 = new System.Windows.Forms.CheckBox();
+            this.chk9 = new System.Windows.Forms.CheckBox();
+            this.chk8 = new System.Windows.Forms.CheckBox();
+            this.chk7 = new System.Windows.Forms.CheckBox();
+            this.chk6 = new System.Windows.Forms.CheckBox();
+            this.chk5 = new System.Windows.Forms.CheckBox();
+            this.chk4 = new System.Windows.Forms.CheckBox();
+            this.chk3 = new System.Windows.Forms.CheckBox();
+            this.chk2 = new System.Windows.Forms.CheckBox();
+            this.chk1 = new System.Windows.Forms.CheckBox();
             this.txtiPlastochron = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtiAcreYield = new System.Windows.Forms.TextBox();
@@ -116,18 +130,16 @@
             this.txtcNumber = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader20 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader21 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader22 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader23 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader24 = new System.Windows.Forms.ColumnHeader();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtdAddDate = new System.Windows.Forms.TextBox();
+            this.txtcAdd = new System.Windows.Forms.TextBox();
+            this.txtdLastDate = new System.Windows.Forms.TextBox();
+            this.txtcLast = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabSpeciesItem.SuspendLayout();
             this.tpgTransaction.SuspendLayout();
@@ -140,6 +152,9 @@
             this.groupBox7.SuspendLayout();
             this.tpgPerdictYield.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            this.tpgSuitPlantTime.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // ToolBar
@@ -224,114 +239,6 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.txtdAddDate);
-            this.groupBox4.Controls.Add(this.txtcAdd);
-            this.groupBox4.Controls.Add(this.txtdLastDate);
-            this.groupBox4.Controls.Add(this.txtcLast);
-            this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Controls.Add(this.label11);
-            this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox4.Location = new System.Drawing.Point(4, 613);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox4.Size = new System.Drawing.Size(966, 71);
-            this.groupBox4.TabIndex = 6;
-            this.groupBox4.TabStop = false;
-            // 
-            // txtdAddDate
-            // 
-            this.txtdAddDate.BackColor = System.Drawing.SystemColors.Info;
-            this.txtdAddDate.Enabled = false;
-            this.txtdAddDate.Location = new System.Drawing.Point(84, 39);
-            this.txtdAddDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtdAddDate.Name = "txtdAddDate";
-            this.txtdAddDate.Size = new System.Drawing.Size(145, 23);
-            this.txtdAddDate.TabIndex = 7;
-            // 
-            // txtcAdd
-            // 
-            this.txtcAdd.BackColor = System.Drawing.SystemColors.Info;
-            this.txtcAdd.Enabled = false;
-            this.txtcAdd.Location = new System.Drawing.Point(84, 12);
-            this.txtcAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtcAdd.Name = "txtcAdd";
-            this.txtcAdd.Size = new System.Drawing.Size(145, 23);
-            this.txtcAdd.TabIndex = 6;
-            // 
-            // txtdLastDate
-            // 
-            this.txtdLastDate.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtdLastDate.BackColor = System.Drawing.SystemColors.Info;
-            this.txtdLastDate.Enabled = false;
-            this.txtdLastDate.Location = new System.Drawing.Point(812, 39);
-            this.txtdLastDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtdLastDate.Name = "txtdLastDate";
-            this.txtdLastDate.Size = new System.Drawing.Size(145, 23);
-            this.txtdLastDate.TabIndex = 5;
-            // 
-            // txtcLast
-            // 
-            this.txtcLast.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtcLast.BackColor = System.Drawing.SystemColors.Info;
-            this.txtcLast.Enabled = false;
-            this.txtcLast.Location = new System.Drawing.Point(812, 12);
-            this.txtcLast.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtcLast.Name = "txtcLast";
-            this.txtcLast.Size = new System.Drawing.Size(145, 23);
-            this.txtcLast.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label4.AutoSize = true;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label4.Location = new System.Drawing.Point(742, 43);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 14);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "修改时间:";
-            // 
-            // label11
-            // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label11.AutoSize = true;
-            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label11.Location = new System.Drawing.Point(742, 15);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(56, 14);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "修改者:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label12.Location = new System.Drawing.Point(15, 42);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(70, 14);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "新增时间:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label13.Location = new System.Drawing.Point(15, 14);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(56, 14);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "新增者:";
-            // 
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
@@ -368,6 +275,8 @@
             // 
             // tabSpeciesItem
             // 
+            this.tabSpeciesItem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.tabSpeciesItem.Controls.Add(this.tpgTransaction);
             this.tabSpeciesItem.Controls.Add(this.tpgCost);
             this.tabSpeciesItem.Controls.Add(this.tpgPerdictYield);
@@ -397,6 +306,8 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox5.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox5.Controls.Add(this.btnTADelete);
             this.groupBox5.Controls.Add(this.btnTAModify);
@@ -614,10 +525,11 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox6.Controls.Add(this.groupBox9);
             this.groupBox6.Controls.Add(this.groupBox8);
             this.groupBox6.Controls.Add(this.groupBox7);
-            this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox6.Location = new System.Drawing.Point(4, 3);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(936, 447);
@@ -626,6 +538,8 @@
             // 
             // groupBox9
             // 
+            this.groupBox9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox9.Controls.Add(this.btnMDelete);
             this.groupBox9.Controls.Add(this.btnMModify);
             this.groupBox9.Controls.Add(this.btnMAdd);
@@ -639,6 +553,7 @@
             // 
             // btnMDelete
             // 
+            this.btnMDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMDelete.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnMDelete.Location = new System.Drawing.Point(863, 264);
             this.btnMDelete.Name = "btnMDelete";
@@ -649,6 +564,7 @@
             // 
             // btnMModify
             // 
+            this.btnMModify.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMModify.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnMModify.Location = new System.Drawing.Point(790, 264);
             this.btnMModify.Name = "btnMModify";
@@ -659,6 +575,7 @@
             // 
             // btnMAdd
             // 
+            this.btnMAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMAdd.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnMAdd.Location = new System.Drawing.Point(719, 264);
             this.btnMAdd.Name = "btnMAdd";
@@ -670,6 +587,8 @@
             // 
             // lvwMaterial
             // 
+            this.lvwMaterial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.lvwMaterial.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader12,
             this.columnHeader13,
@@ -915,15 +834,254 @@
             this.tpgPerdictYield.TabIndex = 2;
             this.tpgPerdictYield.Text = "成品产量预估";
             // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.btnPYDelete);
+            this.groupBox10.Controls.Add(this.btnPYModify);
+            this.groupBox10.Controls.Add(this.btnPYAdd);
+            this.groupBox10.Controls.Add(this.lvwCost);
+            this.groupBox10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox10.Location = new System.Drawing.Point(0, 0);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(944, 453);
+            this.groupBox10.TabIndex = 49;
+            this.groupBox10.TabStop = false;
+            // 
+            // btnPYDelete
+            // 
+            this.btnPYDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPYDelete.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnPYDelete.Location = new System.Drawing.Point(869, 416);
+            this.btnPYDelete.Name = "btnPYDelete";
+            this.btnPYDelete.Size = new System.Drawing.Size(66, 31);
+            this.btnPYDelete.TabIndex = 53;
+            this.btnPYDelete.Text = "删除";
+            this.btnPYDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnPYModify
+            // 
+            this.btnPYModify.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPYModify.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnPYModify.Location = new System.Drawing.Point(796, 416);
+            this.btnPYModify.Name = "btnPYModify";
+            this.btnPYModify.Size = new System.Drawing.Size(66, 31);
+            this.btnPYModify.TabIndex = 52;
+            this.btnPYModify.Text = "修改";
+            this.btnPYModify.UseVisualStyleBackColor = true;
+            // 
+            // btnPYAdd
+            // 
+            this.btnPYAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPYAdd.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnPYAdd.Location = new System.Drawing.Point(725, 416);
+            this.btnPYAdd.Name = "btnPYAdd";
+            this.btnPYAdd.Size = new System.Drawing.Size(66, 31);
+            this.btnPYAdd.TabIndex = 51;
+            this.btnPYAdd.Text = "新增";
+            this.btnPYAdd.UseVisualStyleBackColor = true;
+            // 
+            // lvwCost
+            // 
+            this.lvwCost.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.lvwCost.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader20,
+            this.columnHeader21,
+            this.columnHeader22,
+            this.columnHeader23,
+            this.columnHeader24});
+            this.lvwCost.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lvwCost.FullRowSelect = true;
+            this.lvwCost.GridLines = true;
+            this.lvwCost.HideSelection = false;
+            this.lvwCost.Location = new System.Drawing.Point(3, 19);
+            this.lvwCost.MultiSelect = false;
+            this.lvwCost.Name = "lvwCost";
+            this.lvwCost.Size = new System.Drawing.Size(938, 391);
+            this.lvwCost.TabIndex = 48;
+            this.lvwCost.UseCompatibleStateImageBehavior = false;
+            this.lvwCost.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader20
+            // 
+            this.columnHeader20.Tag = "vsct_RecordID";
+            this.columnHeader20.Text = "";
+            this.columnHeader20.Width = 0;
+            // 
+            // columnHeader21
+            // 
+            this.columnHeader21.Tag = "Material";
+            this.columnHeader21.Text = "开始天数";
+            this.columnHeader21.Width = 113;
+            // 
+            // columnHeader22
+            // 
+            this.columnHeader22.Tag = "vsct_iCycleDatetime";
+            this.columnHeader22.Text = "结束天数";
+            this.columnHeader22.Width = 100;
+            // 
+            // columnHeader23
+            // 
+            this.columnHeader23.Tag = "TransactionName";
+            this.columnHeader23.Text = "预计产量(公斤)";
+            this.columnHeader23.Width = 114;
+            // 
+            // columnHeader24
+            // 
+            this.columnHeader24.Text = "备注";
+            this.columnHeader24.Width = 580;
+            // 
             // tpgSuitPlantTime
             // 
             this.tpgSuitPlantTime.BackColor = System.Drawing.SystemColors.Control;
+            this.tpgSuitPlantTime.Controls.Add(this.groupBox11);
             this.tpgSuitPlantTime.Location = new System.Drawing.Point(4, 23);
             this.tpgSuitPlantTime.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tpgSuitPlantTime.Name = "tpgSuitPlantTime";
-            this.tpgSuitPlantTime.Size = new System.Drawing.Size(944, 434);
+            this.tpgSuitPlantTime.Size = new System.Drawing.Size(944, 453);
             this.tpgSuitPlantTime.TabIndex = 3;
             this.tpgSuitPlantTime.Text = "适种月份";
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.chk12);
+            this.groupBox11.Controls.Add(this.chk11);
+            this.groupBox11.Controls.Add(this.chk10);
+            this.groupBox11.Controls.Add(this.chk9);
+            this.groupBox11.Controls.Add(this.chk8);
+            this.groupBox11.Controls.Add(this.chk7);
+            this.groupBox11.Controls.Add(this.chk6);
+            this.groupBox11.Controls.Add(this.chk5);
+            this.groupBox11.Controls.Add(this.chk4);
+            this.groupBox11.Controls.Add(this.chk3);
+            this.groupBox11.Controls.Add(this.chk2);
+            this.groupBox11.Controls.Add(this.chk1);
+            this.groupBox11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox11.Location = new System.Drawing.Point(0, 0);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(944, 453);
+            this.groupBox11.TabIndex = 0;
+            this.groupBox11.TabStop = false;
+            // 
+            // chk12
+            // 
+            this.chk12.AutoSize = true;
+            this.chk12.Location = new System.Drawing.Point(725, 88);
+            this.chk12.Name = "chk12";
+            this.chk12.Size = new System.Drawing.Size(72, 18);
+            this.chk12.TabIndex = 11;
+            this.chk12.Text = "12月份";
+            this.chk12.UseVisualStyleBackColor = true;
+            // 
+            // chk11
+            // 
+            this.chk11.AutoSize = true;
+            this.chk11.Location = new System.Drawing.Point(550, 88);
+            this.chk11.Name = "chk11";
+            this.chk11.Size = new System.Drawing.Size(72, 18);
+            this.chk11.TabIndex = 10;
+            this.chk11.Text = "11月份";
+            this.chk11.UseVisualStyleBackColor = true;
+            // 
+            // chk10
+            // 
+            this.chk10.AutoSize = true;
+            this.chk10.Location = new System.Drawing.Point(393, 88);
+            this.chk10.Name = "chk10";
+            this.chk10.Size = new System.Drawing.Size(72, 18);
+            this.chk10.TabIndex = 9;
+            this.chk10.Text = "10月份";
+            this.chk10.UseVisualStyleBackColor = true;
+            // 
+            // chk9
+            // 
+            this.chk9.AutoSize = true;
+            this.chk9.Location = new System.Drawing.Point(253, 88);
+            this.chk9.Name = "chk9";
+            this.chk9.Size = new System.Drawing.Size(64, 18);
+            this.chk9.TabIndex = 8;
+            this.chk9.Text = "9月份";
+            this.chk9.UseVisualStyleBackColor = true;
+            // 
+            // chk8
+            // 
+            this.chk8.AutoSize = true;
+            this.chk8.Location = new System.Drawing.Point(129, 88);
+            this.chk8.Name = "chk8";
+            this.chk8.Size = new System.Drawing.Size(64, 18);
+            this.chk8.TabIndex = 7;
+            this.chk8.Text = "8月份";
+            this.chk8.UseVisualStyleBackColor = true;
+            // 
+            // chk7
+            // 
+            this.chk7.AutoSize = true;
+            this.chk7.Location = new System.Drawing.Point(15, 88);
+            this.chk7.Name = "chk7";
+            this.chk7.Size = new System.Drawing.Size(64, 18);
+            this.chk7.TabIndex = 6;
+            this.chk7.Text = "7月份";
+            this.chk7.UseVisualStyleBackColor = true;
+            // 
+            // chk6
+            // 
+            this.chk6.AutoSize = true;
+            this.chk6.Location = new System.Drawing.Point(725, 32);
+            this.chk6.Name = "chk6";
+            this.chk6.Size = new System.Drawing.Size(64, 18);
+            this.chk6.TabIndex = 5;
+            this.chk6.Text = "6月份";
+            this.chk6.UseVisualStyleBackColor = true;
+            // 
+            // chk5
+            // 
+            this.chk5.AutoSize = true;
+            this.chk5.Location = new System.Drawing.Point(550, 32);
+            this.chk5.Name = "chk5";
+            this.chk5.Size = new System.Drawing.Size(64, 18);
+            this.chk5.TabIndex = 4;
+            this.chk5.Text = "5月份";
+            this.chk5.UseVisualStyleBackColor = true;
+            // 
+            // chk4
+            // 
+            this.chk4.AutoSize = true;
+            this.chk4.Location = new System.Drawing.Point(393, 32);
+            this.chk4.Name = "chk4";
+            this.chk4.Size = new System.Drawing.Size(64, 18);
+            this.chk4.TabIndex = 3;
+            this.chk4.Text = "4月份";
+            this.chk4.UseVisualStyleBackColor = true;
+            // 
+            // chk3
+            // 
+            this.chk3.AutoSize = true;
+            this.chk3.Location = new System.Drawing.Point(253, 32);
+            this.chk3.Name = "chk3";
+            this.chk3.Size = new System.Drawing.Size(64, 18);
+            this.chk3.TabIndex = 2;
+            this.chk3.Text = "3月份";
+            this.chk3.UseVisualStyleBackColor = true;
+            // 
+            // chk2
+            // 
+            this.chk2.AutoSize = true;
+            this.chk2.Location = new System.Drawing.Point(129, 32);
+            this.chk2.Name = "chk2";
+            this.chk2.Size = new System.Drawing.Size(64, 18);
+            this.chk2.TabIndex = 1;
+            this.chk2.Text = "2月份";
+            this.chk2.UseVisualStyleBackColor = true;
+            // 
+            // chk1
+            // 
+            this.chk1.AutoSize = true;
+            this.chk1.Location = new System.Drawing.Point(15, 32);
+            this.chk1.Name = "chk1";
+            this.chk1.Size = new System.Drawing.Size(64, 18);
+            this.chk1.TabIndex = 0;
+            this.chk1.Text = "1月份";
+            this.chk1.UseVisualStyleBackColor = true;
             // 
             // txtiPlastochron
             // 
@@ -1119,98 +1277,113 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "品种编号：";
             // 
-            // listView1
+            // groupBox4
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader20,
-            this.columnHeader21,
-            this.columnHeader22,
-            this.columnHeader23,
-            this.columnHeader24});
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.listView1.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 19);
-            this.listView1.MultiSelect = false;
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(938, 391);
-            this.listView1.TabIndex = 48;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.groupBox4.Controls.Add(this.txtdAddDate);
+            this.groupBox4.Controls.Add(this.txtcAdd);
+            this.groupBox4.Controls.Add(this.txtdLastDate);
+            this.groupBox4.Controls.Add(this.txtcLast);
+            this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Controls.Add(this.label11);
+            this.groupBox4.Controls.Add(this.label12);
+            this.groupBox4.Controls.Add(this.label13);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox4.Location = new System.Drawing.Point(4, 613);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox4.Size = new System.Drawing.Size(966, 71);
+            this.groupBox4.TabIndex = 6;
+            this.groupBox4.TabStop = false;
             // 
-            // columnHeader20
+            // txtdAddDate
             // 
-            this.columnHeader20.Tag = "vsct_RecordID";
-            this.columnHeader20.Text = "";
-            this.columnHeader20.Width = 0;
+            this.txtdAddDate.BackColor = System.Drawing.SystemColors.Info;
+            this.txtdAddDate.Enabled = false;
+            this.txtdAddDate.Location = new System.Drawing.Point(84, 39);
+            this.txtdAddDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtdAddDate.Name = "txtdAddDate";
+            this.txtdAddDate.Size = new System.Drawing.Size(145, 23);
+            this.txtdAddDate.TabIndex = 7;
             // 
-            // columnHeader21
+            // txtcAdd
             // 
-            this.columnHeader21.Tag = "Material";
-            this.columnHeader21.Text = "开始天数";
-            this.columnHeader21.Width = 113;
+            this.txtcAdd.BackColor = System.Drawing.SystemColors.Info;
+            this.txtcAdd.Enabled = false;
+            this.txtcAdd.Location = new System.Drawing.Point(84, 12);
+            this.txtcAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtcAdd.Name = "txtcAdd";
+            this.txtcAdd.Size = new System.Drawing.Size(145, 23);
+            this.txtcAdd.TabIndex = 6;
             // 
-            // columnHeader22
+            // txtdLastDate
             // 
-            this.columnHeader22.Tag = "vsct_iCycleDatetime";
-            this.columnHeader22.Text = "结束天数";
-            this.columnHeader22.Width = 100;
+            this.txtdLastDate.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.txtdLastDate.BackColor = System.Drawing.SystemColors.Info;
+            this.txtdLastDate.Enabled = false;
+            this.txtdLastDate.Location = new System.Drawing.Point(812, 39);
+            this.txtdLastDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtdLastDate.Name = "txtdLastDate";
+            this.txtdLastDate.Size = new System.Drawing.Size(145, 23);
+            this.txtdLastDate.TabIndex = 5;
             // 
-            // columnHeader23
+            // txtcLast
             // 
-            this.columnHeader23.Tag = "TransactionName";
-            this.columnHeader23.Text = "预计产量(公斤)";
-            this.columnHeader23.Width = 114;
+            this.txtcLast.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.txtcLast.BackColor = System.Drawing.SystemColors.Info;
+            this.txtcLast.Enabled = false;
+            this.txtcLast.Location = new System.Drawing.Point(812, 12);
+            this.txtcLast.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtcLast.Name = "txtcLast";
+            this.txtcLast.Size = new System.Drawing.Size(145, 23);
+            this.txtcLast.TabIndex = 4;
             // 
-            // columnHeader24
+            // label4
             // 
-            this.columnHeader24.Text = "备注";
-            this.columnHeader24.Width = 580;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label4.AutoSize = true;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label4.Location = new System.Drawing.Point(742, 43);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(70, 14);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "修改时间:";
             // 
-            // groupBox10
+            // label11
             // 
-            this.groupBox10.Controls.Add(this.button1);
-            this.groupBox10.Controls.Add(this.button2);
-            this.groupBox10.Controls.Add(this.button3);
-            this.groupBox10.Controls.Add(this.listView1);
-            this.groupBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox10.Location = new System.Drawing.Point(0, 0);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(944, 453);
-            this.groupBox10.TabIndex = 49;
-            this.groupBox10.TabStop = false;
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label11.AutoSize = true;
+            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label11.Location = new System.Drawing.Point(742, 15);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(56, 14);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "修改者:";
             // 
-            // button1
+            // label12
             // 
-            this.button1.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(869, 416);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 31);
-            this.button1.TabIndex = 53;
-            this.button1.Text = "删除";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label12.AutoSize = true;
+            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label12.Location = new System.Drawing.Point(15, 42);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(70, 14);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "新增时间:";
             // 
-            // button2
+            // label13
             // 
-            this.button2.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(796, 416);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 31);
-            this.button2.TabIndex = 52;
-            this.button2.Text = "修改";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(725, 416);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(66, 31);
-            this.button3.TabIndex = 51;
-            this.button3.Text = "新增";
-            this.button3.UseVisualStyleBackColor = true;
+            this.label13.AutoSize = true;
+            this.label13.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label13.Location = new System.Drawing.Point(15, 14);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(56, 14);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "新增者:";
             // 
             // VegetableSpeciesMaster
             // 
@@ -1222,10 +1395,9 @@
             this.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "VegetableSpeciesMaster";
-            this.Text = "VegetableSpeciesMaster";
+            this.TabText = "品种设置";
+            this.Text = "品种设置";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabSpeciesItem.ResumeLayout(false);
@@ -1241,6 +1413,11 @@
             this.groupBox7.PerformLayout();
             this.tpgPerdictYield.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
+            this.tpgSuitPlantTime.ResumeLayout(false);
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1335,15 +1512,28 @@
         private System.Windows.Forms.ColumnHeader columnHeader16;
         private System.Windows.Forms.ColumnHeader columnHeader18;
         private System.Windows.Forms.ColumnHeader columnHeader19;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvwCost;
         private System.Windows.Forms.ColumnHeader columnHeader20;
         private System.Windows.Forms.ColumnHeader columnHeader21;
         private System.Windows.Forms.ColumnHeader columnHeader22;
         private System.Windows.Forms.ColumnHeader columnHeader23;
         private System.Windows.Forms.ColumnHeader columnHeader24;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnPYDelete;
+        private System.Windows.Forms.Button btnPYModify;
+        private System.Windows.Forms.Button btnPYAdd;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.CheckBox chk12;
+        private System.Windows.Forms.CheckBox chk11;
+        private System.Windows.Forms.CheckBox chk10;
+        private System.Windows.Forms.CheckBox chk9;
+        private System.Windows.Forms.CheckBox chk8;
+        private System.Windows.Forms.CheckBox chk7;
+        private System.Windows.Forms.CheckBox chk6;
+        private System.Windows.Forms.CheckBox chk5;
+        private System.Windows.Forms.CheckBox chk4;
+        private System.Windows.Forms.CheckBox chk3;
+        private System.Windows.Forms.CheckBox chk2;
+        private System.Windows.Forms.CheckBox chk1;
     }
 }

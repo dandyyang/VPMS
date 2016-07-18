@@ -391,6 +391,7 @@
             this.MinimizeBox = false;
             this.Name = "VegetableSpeciesTransaction";
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "事务";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

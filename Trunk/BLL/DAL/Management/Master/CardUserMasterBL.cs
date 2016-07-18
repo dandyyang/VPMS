@@ -445,7 +445,7 @@ namespace BLL.DAL.Management.Master
                     case Common.DefineConstantValue.EditStateEnum.OE_Delete:
                         CardUserMaster_cus_Info o_info = DisplayRecord(info) as CardUserMaster_cus_Info;
                         DeleteDataLogic_ddl_Info ddl = new DeleteDataLogic_ddl_Info();
-                        ddl.ddl_TableName = Common.DefineConstantValue.MasterType.CardUser;
+                        //ddl.ddl_TableName = Common.DefineConstantValue.MasterType.CardUser;
                         ddl.ddl_ID = (itemEntity as CardUserMaster_cus_Info).cus_iRecordID;
                         if (o_info != null)
                         {
@@ -492,23 +492,23 @@ namespace BLL.DAL.Management.Master
                     ReturnValueInfo returnInfo;
                     //if (info.cus_imgPhoto.ToArray().Length > 0)
                     //{
-                    returnInfo = _fileManage.SaveBytes(DefineConstantValue.SchoolInternetOfThings, DefineConstantValue.CardUserPicture, info.PhotoPath, info.cus_imgPhoto.ToArray());
+                    //returnInfo = _fileManage.SaveBytes(DefineConstantValue.SchoolInternetOfThings, DefineConstantValue.CardUserPicture, info.PhotoPath, info.cus_imgPhoto.ToArray());
                     //}
                     //else
                     //{
                     //    returnInfo = _fileManage.Save(DefineConstantValue.Management, Common.DefineConstantValue.CardUserPicture, info.PhotoPath);
                     //}
 
-                    if (!returnInfo.boolValue)
-                    {
-                        msg.boolValue = true;
-                        msg.messageText = "相片保存失败:" + returnInfo.messageText;
-                        info.cus_guidPhotoKey = Guid.NewGuid();
-                    }
-                    else
-                    {
-                        info.cus_guidPhotoKey = (Guid)returnInfo.ValueObject;
-                    }
+                    //if (!returnInfo.boolValue)
+                    //{
+                    //    msg.boolValue = true;
+                    //    msg.messageText = "相片保存失败:" + returnInfo.messageText;
+                    //    info.cus_guidPhotoKey = Guid.NewGuid();
+                    //}
+                    //else
+                    //{
+                    //    info.cus_guidPhotoKey = (Guid)returnInfo.ValueObject;
+                    //}
                 }
                 else if (editState == DefineConstantValue.EditStateEnum.OE_Update)
                 {
@@ -518,18 +518,18 @@ namespace BLL.DAL.Management.Master
                         ReturnValueInfo returnInfo;
                         //if (info.cus_imgPhoto.ToArray().Length > 0)
                         //{
-                        returnInfo = _fileManage.UpdateBytes(_info.cus_guidPhotoKey, DefineConstantValue.SchoolInternetOfThings, DefineConstantValue.CardUserPicture, info.PhotoPath, info.cus_imgPhoto.ToArray());
+                        //returnInfo = _fileManage.UpdateBytes(_info.cus_guidPhotoKey, DefineConstantValue.SchoolInternetOfThings, DefineConstantValue.CardUserPicture, info.PhotoPath, info.cus_imgPhoto.ToArray());
                         //}
                         //else
                         //{
                         //    returnInfo = _fileManage.Save(DefineConstantValue.Management, Common.DefineConstantValue.CardUserPicture, info.PhotoPath);
                         //}
 
-                        if (!returnInfo.boolValue)
-                        {
-                            msg.boolValue = true;
-                            msg.messageText = "相片保存失败:" + returnInfo.messageText;
-                        }
+                        //if (!returnInfo.boolValue)
+                        //{
+                        //    msg.boolValue = true;
+                        //    msg.messageText = "相片保存失败:" + returnInfo.messageText;
+                        //}
                         //info.cus_guidPhotoKey = (Guid)returnInfo.ValueObject;
                     }
                 }

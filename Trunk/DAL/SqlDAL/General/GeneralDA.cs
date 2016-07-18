@@ -31,28 +31,12 @@ namespace DAL.SqlDAL.General
                         infoList = GetBuildingMaster();
                         break;
 
-                    case Common.DefineConstantValue.MasterType.AbsenceType:
-                        infoList = GetAbsenceType();
-                        break;
-
-                    case Common.DefineConstantValue.MasterType.CardUserSex:
-                        infoList = GetCodeMaster(DefineConstantValue.CodeMasterDefine.KEY1_SIOT_CardUserSex);
-                        break;
-
                     case DefineConstantValue.MasterType.SchoolMaster:
                         infoList = GetSchoolMaster();
                         break;
 
-                    case DefineConstantValue.MasterType.CardUserIdentity:
-                        infoList = GetCodeMaster(DefineConstantValue.CodeMasterDefine.KEY1_SIOT_CardUserIdentity);
-                        break;
-
                     case DefineConstantValue.MasterType.SpecialtyMaster:
                         infoList = GetSpecialtyMaster();
-                        break;
-
-                    case DefineConstantValue.MasterType.CardUserClass:
-                        infoList = GetCodeMaster(DefineConstantValue.CodeMasterDefine.KEY1_SIOT_CardUserClass);
                         break;
 
                     case DefineConstantValue.MasterType.DepartmentMaster:
@@ -64,18 +48,11 @@ namespace DAL.SqlDAL.General
                     case DefineConstantValue.MasterType.BuildingSiteMaster:
                         infoList = GetBuildSiteMaster();
                         break;
-                    case DefineConstantValue.MasterType.ControllerReaderUserType:
-                        infoList = GetCodeMaster(DefineConstantValue.CodeMasterDefine.KEY1_SIOT_READEROFCONTROLLER);
-                        break;
-                    case DefineConstantValue.MasterType.WeeklySetting:
-                        infoList = GetCodeMaster(DefineConstantValue.CodeMasterDefine.KEY1_SIOT_WeeklySetting);
-                        break;
+
                     case DefineConstantValue.MasterType.CourseMaster:
                         infoList = GetCourseMaster();
                         break;
-                    case DefineConstantValue.MasterType.PassType:
-                        infoList = GetCodeMaster(DefineConstantValue.CodeMasterDefine.KEY1_SIOT_COWASETTINGPASSTYPE);
-                        break;
+
                     case DefineConstantValue.MasterType.SIOT_AMS_INTRX:
                         infoList = GetCodeMaster(DefineConstantValue.CodeMasterDefine.KEY1_SIOT_AMS_INTRX);
                         break;
@@ -88,108 +65,10 @@ namespace DAL.SqlDAL.General
                     case DefineConstantValue.MasterType.CodeMaster_Key1:
                         infoList = GetCodeMaster_Key1();
                         break;
-                    case DefineConstantValue.MasterType.CourseSetting:
-                        infoList = GetCourseTime();
-                        break;
-                    case DefineConstantValue.MasterType.CardStatc:
-                        infoList = GetCardStatc();
-                        break;
-                    case DefineConstantValue.MasterType.MonitorNumber:
-                        infoList = GetMonitorNumber();
-                        break;
-                    case DefineConstantValue.MasterType.GraduationPeriod:
-                        infoList = GetGraduationPeriod();
-                        break;
-                    case DefineConstantValue.MasterType.SchoolTerm:
-                        infoList = GetSchoolTerm();
-                        break;
-
-                    case DefineConstantValue.MasterType.Theme:
-                        infoList = GetTheme();
-                        break;
-
-                    case DefineConstantValue.MasterType.Subject:
-                        infoList = GetSubject();
-                        break;
-
-                    case DefineConstantValue.MasterType.UserActivityMonitorItemSettingGroup:
-                        infoList = GetUserActivityMonitorItemSettingGroup();
-                        break;
-
-                    case DefineConstantValue.MasterType.IDCardPrinterModel:
-                        infoList = GetPrinterModel();
-                        break;
-
-                    case DefineConstantValue.MasterType.DINING_ADJUST_DefaultValue:
-                        infoList = GetDing_Adjust_DefaultValue();
-                        break;
-                    case DefineConstantValue.MasterType.DINING_LOCKTIME:
-                        infoList = GetDingLockTime();
-                        break;
-
-                    case DefineConstantValue.MasterType.CheckOn24GUnusualRecordCause:
-                        infoList = Get24GUnusualCause();
-                        break;
-
-                    case DefineConstantValue.MasterType.GetMonitorTimeSetting:
-                        infoList = GetMonitorTimeSetting();
-                        break;
-                    case DefineConstantValue.MasterType.PaymentType:
-                        infoList = GetPaymentType();
-                        break;
-
-                    case DefineConstantValue.MasterType.GoToSchoolType:
-                        infoList = GetGoToSchoolType();
-                        break;
-                    case DefineConstantValue.MasterType.RechargeMode:
-                        infoList = GetReChargeMode();
-                        break;
-                    case DefineConstantValue.MasterType.RechargeType:
-                        infoList = GetRechargeType();
-                        break;
-                    case DefineConstantValue.MasterType.FinancialPaymentItemType:
-                        infoList = GetCodeMaster(DefineConstantValue.CodeMasterDefine.KEY1_SIOT_FINANCEPAYMENTRECORDTYPE);
-                        break;
-
-                    case DefineConstantValue.MasterType.TypeOfPayment:
-                        infoList = GetCodeMaster(DefineConstantValue.CodeMasterDefine.KEY1_SIOT_FinanceIncomeOrPayPattern);
-                        break;
-
-                    case DefineConstantValue.MasterType.FinancialAffairsManage_StaffPay:
-                        infoList = GetStaffPayType();
-                        break;
-
-                    case DefineConstantValue.MasterType.FinancialAffairsManage_DailyPay:
-                        infoList = GetDailyPayType();
-                        break;
 
                     case DefineConstantValue.MasterType.SupplierMaster:
 
                         infoList = GetSupplierMaster();
-                        break;
-
-                    case DefineConstantValue.MasterType.FinancialAffairsManagePayType:
-                        infoList = GetFinancialAffairsPayType();
-                        break;
-
-                    case DefineConstantValue.MasterType.FinancialRevenue:
-                        infoList = GetFinancialRevenueType();
-                        break;
-
-                    case DefineConstantValue.MasterType.FinancialProperty:
-                        infoList = GetFinancialProperty();
-                        break;
-
-                    case DefineConstantValue.MasterType.FinancialLiabilities:
-                        infoList = GetFinancialLiabilities();
-                        break;
-
-                    case DefineConstantValue.MasterType.FinancialNetassets:
-                        infoList = GetFinancialNetassets();
-                        break;
-                    case DefineConstantValue.MasterType.TeacherInfo:
-
-                        infoList = GetAllStaffInfo();
                         break;
 
                     default:
@@ -449,108 +328,6 @@ namespace DAL.SqlDAL.General
             return list;
         }
 
-        private List<ComboboxDataInfo> GetStaffPayType()
-        {
-            List<ComboboxDataInfo> list = new List<ComboboxDataInfo>();
-
-            try
-            {
-                using (VPMSDBDataContext db = new VPMSDBDataContext())
-                {
-                    ArticleTypeDefine_atd sysType = db.ArticleTypeDefine_atds.FirstOrDefault(t => t.atd_cSysNum == DefineConstantValue.SIOT_FinancialAffairsManageInfoDefine.FinancialAffairsPay_RecordType_StaffPay && t.atd_lValid == true);
-
-                    if (sysType != null)
-                    {
-                        IEnumerable<ArticleTypeDefine_atd> Query = from t in db.ArticleTypeDefine_atds
-                                                                   where t.atd_cParentRecordNum == sysType.atd_cTypeNum
-                                                                   select t;
-
-                        if (Query != null && Query.Count() > 0)
-                        {
-                            foreach (ArticleTypeDefine_atd item in Query)
-                            {
-                                ComboboxDataInfo li = new ComboboxDataInfo();
-                                li.DisplayMember = item.atd_cDescript.ToString();
-                                li.ValueMember = item.atd_cTypeNum.ToString();
-                                list.Add(li);
-                            }
-                        }
-                    }
-                }
-            }
-            catch (Exception Ex)
-            {
-
-                throw Ex;
-            }
-
-            return list;
-        }
-
-        private List<ComboboxDataInfo> GetReChargeMode()
-        {
-            List<ComboboxDataInfo> list = new List<ComboboxDataInfo>();
-
-            try
-            {
-                using (VPMSDBDataContext db = new VPMSDBDataContext())
-                {
-                    IEnumerable<PaymentSetting_pm> Query = from t in db.PaymentSetting_pms
-                                                           where t.pms_cSettingName == DefineConstantValue.PaymentStruct.SettingName_RechargeMode
-                                                           select t;
-                    if (Query != null && Query.Count() > 0)
-                    {
-                        foreach (PaymentSetting_pm item in Query)
-                        {
-                            ComboboxDataInfo li = new ComboboxDataInfo();
-                            li.DisplayMember = item.pms_cRemark.ToString().Trim();
-                            li.ValueMember = item.pms_cValue.ToString();
-                            list.Add(li);
-                        }
-                    }
-                }
-            }
-            catch (Exception Ex)
-            {
-
-                throw Ex;
-            }
-
-            return list;
-        }
-
-        private List<ComboboxDataInfo> GetRechargeType()
-        {
-            List<ComboboxDataInfo> list = new List<ComboboxDataInfo>();
-
-            try
-            {
-                using (VPMSDBDataContext db = new VPMSDBDataContext())
-                {
-                    IEnumerable<PaymentSetting_pm> Query = from t in db.PaymentSetting_pms
-                                                           where t.pms_cSettingName == DefineConstantValue.PaymentStruct.SettingName_RechargeType
-                                                           select t;
-                    if (Query != null && Query.Count() > 0)
-                    {
-                        foreach (PaymentSetting_pm item in Query)
-                        {
-                            ComboboxDataInfo li = new ComboboxDataInfo();
-                            li.DisplayMember = item.pms_cValue.ToString().Trim();
-                            li.ValueMember = item.pms_iKey.ToString();
-                            list.Add(li);
-                        }
-                    }
-                }
-            }
-            catch (Exception Ex)
-            {
-
-                throw Ex;
-            }
-
-            return list;
-        }
-
         private List<ComboboxDataInfo> GetGoToSchoolType()
         {
             List<ComboboxDataInfo> list = new List<ComboboxDataInfo>();
@@ -718,31 +495,6 @@ namespace DAL.SqlDAL.General
                             li.ValueMember = item.pms_cValue.ToString();
                             list.Add(li);
                         }
-                    }
-                }
-            }
-            catch (Exception Ex)
-            {
-
-                throw Ex;
-            }
-            return list;
-        }
-
-        private List<ComboboxDataInfo> GetDing_Adjust_DefaultValue()
-        {
-            List<ComboboxDataInfo> list = new List<ComboboxDataInfo>();
-            try
-            {
-                using (VPMSDBDataContext db = new VPMSDBDataContext())
-                {
-                    PaymentSetting_pm tab = db.PaymentSetting_pms.FirstOrDefault(t => t.pms_cSettingName == DefineConstantValue.SIOT_PaymentSettingTypeDefine.DINING_ADJUST_DefaultValue);
-                    if (tab != null)
-                    {
-                        ComboboxDataInfo li = new ComboboxDataInfo();
-                        li.DisplayMember = tab.pms_cValue;
-                        li.ValueMember = tab.pms_iValue.ToString();
-                        list.Add(li);
                     }
                 }
             }
@@ -975,24 +727,13 @@ namespace DAL.SqlDAL.General
                     case DefineConstantValue.MasterType.CourseMaster:
                         infoList = GetCourseMasterWidthKey(keyInfo as string);
                         break;
-                    case DefineConstantValue.MasterType.TeacherInfo:
-                        infoList = GetTeacherInfoWidthKey(keyInfo as string);
-                        break;
                     case DefineConstantValue.MasterType.CodeMaster_Key2:
                         infoList = GetCodeMaster_Key2(keyInfo as string);
                         break;
-                    case DefineConstantValue.MasterType.TeacherCourse:
-                        infoList = GetTeacherCourseInfoWidthKey(keyInfo as string);
-                        break;
-
-                    case DefineConstantValue.MasterType.SchoolIDCardModel:
-                        infoList = GetSchoolIDCardModel(keyInfo as string);
-                        break;
-
+                   
                     case DefineConstantValue.MasterType.RightToQueryForTeacherDetailPaymentInfo:
                         infoList = GetRightToQueryForTeacerDetailPaymentInfo(keyInfo as string);
                         break;
-
 
                     case DefineConstantValue.MasterType.RightToQueryForClassDetailPaymentInfo:
                         infoList = GetRightToQueryForClassDetailPaymentInfo(keyInfo as string);
@@ -1013,9 +754,6 @@ namespace DAL.SqlDAL.General
                         infoList = GetSiteMasterWithKey(keyInfo as string);
                         break;
 
-                    case DefineConstantValue.MasterType.FinancialAffairsManage_DailyPay_SubType:
-                        infoList = GetFinancialAffairsManage_DailyPay_SubType(keyInfo as string);
-                        break;
                 }
             }
             catch (Exception ex)
@@ -1819,30 +1557,6 @@ namespace DAL.SqlDAL.General
             return infoList;
         }
 
-        private List<Model.General.ComboboxDataInfo> GetCourseTime()
-        {
-            List<Model.General.ComboboxDataInfo> infoList = new List<Model.General.ComboboxDataInfo>();
-            using (VPMSDBDataContext db = new VPMSDBDataContext())
-            {
-                IQueryable<CheckOnWorkAttendanceSetting_cws> query =
-                    from t in db.CheckOnWorkAttendanceSetting_cws
-                    where t.cws_cNumber == Common.DefineConstantValue.SIOT_COASettingDefine.AttendClassSetting
-                    orderby t.cws_iSeq ascending
-                    select t;
-                if (query.Count() > 0)
-                {
-                    foreach (CheckOnWorkAttendanceSetting_cws t in query)
-                    {
-                        Model.General.ComboboxDataInfo info = new Model.General.ComboboxDataInfo();
-                        info.DisplayMember = t.cws_cName;
-                        info.ValueMember = t.cws_iSeq.ToString();
-                        infoList.Add(info);
-                    }
-                }
-            }
-            return infoList;
-        }
-
         private List<Model.General.ComboboxDataInfo> GetCodeMaster_Key2(string CodeMaster_Key1)
         {
             List<Model.General.ComboboxDataInfo> infoList = new List<Model.General.ComboboxDataInfo>();
@@ -2459,33 +2173,6 @@ namespace DAL.SqlDAL.General
                 throw Ex;
             }
         }
-
-
-
-        #region IGeneralDA Members
-
-        public string GetPaymentPassword(DefineConstantValue.SIOT_PaymentPasswordType passwordType)
-        {
-            string password = string.Empty;
-
-            try
-            {
-                using (VPMSDBDataContext db = new VPMSDBDataContext())
-                {
-                    password = db.PaymentPassword_ppds.Single(t => t.ppd_cPasswordType == passwordType.ToString().Trim()).ppd_cPassword.Trim();
-                }
-
-            }
-            catch (Exception Ex)
-            {
-
-                throw Ex;
-            }
-
-            return password;
-        }
-
-        #endregion
 
     }
 }
