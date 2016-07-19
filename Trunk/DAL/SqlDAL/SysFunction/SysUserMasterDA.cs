@@ -111,7 +111,8 @@ namespace DAL.SqlDAL.SysFunction
         }
 
         /// <summary>
-        /// 根據SQL獲得對應的實體集合
+        /// 根據SQL獲得對應的實體集合
+
         /// </summary>
         /// <param name="Sql"></param>
         /// <returns></returns>

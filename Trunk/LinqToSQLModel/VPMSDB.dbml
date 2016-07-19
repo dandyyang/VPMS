@@ -320,4 +320,78 @@
       <Column Name="slm_dLastDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.VegetableSpeciesCycleTransaction_vsct" Member="VegetableSpeciesCycleTransaction_vsct">
+    <Type Name="VegetableSpeciesCycleTransaction_vsct">
+      <Column Name="vsct_RecordID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="vsct_VSTTRecordID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="vsct_cTransactionNum" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="vsct_lIsRemind" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="vsct_iAheadOfTimeRemind" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VegetableSpeciesMaster_vsm" Member="VegetableSpeciesMaster_vsm">
+    <Type Name="VegetableSpeciesMaster_vsm">
+      <Column Name="vsm_RecordID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="vsm_cNum" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="vsm_iSeq" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="vsm_cName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="vsm_cTypeNum" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="vsm_cByClassificationNum" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="vsm_iNurseryStage" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vsm_iGrowingPeriod" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vsm_iPickingPeriod" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vsm_iAcreYield" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vsm_iPlastochron" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vsm_cRemark" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="vsm_cAdd" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="vsm_dAddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="vsm_cLast" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="vsm_dLastDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VegetableSpeciesMasterCost_vsmc" Member="VegetableSpeciesMasterCost_vsmc">
+    <Type Name="VegetableSpeciesMasterCost_vsmc">
+      <Column Name="vsmc_RecordID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="vsmc_VSMRevordID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="vsmc_cCostTypeNum" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="vsmc_cMTMNum" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="vsmc_fQty" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="vsmc_fUnitPrice" Type="System.Decimal" DbType="Decimal(18,4) NOT NULL" CanBeNull="false" />
+      <Column Name="vsmc_cUnitNum" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VegetableSpeciesPerdictYield_vspy" Member="VegetableSpeciesPerdictYield_vspy">
+    <Type Name="VegetableSpeciesPerdictYield_vspy">
+      <Column Name="vspy_RecordID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="vspy_VSMRevordID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="vspy_iBeginDays" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vspy_iEndDays" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vspy_iYieldQty" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vspy_cRemark" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VegetableSpeciesSuitPlantTime_vspt" Member="VegetableSpeciesSuitPlantTime_vspt">
+    <Type Name="VegetableSpeciesSuitPlantTime_vspt">
+      <Column Name="vspt_RecordID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="vspt_VSMRevordID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="vspt_iMonth" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VegetableSpeciesTransactionTime_vstt" Member="VegetableSpeciesTransactionTime_vstt">
+    <Type Name="VegetableSpeciesTransactionTime_vstt">
+      <Column Name="vstt_RecordID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="vstt_VSMRecordID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="vstt_cPlantingStatusNum" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="vstt_iCycleDatetime" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="vstt_cRemark" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VSCTransactionMaterial_vctm" Member="VSCTransactionMaterial_vctm">
+    <Type Name="VSCTransactionMaterial_vctm">
+      <Column Name="vctm_VSCTRecordID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="vctm_cMTMNum" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="vctm_fQty" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="vctm_cUnitNum" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
 </Database>

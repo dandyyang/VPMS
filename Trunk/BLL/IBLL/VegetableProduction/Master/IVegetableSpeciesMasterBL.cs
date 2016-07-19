@@ -6,7 +6,7 @@ using Model.VegetableProduction.Master;
 
 namespace BLL.IBLL.VegetableProduction.Master
 {
-    public interface IVegetableSpeciesMasterBL : IDataBaseCommandBL<VegetableSpeciesMaster_vsm>, IMainBL, IExtraBL
+    public interface IVegetableSpeciesMasterBL : IDataBaseCommandBL<VegetableSpeciesMaster_vsm_Info>, IMainBL, IExtraBL
     {
 
     }

@@ -9,9 +9,9 @@ namespace Model.VegetableProduction.Master
     /// <summary>
     /// 事务中所用到物料
     /// </summary>
-    public class VSCTransactionMaterial_vctm : IModelObject
+    public class VSCTransactionMaterial_vctm_Info : ModelBase
     {
-        public VSCTransactionMaterial_vctm()
+        public VSCTransactionMaterial_vctm_Info()
         {
             this.vctm_VSCTRecordID = Guid.Empty;
             this.vctm_cMTMNum = string.Empty;
@@ -37,13 +37,5 @@ namespace Model.VegetableProduction.Master
         /// </summary>
         public string vctm_cUnitNum { set; get; }
 
-        #region IModelObject 成员
-
-        public int RecordID
-        {
-             set; get;
-        }
-
-        #endregion
     }
 }

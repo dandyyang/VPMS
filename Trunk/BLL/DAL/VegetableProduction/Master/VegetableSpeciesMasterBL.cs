@@ -10,22 +10,22 @@ namespace BLL.DAL.VegetableProduction.Master
     {
         #region IDataBaseCommandBL<VegetableSpeciesMaster_vsm> 成员
 
-        public Model.VegetableProduction.Master.VegetableSpeciesMaster_vsm GetRecord_First()
+        public Model.VegetableProduction.Master.VegetableSpeciesMaster_vsm_Info GetRecord_First()
         {
             throw new NotImplementedException();
         }
 
-        public Model.VegetableProduction.Master.VegetableSpeciesMaster_vsm GetRecord_Last()
+        public Model.VegetableProduction.Master.VegetableSpeciesMaster_vsm_Info GetRecord_Last()
         {
             throw new NotImplementedException();
         }
 
-        public Model.VegetableProduction.Master.VegetableSpeciesMaster_vsm GetRecord_Previous(Model.Base.DataBaseCommandInfo commandInfo)
+        public Model.VegetableProduction.Master.VegetableSpeciesMaster_vsm_Info GetRecord_Previous(Model.Base.DataBaseCommandInfo commandInfo)
         {
             throw new NotImplementedException();
         }
 
-        public Model.VegetableProduction.Master.VegetableSpeciesMaster_vsm GetRecord_Next(Model.Base.DataBaseCommandInfo commandInfo)
+        public Model.VegetableProduction.Master.VegetableSpeciesMaster_vsm_Info GetRecord_Next(Model.Base.DataBaseCommandInfo commandInfo)
         {
             throw new NotImplementedException();
         }

@@ -9,9 +9,9 @@ namespace Model.VegetableProduction.Master
     /// <summary>
     /// 蔬菜品种主档
     /// </summary>
-    public class VegetableSpeciesMaster_vsm : IModelObject
+    public class VegetableSpeciesMaster_vsm_Info : ModelBase
     {
-        public VegetableSpeciesMaster_vsm()
+        public VegetableSpeciesMaster_vsm_Info()
         {
             this.vsm_RecordID = Guid.Empty;
             this.vsm_cNum = string.Empty;
@@ -100,28 +100,19 @@ namespace Model.VegetableProduction.Master
         /// <summary>
         /// 种植事务时间列表
         /// </summary>
-        public List<VegetableSpeciesTransactionTime_vstt> VegetableSpeciesTransactionTimes { set; get; }
+        public List<VegetableSpeciesTransactionTime_vstt_Info> VegetableSpeciesTransactionTimes { set; get; }
         /// <summary>
         /// 蔬菜品种种植成本列表
         /// </summary>
-        public List<VegetableSpeciesMasterCost_vsmc> VegetableSpeciesMasterCosts { set; get; }
+        public List<VegetableSpeciesMasterCost_vsmc_Info> VegetableSpeciesMasterCosts { set; get; }
         /// <summary>
         /// 蔬菜品种预计产量列表
         /// </summary>
-        public List<VegetableSpeciesPerdictYield_vspy> VegetableSpeciesPerdictYields { set; get; }
+        public List<VegetableSpeciesPerdictYield_vspy_Info> VegetableSpeciesPerdictYields { set; get; }
         /// <summary>
         /// 适种月份列表
         /// </summary>
-        public List<VegetableSpeciesSuitPlantTime_vspt> VegetableSpeciesSuitPlantTimes { set; get; }
+        public List<VegetableSpeciesSuitPlantTime_vspt_Info> VegetableSpeciesSuitPlantTimes { set; get; }
 
-        #region IModelObject 成员
-
-        public int RecordID
-        {
-            get;
-            set;
-        }
-
-        #endregion
     }
 }

@@ -9,9 +9,9 @@ namespace Model.VegetableProduction.Master
     /// <summary>
     /// 种植事务时间
     /// </summary>
-    public class VegetableSpeciesTransactionTime_vstt : IModelObject
+    public class VegetableSpeciesTransactionTime_vstt_Info : ModelBase
     {
-        public VegetableSpeciesTransactionTime_vstt()
+        public VegetableSpeciesTransactionTime_vstt_Info()
         {
             this.vstt_RecordID = Guid.Empty;
             this.vstt_VSMRecordID = Guid.Empty;
@@ -46,17 +46,7 @@ namespace Model.VegetableProduction.Master
         /// <summary>
         /// 种植周期事务列表
         /// </summary>
-        public List<VegetableSpeciesCycleTransaction_vsct> VegetableSpeciesCycleTransactions { set; get; }
+        public List<VegetableSpeciesCycleTransaction_vsct_Info> VegetableSpeciesCycleTransactions { set; get; }
 
-
-        #region IModelObject 成员
-
-        public int RecordID
-        {
-            set;
-            get;
-        }
-
-        #endregion
     }
 }

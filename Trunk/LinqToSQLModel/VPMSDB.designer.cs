@@ -102,6 +102,27 @@ namespace LinqToSQLModel
     partial void InsertSupplierMaster_slm(SupplierMaster_slm instance);
     partial void UpdateSupplierMaster_slm(SupplierMaster_slm instance);
     partial void DeleteSupplierMaster_slm(SupplierMaster_slm instance);
+    partial void InsertVegetableSpeciesCycleTransaction_vsct(VegetableSpeciesCycleTransaction_vsct instance);
+    partial void UpdateVegetableSpeciesCycleTransaction_vsct(VegetableSpeciesCycleTransaction_vsct instance);
+    partial void DeleteVegetableSpeciesCycleTransaction_vsct(VegetableSpeciesCycleTransaction_vsct instance);
+    partial void InsertVegetableSpeciesMaster_vsm(VegetableSpeciesMaster_vsm instance);
+    partial void UpdateVegetableSpeciesMaster_vsm(VegetableSpeciesMaster_vsm instance);
+    partial void DeleteVegetableSpeciesMaster_vsm(VegetableSpeciesMaster_vsm instance);
+    partial void InsertVegetableSpeciesMasterCost_vsmc(VegetableSpeciesMasterCost_vsmc instance);
+    partial void UpdateVegetableSpeciesMasterCost_vsmc(VegetableSpeciesMasterCost_vsmc instance);
+    partial void DeleteVegetableSpeciesMasterCost_vsmc(VegetableSpeciesMasterCost_vsmc instance);
+    partial void InsertVegetableSpeciesPerdictYield_vspy(VegetableSpeciesPerdictYield_vspy instance);
+    partial void UpdateVegetableSpeciesPerdictYield_vspy(VegetableSpeciesPerdictYield_vspy instance);
+    partial void DeleteVegetableSpeciesPerdictYield_vspy(VegetableSpeciesPerdictYield_vspy instance);
+    partial void InsertVegetableSpeciesSuitPlantTime_vspt(VegetableSpeciesSuitPlantTime_vspt instance);
+    partial void UpdateVegetableSpeciesSuitPlantTime_vspt(VegetableSpeciesSuitPlantTime_vspt instance);
+    partial void DeleteVegetableSpeciesSuitPlantTime_vspt(VegetableSpeciesSuitPlantTime_vspt instance);
+    partial void InsertVegetableSpeciesTransactionTime_vstt(VegetableSpeciesTransactionTime_vstt instance);
+    partial void UpdateVegetableSpeciesTransactionTime_vstt(VegetableSpeciesTransactionTime_vstt instance);
+    partial void DeleteVegetableSpeciesTransactionTime_vstt(VegetableSpeciesTransactionTime_vstt instance);
+    partial void InsertVSCTransactionMaterial_vctm(VSCTransactionMaterial_vctm instance);
+    partial void UpdateVSCTransactionMaterial_vctm(VSCTransactionMaterial_vctm instance);
+    partial void DeleteVSCTransactionMaterial_vctm(VSCTransactionMaterial_vctm instance);
     #endregion
 		
 		public VPMSDBDataContext() : 
@@ -323,6 +344,62 @@ namespace LinqToSQLModel
 			get
 			{
 				return this.GetTable<SupplierMaster_slm>();
+			}
+		}
+		
+		public System.Data.Linq.Table<VegetableSpeciesCycleTransaction_vsct> VegetableSpeciesCycleTransaction_vsct
+		{
+			get
+			{
+				return this.GetTable<VegetableSpeciesCycleTransaction_vsct>();
+			}
+		}
+		
+		public System.Data.Linq.Table<VegetableSpeciesMaster_vsm> VegetableSpeciesMaster_vsm
+		{
+			get
+			{
+				return this.GetTable<VegetableSpeciesMaster_vsm>();
+			}
+		}
+		
+		public System.Data.Linq.Table<VegetableSpeciesMasterCost_vsmc> VegetableSpeciesMasterCost_vsmc
+		{
+			get
+			{
+				return this.GetTable<VegetableSpeciesMasterCost_vsmc>();
+			}
+		}
+		
+		public System.Data.Linq.Table<VegetableSpeciesPerdictYield_vspy> VegetableSpeciesPerdictYield_vspy
+		{
+			get
+			{
+				return this.GetTable<VegetableSpeciesPerdictYield_vspy>();
+			}
+		}
+		
+		public System.Data.Linq.Table<VegetableSpeciesSuitPlantTime_vspt> VegetableSpeciesSuitPlantTime_vspt
+		{
+			get
+			{
+				return this.GetTable<VegetableSpeciesSuitPlantTime_vspt>();
+			}
+		}
+		
+		public System.Data.Linq.Table<VegetableSpeciesTransactionTime_vstt> VegetableSpeciesTransactionTime_vstt
+		{
+			get
+			{
+				return this.GetTable<VegetableSpeciesTransactionTime_vstt>();
+			}
+		}
+		
+		public System.Data.Linq.Table<VSCTransactionMaterial_vctm> VSCTransactionMaterial_vctm
+		{
+			get
+			{
+				return this.GetTable<VSCTransactionMaterial_vctm>();
 			}
 		}
 	}
@@ -6734,6 +6811,1376 @@ namespace LinqToSQLModel
 					this._slm_dLastDate = value;
 					this.SendPropertyChanged("slm_dLastDate");
 					this.Onslm_dLastDateChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[Table(Name="dbo.VegetableSpeciesCycleTransaction_vsct")]
+	public partial class VegetableSpeciesCycleTransaction_vsct : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private System.Guid _vsct_RecordID;
+		
+		private System.Guid _vsct_VSTTRecordID;
+		
+		private string _vsct_cTransactionNum;
+		
+		private bool _vsct_lIsRemind;
+		
+		private int _vsct_iAheadOfTimeRemind;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onvsct_RecordIDChanging(System.Guid value);
+    partial void Onvsct_RecordIDChanged();
+    partial void Onvsct_VSTTRecordIDChanging(System.Guid value);
+    partial void Onvsct_VSTTRecordIDChanged();
+    partial void Onvsct_cTransactionNumChanging(string value);
+    partial void Onvsct_cTransactionNumChanged();
+    partial void Onvsct_lIsRemindChanging(bool value);
+    partial void Onvsct_lIsRemindChanged();
+    partial void Onvsct_iAheadOfTimeRemindChanging(int value);
+    partial void Onvsct_iAheadOfTimeRemindChanged();
+    #endregion
+		
+		public VegetableSpeciesCycleTransaction_vsct()
+		{
+			OnCreated();
+		}
+		
+		[Column(Storage="_vsct_RecordID", DbType="UniqueIdentifier NOT NULL", IsPrimaryKey=true)]
+		public System.Guid vsct_RecordID
+		{
+			get
+			{
+				return this._vsct_RecordID;
+			}
+			set
+			{
+				if ((this._vsct_RecordID != value))
+				{
+					this.Onvsct_RecordIDChanging(value);
+					this.SendPropertyChanging();
+					this._vsct_RecordID = value;
+					this.SendPropertyChanged("vsct_RecordID");
+					this.Onvsct_RecordIDChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsct_VSTTRecordID", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid vsct_VSTTRecordID
+		{
+			get
+			{
+				return this._vsct_VSTTRecordID;
+			}
+			set
+			{
+				if ((this._vsct_VSTTRecordID != value))
+				{
+					this.Onvsct_VSTTRecordIDChanging(value);
+					this.SendPropertyChanging();
+					this._vsct_VSTTRecordID = value;
+					this.SendPropertyChanged("vsct_VSTTRecordID");
+					this.Onvsct_VSTTRecordIDChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsct_cTransactionNum", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string vsct_cTransactionNum
+		{
+			get
+			{
+				return this._vsct_cTransactionNum;
+			}
+			set
+			{
+				if ((this._vsct_cTransactionNum != value))
+				{
+					this.Onvsct_cTransactionNumChanging(value);
+					this.SendPropertyChanging();
+					this._vsct_cTransactionNum = value;
+					this.SendPropertyChanged("vsct_cTransactionNum");
+					this.Onvsct_cTransactionNumChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsct_lIsRemind", DbType="Bit NOT NULL")]
+		public bool vsct_lIsRemind
+		{
+			get
+			{
+				return this._vsct_lIsRemind;
+			}
+			set
+			{
+				if ((this._vsct_lIsRemind != value))
+				{
+					this.Onvsct_lIsRemindChanging(value);
+					this.SendPropertyChanging();
+					this._vsct_lIsRemind = value;
+					this.SendPropertyChanged("vsct_lIsRemind");
+					this.Onvsct_lIsRemindChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsct_iAheadOfTimeRemind", DbType="Int NOT NULL")]
+		public int vsct_iAheadOfTimeRemind
+		{
+			get
+			{
+				return this._vsct_iAheadOfTimeRemind;
+			}
+			set
+			{
+				if ((this._vsct_iAheadOfTimeRemind != value))
+				{
+					this.Onvsct_iAheadOfTimeRemindChanging(value);
+					this.SendPropertyChanging();
+					this._vsct_iAheadOfTimeRemind = value;
+					this.SendPropertyChanged("vsct_iAheadOfTimeRemind");
+					this.Onvsct_iAheadOfTimeRemindChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[Table(Name="dbo.VegetableSpeciesMaster_vsm")]
+	public partial class VegetableSpeciesMaster_vsm : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private System.Guid _vsm_RecordID;
+		
+		private string _vsm_cNum;
+		
+		private int _vsm_iSeq;
+		
+		private string _vsm_cName;
+		
+		private string _vsm_cTypeNum;
+		
+		private string _vsm_cByClassificationNum;
+		
+		private int _vsm_iNurseryStage;
+		
+		private int _vsm_iGrowingPeriod;
+		
+		private int _vsm_iPickingPeriod;
+		
+		private int _vsm_iAcreYield;
+		
+		private int _vsm_iPlastochron;
+		
+		private string _vsm_cRemark;
+		
+		private string _vsm_cAdd;
+		
+		private System.Nullable<System.DateTime> _vsm_dAddDate;
+		
+		private string _vsm_cLast;
+		
+		private System.Nullable<System.DateTime> _vsm_dLastDate;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onvsm_RecordIDChanging(System.Guid value);
+    partial void Onvsm_RecordIDChanged();
+    partial void Onvsm_cNumChanging(string value);
+    partial void Onvsm_cNumChanged();
+    partial void Onvsm_iSeqChanging(int value);
+    partial void Onvsm_iSeqChanged();
+    partial void Onvsm_cNameChanging(string value);
+    partial void Onvsm_cNameChanged();
+    partial void Onvsm_cTypeNumChanging(string value);
+    partial void Onvsm_cTypeNumChanged();
+    partial void Onvsm_cByClassificationNumChanging(string value);
+    partial void Onvsm_cByClassificationNumChanged();
+    partial void Onvsm_iNurseryStageChanging(int value);
+    partial void Onvsm_iNurseryStageChanged();
+    partial void Onvsm_iGrowingPeriodChanging(int value);
+    partial void Onvsm_iGrowingPeriodChanged();
+    partial void Onvsm_iPickingPeriodChanging(int value);
+    partial void Onvsm_iPickingPeriodChanged();
+    partial void Onvsm_iAcreYieldChanging(int value);
+    partial void Onvsm_iAcreYieldChanged();
+    partial void Onvsm_iPlastochronChanging(int value);
+    partial void Onvsm_iPlastochronChanged();
+    partial void Onvsm_cRemarkChanging(string value);
+    partial void Onvsm_cRemarkChanged();
+    partial void Onvsm_cAddChanging(string value);
+    partial void Onvsm_cAddChanged();
+    partial void Onvsm_dAddDateChanging(System.Nullable<System.DateTime> value);
+    partial void Onvsm_dAddDateChanged();
+    partial void Onvsm_cLastChanging(string value);
+    partial void Onvsm_cLastChanged();
+    partial void Onvsm_dLastDateChanging(System.Nullable<System.DateTime> value);
+    partial void Onvsm_dLastDateChanged();
+    #endregion
+		
+		public VegetableSpeciesMaster_vsm()
+		{
+			OnCreated();
+		}
+		
+		[Column(Storage="_vsm_RecordID", DbType="UniqueIdentifier NOT NULL", IsPrimaryKey=true)]
+		public System.Guid vsm_RecordID
+		{
+			get
+			{
+				return this._vsm_RecordID;
+			}
+			set
+			{
+				if ((this._vsm_RecordID != value))
+				{
+					this.Onvsm_RecordIDChanging(value);
+					this.SendPropertyChanging();
+					this._vsm_RecordID = value;
+					this.SendPropertyChanged("vsm_RecordID");
+					this.Onvsm_RecordIDChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsm_cNum", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string vsm_cNum
+		{
+			get
+			{
+				return this._vsm_cNum;
+			}
+			set
+			{
+				if ((this._vsm_cNum != value))
+				{
+					this.Onvsm_cNumChanging(value);
+					this.SendPropertyChanging();
+					this._vsm_cNum = value;
+					this.SendPropertyChanged("vsm_cNum");
+					this.Onvsm_cNumChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsm_iSeq", AutoSync=AutoSync.Always, DbType="Int NOT NULL IDENTITY", IsDbGenerated=true)]
+		public int vsm_iSeq
+		{
+			get
+			{
+				return this._vsm_iSeq;
+			}
+			set
+			{
+				if ((this._vsm_iSeq != value))
+				{
+					this.Onvsm_iSeqChanging(value);
+					this.SendPropertyChanging();
+					this._vsm_iSeq = value;
+					this.SendPropertyChanged("vsm_iSeq");
+					this.Onvsm_iSeqChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsm_cName", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string vsm_cName
+		{
+			get
+			{
+				return this._vsm_cName;
+			}
+			set
+			{
+				if ((this._vsm_cName != value))
+				{
+					this.Onvsm_cNameChanging(value);
+					this.SendPropertyChanging();
+					this._vsm_cName = value;
+					this.SendPropertyChanged("vsm_cName");
+					this.Onvsm_cNameChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsm_cTypeNum", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string vsm_cTypeNum
+		{
+			get
+			{
+				return this._vsm_cTypeNum;
+			}
+			set
+			{
+				if ((this._vsm_cTypeNum != value))
+				{
+					this.Onvsm_cTypeNumChanging(value);
+					this.SendPropertyChanging();
+					this._vsm_cTypeNum = value;
+					this.SendPropertyChanged("vsm_cTypeNum");
+					this.Onvsm_cTypeNumChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsm_cByClassificationNum", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string vsm_cByClassificationNum
+		{
+			get
+			{
+				return this._vsm_cByClassificationNum;
+			}
+			set
+			{
+				if ((this._vsm_cByClassificationNum != value))
+				{
+					this.Onvsm_cByClassificationNumChanging(value);
+					this.SendPropertyChanging();
+					this._vsm_cByClassificationNum = value;
+					this.SendPropertyChanged("vsm_cByClassificationNum");
+					this.Onvsm_cByClassificationNumChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsm_iNurseryStage", DbType="Int NOT NULL")]
+		public int vsm_iNurseryStage
+		{
+			get
+			{
+				return this._vsm_iNurseryStage;
+			}
+			set
+			{
+				if ((this._vsm_iNurseryStage != value))
+				{
+					this.Onvsm_iNurseryStageChanging(value);
+					this.SendPropertyChanging();
+					this._vsm_iNurseryStage = value;
+					this.SendPropertyChanged("vsm_iNurseryStage");
+					this.Onvsm_iNurseryStageChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsm_iGrowingPeriod", DbType="Int NOT NULL")]
+		public int vsm_iGrowingPeriod
+		{
+			get
+			{
+				return this._vsm_iGrowingPeriod;
+			}
+			set
+			{
+				if ((this._vsm_iGrowingPeriod != value))
+				{
+					this.Onvsm_iGrowingPeriodChanging(value);
+					this.SendPropertyChanging();
+					this._vsm_iGrowingPeriod = value;
+					this.SendPropertyChanged("vsm_iGrowingPeriod");
+					this.Onvsm_iGrowingPeriodChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsm_iPickingPeriod", DbType="Int NOT NULL")]
+		public int vsm_iPickingPeriod
+		{
+			get
+			{
+				return this._vsm_iPickingPeriod;
+			}
+			set
+			{
+				if ((this._vsm_iPickingPeriod != value))
+				{
+					this.Onvsm_iPickingPeriodChanging(value);
+					this.SendPropertyChanging();
+					this._vsm_iPickingPeriod = value;
+					this.SendPropertyChanged("vsm_iPickingPeriod");
+					this.Onvsm_iPickingPeriodChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsm_iAcreYield", DbType="Int NOT NULL")]
+		public int vsm_iAcreYield
+		{
+			get
+			{
+				return this._vsm_iAcreYield;
+			}
+			set
+			{
+				if ((this._vsm_iAcreYield != value))
+				{
+					this.Onvsm_iAcreYieldChanging(value);
+					this.SendPropertyChanging();
+					this._vsm_iAcreYield = value;
+					this.SendPropertyChanged("vsm_iAcreYield");
+					this.Onvsm_iAcreYieldChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsm_iPlastochron", DbType="Int NOT NULL")]
+		public int vsm_iPlastochron
+		{
+			get
+			{
+				return this._vsm_iPlastochron;
+			}
+			set
+			{
+				if ((this._vsm_iPlastochron != value))
+				{
+					this.Onvsm_iPlastochronChanging(value);
+					this.SendPropertyChanging();
+					this._vsm_iPlastochron = value;
+					this.SendPropertyChanged("vsm_iPlastochron");
+					this.Onvsm_iPlastochronChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsm_cRemark", DbType="NVarChar(200) NOT NULL", CanBeNull=false)]
+		public string vsm_cRemark
+		{
+			get
+			{
+				return this._vsm_cRemark;
+			}
+			set
+			{
+				if ((this._vsm_cRemark != value))
+				{
+					this.Onvsm_cRemarkChanging(value);
+					this.SendPropertyChanging();
+					this._vsm_cRemark = value;
+					this.SendPropertyChanged("vsm_cRemark");
+					this.Onvsm_cRemarkChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsm_cAdd", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		public string vsm_cAdd
+		{
+			get
+			{
+				return this._vsm_cAdd;
+			}
+			set
+			{
+				if ((this._vsm_cAdd != value))
+				{
+					this.Onvsm_cAddChanging(value);
+					this.SendPropertyChanging();
+					this._vsm_cAdd = value;
+					this.SendPropertyChanged("vsm_cAdd");
+					this.Onvsm_cAddChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsm_dAddDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> vsm_dAddDate
+		{
+			get
+			{
+				return this._vsm_dAddDate;
+			}
+			set
+			{
+				if ((this._vsm_dAddDate != value))
+				{
+					this.Onvsm_dAddDateChanging(value);
+					this.SendPropertyChanging();
+					this._vsm_dAddDate = value;
+					this.SendPropertyChanged("vsm_dAddDate");
+					this.Onvsm_dAddDateChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsm_cLast", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		public string vsm_cLast
+		{
+			get
+			{
+				return this._vsm_cLast;
+			}
+			set
+			{
+				if ((this._vsm_cLast != value))
+				{
+					this.Onvsm_cLastChanging(value);
+					this.SendPropertyChanging();
+					this._vsm_cLast = value;
+					this.SendPropertyChanged("vsm_cLast");
+					this.Onvsm_cLastChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsm_dLastDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> vsm_dLastDate
+		{
+			get
+			{
+				return this._vsm_dLastDate;
+			}
+			set
+			{
+				if ((this._vsm_dLastDate != value))
+				{
+					this.Onvsm_dLastDateChanging(value);
+					this.SendPropertyChanging();
+					this._vsm_dLastDate = value;
+					this.SendPropertyChanged("vsm_dLastDate");
+					this.Onvsm_dLastDateChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[Table(Name="dbo.VegetableSpeciesMasterCost_vsmc")]
+	public partial class VegetableSpeciesMasterCost_vsmc : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private System.Guid _vsmc_RecordID;
+		
+		private System.Guid _vsmc_VSMRevordID;
+		
+		private string _vsmc_cCostTypeNum;
+		
+		private string _vsmc_cMTMNum;
+		
+		private decimal _vsmc_fQty;
+		
+		private decimal _vsmc_fUnitPrice;
+		
+		private string _vsmc_cUnitNum;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onvsmc_RecordIDChanging(System.Guid value);
+    partial void Onvsmc_RecordIDChanged();
+    partial void Onvsmc_VSMRevordIDChanging(System.Guid value);
+    partial void Onvsmc_VSMRevordIDChanged();
+    partial void Onvsmc_cCostTypeNumChanging(string value);
+    partial void Onvsmc_cCostTypeNumChanged();
+    partial void Onvsmc_cMTMNumChanging(string value);
+    partial void Onvsmc_cMTMNumChanged();
+    partial void Onvsmc_fQtyChanging(decimal value);
+    partial void Onvsmc_fQtyChanged();
+    partial void Onvsmc_fUnitPriceChanging(decimal value);
+    partial void Onvsmc_fUnitPriceChanged();
+    partial void Onvsmc_cUnitNumChanging(string value);
+    partial void Onvsmc_cUnitNumChanged();
+    #endregion
+		
+		public VegetableSpeciesMasterCost_vsmc()
+		{
+			OnCreated();
+		}
+		
+		[Column(Storage="_vsmc_RecordID", DbType="UniqueIdentifier NOT NULL", IsPrimaryKey=true)]
+		public System.Guid vsmc_RecordID
+		{
+			get
+			{
+				return this._vsmc_RecordID;
+			}
+			set
+			{
+				if ((this._vsmc_RecordID != value))
+				{
+					this.Onvsmc_RecordIDChanging(value);
+					this.SendPropertyChanging();
+					this._vsmc_RecordID = value;
+					this.SendPropertyChanged("vsmc_RecordID");
+					this.Onvsmc_RecordIDChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsmc_VSMRevordID", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid vsmc_VSMRevordID
+		{
+			get
+			{
+				return this._vsmc_VSMRevordID;
+			}
+			set
+			{
+				if ((this._vsmc_VSMRevordID != value))
+				{
+					this.Onvsmc_VSMRevordIDChanging(value);
+					this.SendPropertyChanging();
+					this._vsmc_VSMRevordID = value;
+					this.SendPropertyChanged("vsmc_VSMRevordID");
+					this.Onvsmc_VSMRevordIDChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsmc_cCostTypeNum", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string vsmc_cCostTypeNum
+		{
+			get
+			{
+				return this._vsmc_cCostTypeNum;
+			}
+			set
+			{
+				if ((this._vsmc_cCostTypeNum != value))
+				{
+					this.Onvsmc_cCostTypeNumChanging(value);
+					this.SendPropertyChanging();
+					this._vsmc_cCostTypeNum = value;
+					this.SendPropertyChanged("vsmc_cCostTypeNum");
+					this.Onvsmc_cCostTypeNumChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsmc_cMTMNum", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string vsmc_cMTMNum
+		{
+			get
+			{
+				return this._vsmc_cMTMNum;
+			}
+			set
+			{
+				if ((this._vsmc_cMTMNum != value))
+				{
+					this.Onvsmc_cMTMNumChanging(value);
+					this.SendPropertyChanging();
+					this._vsmc_cMTMNum = value;
+					this.SendPropertyChanged("vsmc_cMTMNum");
+					this.Onvsmc_cMTMNumChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsmc_fQty", DbType="Decimal(18,2) NOT NULL")]
+		public decimal vsmc_fQty
+		{
+			get
+			{
+				return this._vsmc_fQty;
+			}
+			set
+			{
+				if ((this._vsmc_fQty != value))
+				{
+					this.Onvsmc_fQtyChanging(value);
+					this.SendPropertyChanging();
+					this._vsmc_fQty = value;
+					this.SendPropertyChanged("vsmc_fQty");
+					this.Onvsmc_fQtyChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsmc_fUnitPrice", DbType="Decimal(18,4) NOT NULL")]
+		public decimal vsmc_fUnitPrice
+		{
+			get
+			{
+				return this._vsmc_fUnitPrice;
+			}
+			set
+			{
+				if ((this._vsmc_fUnitPrice != value))
+				{
+					this.Onvsmc_fUnitPriceChanging(value);
+					this.SendPropertyChanging();
+					this._vsmc_fUnitPrice = value;
+					this.SendPropertyChanged("vsmc_fUnitPrice");
+					this.Onvsmc_fUnitPriceChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vsmc_cUnitNum", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string vsmc_cUnitNum
+		{
+			get
+			{
+				return this._vsmc_cUnitNum;
+			}
+			set
+			{
+				if ((this._vsmc_cUnitNum != value))
+				{
+					this.Onvsmc_cUnitNumChanging(value);
+					this.SendPropertyChanging();
+					this._vsmc_cUnitNum = value;
+					this.SendPropertyChanged("vsmc_cUnitNum");
+					this.Onvsmc_cUnitNumChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[Table(Name="dbo.VegetableSpeciesPerdictYield_vspy")]
+	public partial class VegetableSpeciesPerdictYield_vspy : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private System.Guid _vspy_RecordID;
+		
+		private System.Guid _vspy_VSMRevordID;
+		
+		private int _vspy_iBeginDays;
+		
+		private int _vspy_iEndDays;
+		
+		private int _vspy_iYieldQty;
+		
+		private string _vspy_cRemark;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onvspy_RecordIDChanging(System.Guid value);
+    partial void Onvspy_RecordIDChanged();
+    partial void Onvspy_VSMRevordIDChanging(System.Guid value);
+    partial void Onvspy_VSMRevordIDChanged();
+    partial void Onvspy_iBeginDaysChanging(int value);
+    partial void Onvspy_iBeginDaysChanged();
+    partial void Onvspy_iEndDaysChanging(int value);
+    partial void Onvspy_iEndDaysChanged();
+    partial void Onvspy_iYieldQtyChanging(int value);
+    partial void Onvspy_iYieldQtyChanged();
+    partial void Onvspy_cRemarkChanging(string value);
+    partial void Onvspy_cRemarkChanged();
+    #endregion
+		
+		public VegetableSpeciesPerdictYield_vspy()
+		{
+			OnCreated();
+		}
+		
+		[Column(Storage="_vspy_RecordID", DbType="UniqueIdentifier NOT NULL", IsPrimaryKey=true)]
+		public System.Guid vspy_RecordID
+		{
+			get
+			{
+				return this._vspy_RecordID;
+			}
+			set
+			{
+				if ((this._vspy_RecordID != value))
+				{
+					this.Onvspy_RecordIDChanging(value);
+					this.SendPropertyChanging();
+					this._vspy_RecordID = value;
+					this.SendPropertyChanged("vspy_RecordID");
+					this.Onvspy_RecordIDChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vspy_VSMRevordID", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid vspy_VSMRevordID
+		{
+			get
+			{
+				return this._vspy_VSMRevordID;
+			}
+			set
+			{
+				if ((this._vspy_VSMRevordID != value))
+				{
+					this.Onvspy_VSMRevordIDChanging(value);
+					this.SendPropertyChanging();
+					this._vspy_VSMRevordID = value;
+					this.SendPropertyChanged("vspy_VSMRevordID");
+					this.Onvspy_VSMRevordIDChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vspy_iBeginDays", DbType="Int NOT NULL")]
+		public int vspy_iBeginDays
+		{
+			get
+			{
+				return this._vspy_iBeginDays;
+			}
+			set
+			{
+				if ((this._vspy_iBeginDays != value))
+				{
+					this.Onvspy_iBeginDaysChanging(value);
+					this.SendPropertyChanging();
+					this._vspy_iBeginDays = value;
+					this.SendPropertyChanged("vspy_iBeginDays");
+					this.Onvspy_iBeginDaysChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vspy_iEndDays", DbType="Int NOT NULL")]
+		public int vspy_iEndDays
+		{
+			get
+			{
+				return this._vspy_iEndDays;
+			}
+			set
+			{
+				if ((this._vspy_iEndDays != value))
+				{
+					this.Onvspy_iEndDaysChanging(value);
+					this.SendPropertyChanging();
+					this._vspy_iEndDays = value;
+					this.SendPropertyChanged("vspy_iEndDays");
+					this.Onvspy_iEndDaysChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vspy_iYieldQty", DbType="Int NOT NULL")]
+		public int vspy_iYieldQty
+		{
+			get
+			{
+				return this._vspy_iYieldQty;
+			}
+			set
+			{
+				if ((this._vspy_iYieldQty != value))
+				{
+					this.Onvspy_iYieldQtyChanging(value);
+					this.SendPropertyChanging();
+					this._vspy_iYieldQty = value;
+					this.SendPropertyChanged("vspy_iYieldQty");
+					this.Onvspy_iYieldQtyChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vspy_cRemark", DbType="NVarChar(200) NOT NULL", CanBeNull=false)]
+		public string vspy_cRemark
+		{
+			get
+			{
+				return this._vspy_cRemark;
+			}
+			set
+			{
+				if ((this._vspy_cRemark != value))
+				{
+					this.Onvspy_cRemarkChanging(value);
+					this.SendPropertyChanging();
+					this._vspy_cRemark = value;
+					this.SendPropertyChanged("vspy_cRemark");
+					this.Onvspy_cRemarkChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[Table(Name="dbo.VegetableSpeciesSuitPlantTime_vspt")]
+	public partial class VegetableSpeciesSuitPlantTime_vspt : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private System.Guid _vspt_RecordID;
+		
+		private System.Guid _vspt_VSMRevordID;
+		
+		private short _vspt_iMonth;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onvspt_RecordIDChanging(System.Guid value);
+    partial void Onvspt_RecordIDChanged();
+    partial void Onvspt_VSMRevordIDChanging(System.Guid value);
+    partial void Onvspt_VSMRevordIDChanged();
+    partial void Onvspt_iMonthChanging(short value);
+    partial void Onvspt_iMonthChanged();
+    #endregion
+		
+		public VegetableSpeciesSuitPlantTime_vspt()
+		{
+			OnCreated();
+		}
+		
+		[Column(Storage="_vspt_RecordID", DbType="UniqueIdentifier NOT NULL", IsPrimaryKey=true)]
+		public System.Guid vspt_RecordID
+		{
+			get
+			{
+				return this._vspt_RecordID;
+			}
+			set
+			{
+				if ((this._vspt_RecordID != value))
+				{
+					this.Onvspt_RecordIDChanging(value);
+					this.SendPropertyChanging();
+					this._vspt_RecordID = value;
+					this.SendPropertyChanged("vspt_RecordID");
+					this.Onvspt_RecordIDChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vspt_VSMRevordID", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid vspt_VSMRevordID
+		{
+			get
+			{
+				return this._vspt_VSMRevordID;
+			}
+			set
+			{
+				if ((this._vspt_VSMRevordID != value))
+				{
+					this.Onvspt_VSMRevordIDChanging(value);
+					this.SendPropertyChanging();
+					this._vspt_VSMRevordID = value;
+					this.SendPropertyChanged("vspt_VSMRevordID");
+					this.Onvspt_VSMRevordIDChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vspt_iMonth", DbType="SmallInt NOT NULL")]
+		public short vspt_iMonth
+		{
+			get
+			{
+				return this._vspt_iMonth;
+			}
+			set
+			{
+				if ((this._vspt_iMonth != value))
+				{
+					this.Onvspt_iMonthChanging(value);
+					this.SendPropertyChanging();
+					this._vspt_iMonth = value;
+					this.SendPropertyChanged("vspt_iMonth");
+					this.Onvspt_iMonthChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[Table(Name="dbo.VegetableSpeciesTransactionTime_vstt")]
+	public partial class VegetableSpeciesTransactionTime_vstt : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private System.Guid _vstt_RecordID;
+		
+		private System.Guid _vstt_VSMRecordID;
+		
+		private string _vstt_cPlantingStatusNum;
+		
+		private int _vstt_iCycleDatetime;
+		
+		private string _vstt_cRemark;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onvstt_RecordIDChanging(System.Guid value);
+    partial void Onvstt_RecordIDChanged();
+    partial void Onvstt_VSMRecordIDChanging(System.Guid value);
+    partial void Onvstt_VSMRecordIDChanged();
+    partial void Onvstt_cPlantingStatusNumChanging(string value);
+    partial void Onvstt_cPlantingStatusNumChanged();
+    partial void Onvstt_iCycleDatetimeChanging(int value);
+    partial void Onvstt_iCycleDatetimeChanged();
+    partial void Onvstt_cRemarkChanging(string value);
+    partial void Onvstt_cRemarkChanged();
+    #endregion
+		
+		public VegetableSpeciesTransactionTime_vstt()
+		{
+			OnCreated();
+		}
+		
+		[Column(Storage="_vstt_RecordID", DbType="UniqueIdentifier NOT NULL", IsPrimaryKey=true)]
+		public System.Guid vstt_RecordID
+		{
+			get
+			{
+				return this._vstt_RecordID;
+			}
+			set
+			{
+				if ((this._vstt_RecordID != value))
+				{
+					this.Onvstt_RecordIDChanging(value);
+					this.SendPropertyChanging();
+					this._vstt_RecordID = value;
+					this.SendPropertyChanged("vstt_RecordID");
+					this.Onvstt_RecordIDChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vstt_VSMRecordID", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid vstt_VSMRecordID
+		{
+			get
+			{
+				return this._vstt_VSMRecordID;
+			}
+			set
+			{
+				if ((this._vstt_VSMRecordID != value))
+				{
+					this.Onvstt_VSMRecordIDChanging(value);
+					this.SendPropertyChanging();
+					this._vstt_VSMRecordID = value;
+					this.SendPropertyChanged("vstt_VSMRecordID");
+					this.Onvstt_VSMRecordIDChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vstt_cPlantingStatusNum", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string vstt_cPlantingStatusNum
+		{
+			get
+			{
+				return this._vstt_cPlantingStatusNum;
+			}
+			set
+			{
+				if ((this._vstt_cPlantingStatusNum != value))
+				{
+					this.Onvstt_cPlantingStatusNumChanging(value);
+					this.SendPropertyChanging();
+					this._vstt_cPlantingStatusNum = value;
+					this.SendPropertyChanged("vstt_cPlantingStatusNum");
+					this.Onvstt_cPlantingStatusNumChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vstt_iCycleDatetime", DbType="Int NOT NULL")]
+		public int vstt_iCycleDatetime
+		{
+			get
+			{
+				return this._vstt_iCycleDatetime;
+			}
+			set
+			{
+				if ((this._vstt_iCycleDatetime != value))
+				{
+					this.Onvstt_iCycleDatetimeChanging(value);
+					this.SendPropertyChanging();
+					this._vstt_iCycleDatetime = value;
+					this.SendPropertyChanged("vstt_iCycleDatetime");
+					this.Onvstt_iCycleDatetimeChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vstt_cRemark", DbType="NVarChar(200) NOT NULL", CanBeNull=false)]
+		public string vstt_cRemark
+		{
+			get
+			{
+				return this._vstt_cRemark;
+			}
+			set
+			{
+				if ((this._vstt_cRemark != value))
+				{
+					this.Onvstt_cRemarkChanging(value);
+					this.SendPropertyChanging();
+					this._vstt_cRemark = value;
+					this.SendPropertyChanged("vstt_cRemark");
+					this.Onvstt_cRemarkChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[Table(Name="dbo.VSCTransactionMaterial_vctm")]
+	public partial class VSCTransactionMaterial_vctm : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private System.Guid _vctm_VSCTRecordID;
+		
+		private string _vctm_cMTMNum;
+		
+		private decimal _vctm_fQty;
+		
+		private string _vctm_cUnitNum;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onvctm_VSCTRecordIDChanging(System.Guid value);
+    partial void Onvctm_VSCTRecordIDChanged();
+    partial void Onvctm_cMTMNumChanging(string value);
+    partial void Onvctm_cMTMNumChanged();
+    partial void Onvctm_fQtyChanging(decimal value);
+    partial void Onvctm_fQtyChanged();
+    partial void Onvctm_cUnitNumChanging(string value);
+    partial void Onvctm_cUnitNumChanged();
+    #endregion
+		
+		public VSCTransactionMaterial_vctm()
+		{
+			OnCreated();
+		}
+		
+		[Column(Storage="_vctm_VSCTRecordID", DbType="UniqueIdentifier NOT NULL", IsPrimaryKey=true)]
+		public System.Guid vctm_VSCTRecordID
+		{
+			get
+			{
+				return this._vctm_VSCTRecordID;
+			}
+			set
+			{
+				if ((this._vctm_VSCTRecordID != value))
+				{
+					this.Onvctm_VSCTRecordIDChanging(value);
+					this.SendPropertyChanging();
+					this._vctm_VSCTRecordID = value;
+					this.SendPropertyChanged("vctm_VSCTRecordID");
+					this.Onvctm_VSCTRecordIDChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vctm_cMTMNum", DbType="VarChar(30) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string vctm_cMTMNum
+		{
+			get
+			{
+				return this._vctm_cMTMNum;
+			}
+			set
+			{
+				if ((this._vctm_cMTMNum != value))
+				{
+					this.Onvctm_cMTMNumChanging(value);
+					this.SendPropertyChanging();
+					this._vctm_cMTMNum = value;
+					this.SendPropertyChanged("vctm_cMTMNum");
+					this.Onvctm_cMTMNumChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vctm_fQty", DbType="Decimal(18,2) NOT NULL")]
+		public decimal vctm_fQty
+		{
+			get
+			{
+				return this._vctm_fQty;
+			}
+			set
+			{
+				if ((this._vctm_fQty != value))
+				{
+					this.Onvctm_fQtyChanging(value);
+					this.SendPropertyChanging();
+					this._vctm_fQty = value;
+					this.SendPropertyChanged("vctm_fQty");
+					this.Onvctm_fQtyChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_vctm_cUnitNum", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string vctm_cUnitNum
+		{
+			get
+			{
+				return this._vctm_cUnitNum;
+			}
+			set
+			{
+				if ((this._vctm_cUnitNum != value))
+				{
+					this.Onvctm_cUnitNumChanging(value);
+					this.SendPropertyChanging();
+					this._vctm_cUnitNum = value;
+					this.SendPropertyChanged("vctm_cUnitNum");
+					this.Onvctm_cUnitNumChanged();
 				}
 			}
 		}

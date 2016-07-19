@@ -7,20 +7,18 @@ using Model.IModel;
 namespace Model.VegetableProduction.Master
 {
     /// <summary>
-    /// 蔬菜品种种植成本
+    /// 蔬菜品种预计产量
     /// </summary>
-    public class VegetableSpeciesMasterCost_vsmc : IModelObject
+    public class VegetableSpeciesPerdictYield_vspy_Info : ModelBase
     {
-        public VegetableSpeciesMasterCost_vsmc()
+        public VegetableSpeciesPerdictYield_vspy_Info()
         {
             this.vsmc_RecordID = Guid.Empty;
             this.vsmc_VSMRevordID = Guid.Empty;
-            this.vsmc_cCostTypeNum = string.Empty;
-            this.vsmc_fQty = 0;
-            this.vsmc_fUnitPrice = 0;
-            this.vsmc_cMTMNum = string.Empty;
-            this.vsmc_cUnitNum = string.Empty;
-
+            this.vspy_iBeginDays = 0;
+            this.vspy_iEndDays = 0;
+            this.vspy_iYieldQty = 0;
+            this.vspy_cRemark = string.Empty;
         }
 
         /// <summary>
@@ -32,33 +30,28 @@ namespace Model.VegetableProduction.Master
         /// </summary>
         public Guid vsmc_VSMRevordID { set; get; }
         /// <summary>
-        /// 成本类型编号
+        /// 开始天数
         /// </summary>
-        public string vsmc_cCostTypeNum { set; get; }
+        public int vspy_iBeginDays { set; get; }
         /// <summary>
-        /// 用量
+        /// 结束天数
         /// </summary>
-        public decimal vsmc_fQty { set; get; }
+        public int vspy_iEndDays { set; get; }
         /// <summary>
-        /// 单价
+        /// 预计产量（公斤）
         /// </summary>
-        public decimal vsmc_fUnitPrice { set; get; }
+        public int vspy_iYieldQty { set; get; }
         /// <summary>
-        /// 物料编号
+        /// 备注
         /// </summary>
-        public string vsmc_cMTMNum { set; get; }
-        /// <summary>
-        /// 单位
-        /// </summary>
-        public string vsmc_cUnitNum { set; get; }
-
+        public string vspy_cRemark { set; get; }
 
         #region IModelObject 成员
 
         public int RecordID
         {
-            get;
             set;
+            get;
         }
 
         #endregion

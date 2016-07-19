@@ -9,9 +9,9 @@ namespace Model.VegetableProduction.Master
     /// <summary>
     /// 适种月份表
     /// </summary>
-    public class VegetableSpeciesSuitPlantTime_vspt : IModelObject
+    public class VegetableSpeciesSuitPlantTime_vspt_Info : ModelBase
     {
-        public VegetableSpeciesSuitPlantTime_vspt()
+        public VegetableSpeciesSuitPlantTime_vspt_Info()
         {
             this.vsmc_RecordID = Guid.Empty;
             this.vsmc_VSMRevordID = Guid.Empty;
@@ -31,14 +31,5 @@ namespace Model.VegetableProduction.Master
         /// </summary>
         public string vspt_iMonth { set; get; }
 
-        #region IModelObject 成员
-
-        public int RecordID
-        {
-            set;
-            get;
-        }
-
-        #endregion
     }
 }
