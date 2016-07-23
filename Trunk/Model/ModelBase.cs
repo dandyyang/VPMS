@@ -16,7 +16,7 @@ namespace Model
         /// <summary>
         /// 记录编辑状态（Insert=1,Update=2,Delete=4）
         /// </summary>
-        public int RecordEditStatus
+        public Common.DefineConstantValue.EditStateEnum RecordEditStatus
         {
             set;
             get;
